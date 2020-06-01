@@ -1,23 +1,973 @@
 {
-    "num_links": 1,
+    "help": "https://github.com/pirate/ArchiveBox",
+    "updated": "1591011293.292412",
+    "num_links": 6,
+    "info": "ArchiveBox Index",
     "version": "6c4c6862e2052d4d0b0c7640361dfd93d6ea7748",
     "links": [
         {
-            "url": "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
-            "tags": "",
-            "sources": [
-                "/data/sources/stdin-1591010419.txt",
-                "/data/sources/stdin-1591010406.txt"
-            ],
-            "title": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times",
-            "timestamp": "1591010406",
             "history": {
                 "dom": [
                     {
-                        "start_ts": "2020-06-01 11:20:30.974049",
+                        "end_ts": "2020-06-01 11:29:40.599206",
+                        "start_ts": "2020-06-01 11:29:37.935011",
+                        "duration": 2,
+                        "output": "output.html",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--dump-dom",
+                            "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "media": [
+                    {
+                        "end_ts": "2020-06-01 11:29:51.398706",
+                        "start_ts": "2020-06-01 11:29:40.603634",
+                        "duration": 10,
+                        "output": "media",
+                        "cmd": [
+                            "youtube-dl",
+                            "--write-description",
+                            "--write-info-json",
+                            "--write-annotations",
+                            "--yes-playlist",
+                            "--write-thumbnail",
+                            "--no-call-home",
+                            "--no-check-certificate",
+                            "--all-subs",
+                            "--extract-audio",
+                            "--keep-video",
+                            "--ignore-errors",
+                            "--geo-bypass",
+                            "--audio-format",
+                            "mp3",
+                            "--audio-quality",
+                            "320K",
+                            "--embed-thumbnail",
+                            "--add-metadata",
+                            "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "favicon": [
+                    {
+                        "end_ts": "2020-06-01 11:29:30.815167",
+                        "start_ts": "2020-06-01 11:29:30.527102",
+                        "duration": 0,
+                        "output": "favicon.ico",
+                        "cmd": [
+                            "curl",
+                            "--max-time",
+                            "60",
+                            "--location",
+                            "--output",
+                            "favicon.ico",
+                            "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "git": [],
+                "screenshot": [
+                    {
+                        "end_ts": "2020-06-01 11:29:37.934407",
+                        "start_ts": "2020-06-01 11:29:34.815665",
+                        "duration": 3,
+                        "output": "screenshot.png",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--screenshot",
+                            "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "pdf": [
+                    {
+                        "end_ts": "2020-06-01 11:29:34.815058",
+                        "start_ts": "2020-06-01 11:29:31.290785",
+                        "duration": 3,
+                        "output": "output.pdf",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "title": [
+                    {
+                        "end_ts": "2020-06-01 11:29:30.523824",
+                        "start_ts": "2020-06-01 11:29:30.083049",
+                        "duration": 0,
+                        "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post",
+                        "cmd": [
+                            "curl",
+                            "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/",
+                            "|",
+                            "grep",
+                            "<title>"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "wget": [
+                    {
+                        "end_ts": "2020-06-01 11:29:31.290065",
+                        "start_ts": "2020-06-01 11:29:30.818139",
+                        "duration": 0,
+                        "output": "www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/index.html",
+                        "cmd": [
+                            "wget",
+                            "--no-verbose",
+                            "--adjust-extension",
+                            "--convert-links",
+                            "--force-directories",
+                            "--backup-converted",
+                            "--span-hosts",
+                            "--no-parent",
+                            "-e",
+                            "robots=off",
+                            "--restrict-file-names=windows",
+                            "--timeout=60",
+                            "--warc-file=warc/1591010970",
+                            "--page-requisites",
+                            "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                            "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "succeeded"
+                    }
+                ],
+                "archive_org": [
+                    {
+                        "end_ts": "2020-06-01 11:29:57.171363",
+                        "start_ts": "2020-06-01 11:29:51.399261",
+                        "duration": 5,
+                        "output": "WaybackException: java.net.SocketTimeoutException: Read timed out",
+                        "cmd": [
+                            "curl",
+                            "--location",
+                            "--head",
+                            "--user-agent",
+                            "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                            "--max-time",
+                            "60",
+                            "https://web.archive.org/save/https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                        ],
+                        "pwd": "/data/archive/1591010969",
+                        "status": "failed"
+                    }
+                ]
+            },
+            "timestamp": "1591010969",
+            "sources": [
+                "/data/sources/stdin-1591010969.txt"
+            ],
+            "title": "Washington Post: Breaking News, World, US, DC News & Analysis - The Washington Post",
+            "url": "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/",
+            "tags": ""
+        },
+        {
+            "history": {
+                "dom": [
+                    {
+                        "end_ts": "2020-06-01 11:31:13.418196",
+                        "start_ts": "2020-06-01 11:31:08.573960",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "output.html",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--dump-dom",
+                            "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                        ],
+                        "duration": 4,
+                        "status": "succeeded"
+                    }
+                ],
+                "media": [
+                    {
+                        "end_ts": "2020-06-01 11:31:14.182261",
+                        "start_ts": "2020-06-01 11:31:13.420549",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "Failed to download media",
+                        "cmd": [
+                            "youtube-dl",
+                            "--write-description",
+                            "--write-info-json",
+                            "--write-annotations",
+                            "--yes-playlist",
+                            "--write-thumbnail",
+                            "--no-call-home",
+                            "--no-check-certificate",
+                            "--all-subs",
+                            "--extract-audio",
+                            "--keep-video",
+                            "--ignore-errors",
+                            "--geo-bypass",
+                            "--audio-format",
+                            "mp3",
+                            "--audio-quality",
+                            "320K",
+                            "--embed-thumbnail",
+                            "--add-metadata",
+                            "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                        ],
+                        "duration": 0,
+                        "status": "failed"
+                    }
+                ],
+                "favicon": [
+                    {
+                        "end_ts": "2020-06-01 11:29:57.856983",
+                        "start_ts": "2020-06-01 11:29:57.596109",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "favicon.ico",
+                        "cmd": [
+                            "curl",
+                            "--max-time",
+                            "60",
+                            "--location",
+                            "--output",
+                            "favicon.ico",
+                            "https://www.google.com/s2/favicons?domain=www.nytimes.com"
+                        ],
+                        "duration": 0,
+                        "status": "succeeded"
+                    }
+                ],
+                "screenshot": [
+                    {
+                        "end_ts": "2020-06-01 11:31:08.573008",
+                        "start_ts": "2020-06-01 11:31:03.134515",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "screenshot.png",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--screenshot",
+                            "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                        ],
+                        "duration": 5,
+                        "status": "succeeded"
+                    }
+                ],
+                "pdf": [
+                    {
+                        "end_ts": "2020-06-01 11:31:03.133841",
+                        "start_ts": "2020-06-01 11:30:57.804034",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "output.pdf",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                        ],
+                        "duration": 5,
+                        "status": "succeeded"
+                    }
+                ],
+                "wget": [
+                    {
+                        "end_ts": "2020-06-01 11:30:57.801942",
+                        "start_ts": "2020-06-01 11:29:57.862303",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "Command 'wget' timed out after 60 seconds",
+                        "cmd": [
+                            "wget",
+                            "--no-verbose",
+                            "--adjust-extension",
+                            "--convert-links",
+                            "--force-directories",
+                            "--backup-converted",
+                            "--span-hosts",
+                            "--no-parent",
+                            "-e",
+                            "robots=off",
+                            "--restrict-file-names=windows",
+                            "--timeout=60",
+                            "--warc-file=warc/1591010997",
+                            "--page-requisites",
+                            "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                            "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                        ],
+                        "duration": 59,
+                        "status": "failed"
+                    }
+                ],
+                "title": [
+                    {
+                        "end_ts": "2020-06-01 11:29:57.593495",
+                        "start_ts": "2020-06-01 11:29:57.242407",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "Opinion | Destructive Power of Despair - The New York Times",
+                        "cmd": [
+                            "curl",
+                            "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
+                            "|",
+                            "grep",
+                            "<title>"
+                        ],
+                        "duration": 0,
+                        "status": "succeeded"
+                    }
+                ],
+                "archive_org": [
+                    {
+                        "end_ts": "2020-06-01 11:31:15.834223",
+                        "start_ts": "2020-06-01 11:31:14.182890",
+                        "pwd": "/data/archive/1591010969.0",
+                        "output": "https://web.archive.org/web/20200601113114/https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
+                        "cmd": [
+                            "curl",
+                            "--location",
+                            "--head",
+                            "--user-agent",
+                            "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                            "--max-time",
+                            "60",
+                            "https://web.archive.org/save/https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                        ],
+                        "duration": 1,
+                        "status": "succeeded"
+                    }
+                ],
+                "git": []
+            },
+            "timestamp": "1591010969.0",
+            "sources": [
+                "/data/sources/stdin-1591010969.txt"
+            ],
+            "title": "Opinion | Destructive Power of Despair - The New York Times",
+            "url": "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
+            "tags": ""
+        },
+        {
+            "history": {
+                "dom": [
+                    {
+                        "end_ts": "2020-06-01 11:32:27.623333",
+                        "start_ts": "2020-06-01 11:32:24.358781",
+                        "duration": 3,
+                        "output": "output.html",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--dump-dom",
+                            "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "succeeded"
+                    }
+                ],
+                "media": [
+                    {
+                        "end_ts": "2020-06-01 11:32:28.720774",
+                        "start_ts": "2020-06-01 11:32:27.626311",
+                        "duration": 1,
+                        "output": "Failed to download media",
+                        "cmd": [
+                            "youtube-dl",
+                            "--write-description",
+                            "--write-info-json",
+                            "--write-annotations",
+                            "--yes-playlist",
+                            "--write-thumbnail",
+                            "--no-call-home",
+                            "--no-check-certificate",
+                            "--all-subs",
+                            "--extract-audio",
+                            "--keep-video",
+                            "--ignore-errors",
+                            "--geo-bypass",
+                            "--audio-format",
+                            "mp3",
+                            "--audio-quality",
+                            "320K",
+                            "--embed-thumbnail",
+                            "--add-metadata",
+                            "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "failed"
+                    }
+                ],
+                "archive_org": [
+                    {
+                        "end_ts": "2020-06-01 11:32:29.452877",
+                        "start_ts": "2020-06-01 11:32:28.721563",
+                        "duration": 0,
+                        "output": "https://web.archive.org/web/20200601113229/https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
+                        "cmd": [
+                            "curl",
+                            "--location",
+                            "--head",
+                            "--user-agent",
+                            "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                            "--max-time",
+                            "60",
+                            "https://web.archive.org/save/https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "succeeded"
+                    }
+                ],
+                "favicon": [
+                    {
+                        "end_ts": "2020-06-01 11:31:16.401908",
+                        "start_ts": "2020-06-01 11:31:16.197890",
+                        "duration": 0,
+                        "output": "favicon.ico",
+                        "cmd": [
+                            "curl",
+                            "--max-time",
+                            "60",
+                            "--location",
+                            "--output",
+                            "favicon.ico",
+                            "https://www.google.com/s2/favicons?domain=www.nbcnews.com"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "succeeded"
+                    }
+                ],
+                "screenshot": [
+                    {
+                        "end_ts": "2020-06-01 11:32:24.357774",
+                        "start_ts": "2020-06-01 11:32:20.936610",
+                        "duration": 3,
+                        "output": "screenshot.png",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--screenshot",
+                            "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "succeeded"
+                    }
+                ],
+                "wget": [
+                    {
+                        "end_ts": "2020-06-01 11:32:16.345513",
+                        "start_ts": "2020-06-01 11:31:16.405625",
+                        "duration": 59,
+                        "output": "Command 'wget' timed out after 60 seconds",
+                        "cmd": [
+                            "wget",
+                            "--no-verbose",
+                            "--adjust-extension",
+                            "--convert-links",
+                            "--force-directories",
+                            "--backup-converted",
+                            "--span-hosts",
+                            "--no-parent",
+                            "-e",
+                            "robots=off",
+                            "--restrict-file-names=windows",
+                            "--timeout=60",
+                            "--warc-file=warc/1591011076",
+                            "--page-requisites",
+                            "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                            "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "failed"
+                    }
+                ],
+                "title": [
+                    {
+                        "end_ts": "2020-06-01 11:31:16.196066",
+                        "start_ts": "2020-06-01 11:31:15.913946",
+                        "duration": 0,
+                        "output": "Curfews go into effect in cities around the country as George Floyd protests continue",
+                        "cmd": [
+                            "curl",
+                            "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
+                            "|",
+                            "grep",
+                            "<title>"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "succeeded"
+                    }
+                ],
+                "pdf": [
+                    {
+                        "end_ts": "2020-06-01 11:32:20.935324",
+                        "start_ts": "2020-06-01 11:32:16.348586",
+                        "duration": 4,
+                        "output": "output.pdf",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                        ],
+                        "pwd": "/data/archive/1591010969.1",
+                        "status": "succeeded"
+                    }
+                ],
+                "git": []
+            },
+            "timestamp": "1591010969.1",
+            "sources": [
+                "/data/sources/stdin-1591010969.txt"
+            ],
+            "title": "Curfews go into effect in cities around the country as George Floyd protests continue",
+            "url": "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
+            "tags": ""
+        },
+        {
+            "history": {
+                "dom": [
+                    {
+                        "end_ts": "2020-06-01 11:33:35.721686",
+                        "start_ts": "2020-06-01 11:33:34.629353",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "output.html",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--dump-dom",
+                            "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                        ],
+                        "duration": 1,
+                        "status": "succeeded"
+                    }
+                ],
+                "media": [
+                    {
+                        "end_ts": "2020-06-01 11:33:37.027759",
+                        "start_ts": "2020-06-01 11:33:35.724404",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "media",
+                        "cmd": [
+                            "youtube-dl",
+                            "--write-description",
+                            "--write-info-json",
+                            "--write-annotations",
+                            "--yes-playlist",
+                            "--write-thumbnail",
+                            "--no-call-home",
+                            "--no-check-certificate",
+                            "--all-subs",
+                            "--extract-audio",
+                            "--keep-video",
+                            "--ignore-errors",
+                            "--geo-bypass",
+                            "--audio-format",
+                            "mp3",
+                            "--audio-quality",
+                            "320K",
+                            "--embed-thumbnail",
+                            "--add-metadata",
+                            "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                        ],
+                        "duration": 1,
+                        "status": "succeeded"
+                    }
+                ],
+                "favicon": [
+                    {
+                        "end_ts": "2020-06-01 11:32:30.371598",
+                        "start_ts": "2020-06-01 11:32:30.157153",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "favicon.ico",
+                        "cmd": [
+                            "curl",
+                            "--max-time",
+                            "60",
+                            "--location",
+                            "--output",
+                            "favicon.ico",
+                            "https://www.google.com/s2/favicons?domain=www.cnbc.com"
+                        ],
+                        "duration": 0,
+                        "status": "succeeded"
+                    }
+                ],
+                "wget": [
+                    {
+                        "end_ts": "2020-06-01 11:33:30.314490",
+                        "start_ts": "2020-06-01 11:32:30.376322",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "Command 'wget' timed out after 60 seconds",
+                        "cmd": [
+                            "wget",
+                            "--no-verbose",
+                            "--adjust-extension",
+                            "--convert-links",
+                            "--force-directories",
+                            "--backup-converted",
+                            "--span-hosts",
+                            "--no-parent",
+                            "-e",
+                            "robots=off",
+                            "--restrict-file-names=windows",
+                            "--timeout=60",
+                            "--warc-file=warc/1591011150",
+                            "--page-requisites",
+                            "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                            "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                        ],
+                        "duration": 59,
+                        "status": "failed"
+                    }
+                ],
+                "screenshot": [
+                    {
+                        "end_ts": "2020-06-01 11:33:34.628428",
+                        "start_ts": "2020-06-01 11:33:32.754476",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "screenshot.png",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--screenshot",
+                            "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                        ],
+                        "duration": 1,
+                        "status": "succeeded"
+                    }
+                ],
+                "pdf": [
+                    {
+                        "end_ts": "2020-06-01 11:33:32.753463",
+                        "start_ts": "2020-06-01 11:33:30.316661",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "output.pdf",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                        ],
+                        "duration": 2,
+                        "status": "succeeded"
+                    }
+                ],
+                "title": [
+                    {
+                        "end_ts": "2020-06-01 11:32:30.154747",
+                        "start_ts": "2020-06-01 11:32:29.545852",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "George Floyd protest live updates: Hundreds arrested in police clashes",
+                        "cmd": [
+                            "curl",
+                            "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
+                            "|",
+                            "grep",
+                            "<title>"
+                        ],
+                        "duration": 0,
+                        "status": "succeeded"
+                    }
+                ],
+                "git": [],
+                "archive_org": [
+                    {
+                        "end_ts": "2020-06-01 11:33:38.325843",
+                        "start_ts": "2020-06-01 11:33:37.028343",
+                        "pwd": "/data/archive/1591010969.2",
+                        "output": "https://web.archive.org/web/20200601113337/https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
+                        "cmd": [
+                            "curl",
+                            "--location",
+                            "--head",
+                            "--user-agent",
+                            "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                            "--max-time",
+                            "60",
+                            "https://web.archive.org/save/https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                        ],
+                        "duration": 1,
+                        "status": "succeeded"
+                    }
+                ]
+            },
+            "timestamp": "1591010969.2",
+            "sources": [
+                "/data/sources/stdin-1591010969.txt"
+            ],
+            "title": "George Floyd protest live updates: Hundreds arrested in police clashes",
+            "url": "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
+            "tags": ""
+        },
+        {
+            "history": {
+                "dom": [
+                    {
+                        "end_ts": "2020-06-01 11:34:45.622233",
+                        "start_ts": "2020-06-01 11:34:43.531143",
+                        "duration": 2,
+                        "output": "output.html",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--dump-dom",
+                            "https://www.bbc.com/news/world-us-canada-52872401"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "succeeded"
+                    }
+                ],
+                "media": [
+                    {
+                        "end_ts": "2020-06-01 11:34:46.806293",
+                        "start_ts": "2020-06-01 11:34:45.624453",
+                        "duration": 1,
+                        "output": "Failed to download media",
+                        "cmd": [
+                            "youtube-dl",
+                            "--write-description",
+                            "--write-info-json",
+                            "--write-annotations",
+                            "--yes-playlist",
+                            "--write-thumbnail",
+                            "--no-call-home",
+                            "--no-check-certificate",
+                            "--all-subs",
+                            "--extract-audio",
+                            "--keep-video",
+                            "--ignore-errors",
+                            "--geo-bypass",
+                            "--audio-format",
+                            "mp3",
+                            "--audio-quality",
+                            "320K",
+                            "--embed-thumbnail",
+                            "--add-metadata",
+                            "https://www.bbc.com/news/world-us-canada-52872401"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "failed"
+                    }
+                ],
+                "favicon": [
+                    {
+                        "end_ts": "2020-06-01 11:33:39.151375",
+                        "start_ts": "2020-06-01 11:33:38.983418",
+                        "duration": 0,
+                        "output": "favicon.ico",
+                        "cmd": [
+                            "curl",
+                            "--max-time",
+                            "60",
+                            "--location",
+                            "--output",
+                            "favicon.ico",
+                            "https://www.google.com/s2/favicons?domain=www.bbc.com"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "succeeded"
+                    }
+                ],
+                "git": [],
+                "screenshot": [
+                    {
+                        "end_ts": "2020-06-01 11:34:43.530293",
+                        "start_ts": "2020-06-01 11:34:41.407651",
+                        "duration": 2,
+                        "output": "screenshot.png",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--screenshot",
+                            "https://www.bbc.com/news/world-us-canada-52872401"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "succeeded"
+                    }
+                ],
+                "pdf": [
+                    {
+                        "end_ts": "2020-06-01 11:34:41.407040",
+                        "start_ts": "2020-06-01 11:34:39.108255",
+                        "duration": 2,
+                        "output": "output.pdf",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.bbc.com/news/world-us-canada-52872401"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "succeeded"
+                    }
+                ],
+                "title": [
+                    {
+                        "end_ts": "2020-06-01 11:33:38.980253",
+                        "start_ts": "2020-06-01 11:33:38.396946",
+                        "duration": 0,
+                        "output": "George Floyd death: Violence erupts on sixth day of protests - BBC News",
+                        "cmd": [
+                            "curl",
+                            "https://www.bbc.com/news/world-us-canada-52872401",
+                            "|",
+                            "grep",
+                            "<title>"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "succeeded"
+                    }
+                ],
+                "wget": [
+                    {
+                        "end_ts": "2020-06-01 11:34:39.103975",
+                        "start_ts": "2020-06-01 11:33:39.153824",
+                        "duration": 59,
+                        "output": "Command 'wget' timed out after 60 seconds",
+                        "cmd": [
+                            "wget",
+                            "--no-verbose",
+                            "--adjust-extension",
+                            "--convert-links",
+                            "--force-directories",
+                            "--backup-converted",
+                            "--span-hosts",
+                            "--no-parent",
+                            "-e",
+                            "robots=off",
+                            "--restrict-file-names=windows",
+                            "--timeout=60",
+                            "--warc-file=warc/1591011219",
+                            "--page-requisites",
+                            "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                            "https://www.bbc.com/news/world-us-canada-52872401"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "failed"
+                    }
+                ],
+                "archive_org": [
+                    {
+                        "end_ts": "2020-06-01 11:34:47.516726",
+                        "start_ts": "2020-06-01 11:34:46.806994",
+                        "duration": 0,
+                        "output": "https://web.archive.org/web/20200601113447/https://www.bbc.com/news/world-us-canada-52872401",
+                        "cmd": [
+                            "curl",
+                            "--location",
+                            "--head",
+                            "--user-agent",
+                            "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                            "--max-time",
+                            "60",
+                            "https://web.archive.org/save/https://www.bbc.com/news/world-us-canada-52872401"
+                        ],
+                        "pwd": "/data/archive/1591010969.3",
+                        "status": "succeeded"
+                    }
+                ]
+            },
+            "timestamp": "1591010969.3",
+            "sources": [
+                "/data/sources/stdin-1591010969.txt"
+            ],
+            "title": "George Floyd death: Violence erupts on sixth day of protests - BBC News",
+            "url": "https://www.bbc.com/news/world-us-canada-52872401",
+            "tags": ""
+        },
+        {
+            "history": {
+                "dom": [
+                    {
                         "end_ts": "2020-06-01 11:20:37.350514",
-                        "pwd": "/data/archive/1591010406",
+                        "start_ts": "2020-06-01 11:20:30.974049",
                         "duration": 6,
+                        "output": "output.html",
                         "cmd": [
                             "google-chrome-unstable",
                             "--headless",
@@ -29,17 +979,16 @@
                             "--dump-dom",
                             "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                         ],
-                        "output": "output.html",
+                        "pwd": "/data/archive/1591010406",
                         "status": "succeeded"
                     }
                 ],
-                "wget": [],
                 "media": [
                     {
-                        "start_ts": "2020-06-01 11:20:37.352984",
                         "end_ts": "2020-06-01 11:20:38.054023",
-                        "pwd": "/data/archive/1591010406",
+                        "start_ts": "2020-06-01 11:20:37.352984",
                         "duration": 0,
+                        "output": "Failed to download media",
                         "cmd": [
                             "youtube-dl",
                             "--write-description",
@@ -62,37 +1011,17 @@
                             "--add-metadata",
                             "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                         ],
-                        "output": "Failed to download media",
-                        "status": "failed"
-                    }
-                ],
-                "pdf": [
-                    {
-                        "start_ts": "2020-06-01 11:20:19.778178",
-                        "end_ts": "2020-06-01 11:20:25.112033",
                         "pwd": "/data/archive/1591010406",
-                        "duration": 5,
-                        "cmd": [
-                            "google-chrome-unstable",
-                            "--headless",
-                            "--no-sandbox",
-                            "--disable-gpu",
-                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                            "--window-size=1440,2000",
-                            "--timeout=60000",
-                            "--print-to-pdf",
-                            "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
-                        ],
-                        "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
                         "status": "failed"
                     }
                 ],
+                "favicon": [],
                 "screenshot": [
                     {
-                        "start_ts": "2020-06-01 11:20:25.112858",
                         "end_ts": "2020-06-01 11:20:30.973408",
-                        "pwd": "/data/archive/1591010406",
+                        "start_ts": "2020-06-01 11:20:25.112858",
                         "duration": 5,
+                        "output": "screenshot.png",
                         "cmd": [
                             "google-chrome-unstable",
                             "--headless",
@@ -104,16 +1033,75 @@
                             "--screenshot",
                             "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                         ],
-                        "output": "screenshot.png",
+                        "pwd": "/data/archive/1591010406",
                         "status": "succeeded"
                     }
                 ],
+                "pdf": [
+                    {
+                        "end_ts": "2020-06-01 11:20:25.112033",
+                        "start_ts": "2020-06-01 11:20:19.778178",
+                        "duration": 5,
+                        "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
+                        ],
+                        "pwd": "/data/archive/1591010406",
+                        "status": "failed"
+                    },
+                    {
+                        "end_ts": "2020-06-01 11:34:53.237333",
+                        "start_ts": "2020-06-01 11:34:47.587740",
+                        "pwd": "/data/archive/1591010406",
+                        "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
+                        "cmd": [
+                            "google-chrome-unstable",
+                            "--headless",
+                            "--no-sandbox",
+                            "--disable-gpu",
+                            "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                            "--window-size=1440,2000",
+                            "--timeout=60000",
+                            "--print-to-pdf",
+                            "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
+                        ],
+                        "duration": 5,
+                        "status": "failed"
+                    }
+                ],
+                "wget": [],
+                "title": [
+                    {
+                        "end_ts": "2020-06-01 11:20:19.764078",
+                        "start_ts": "2020-06-01 11:20:19.346488",
+                        "duration": 0,
+                        "output": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times",
+                        "cmd": [
+                            "curl",
+                            "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
+                            "|",
+                            "grep",
+                            "<title>"
+                        ],
+                        "pwd": "/data/archive/1591010406",
+                        "status": "succeeded"
+                    }
+                ],
+                "git": [],
                 "archive_org": [
                     {
-                        "start_ts": "2020-06-01 11:20:38.054655",
                         "end_ts": "2020-06-01 11:20:38.941352",
-                        "pwd": "/data/archive/1591010406",
+                        "start_ts": "2020-06-01 11:20:38.054655",
                         "duration": 0,
+                        "output": "https://web.archive.org/web/20200601112038/https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
                         "cmd": [
                             "curl",
                             "--location",
@@ -124,33 +1112,20 @@
                             "60",
                             "https://web.archive.org/save/https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                         ],
-                        "output": "https://web.archive.org/web/20200601112038/https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
-                        "status": "succeeded"
-                    }
-                ],
-                "favicon": [],
-                "title": [
-                    {
-                        "start_ts": "2020-06-01 11:20:19.346488",
-                        "end_ts": "2020-06-01 11:20:19.764078",
                         "pwd": "/data/archive/1591010406",
-                        "duration": 0,
-                        "cmd": [
-                            "curl",
-                            "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
-                            "|",
-                            "grep",
-                            "<title>"
-                        ],
-                        "output": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times",
                         "status": "succeeded"
                     }
-                ],
-                "git": []
-            }
+                ]
+            },
+            "timestamp": "1591010406",
+            "sources": [
+                "/data/sources/stdin-1591010969.txt",
+                "/data/sources/stdin-1591010419.txt",
+                "/data/sources/stdin-1591010406.txt"
+            ],
+            "title": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times",
+            "url": "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
+            "tags": ""
         }
-    ],
-    "info": "ArchiveBox Index",
-    "updated": "1591010439.006962",
-    "help": "https://github.com/pirate/ArchiveBox"
+    ]
 }

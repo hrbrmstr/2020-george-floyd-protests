@@ -1,0 +1,192 @@
+{
+    "history": {
+        "dom": [
+            {
+                "end_ts": "2020-06-01 11:34:45.622233",
+                "start_ts": "2020-06-01 11:34:43.531143",
+                "duration": 2,
+                "output": "output.html",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bbc.com/news/world-us-canada-52872401"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "succeeded"
+            }
+        ],
+        "media": [
+            {
+                "end_ts": "2020-06-01 11:34:46.806293",
+                "start_ts": "2020-06-01 11:34:45.624453",
+                "duration": 1,
+                "output": "Failed to download media",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bbc.com/news/world-us-canada-52872401"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "failed"
+            }
+        ],
+        "archive_org": [
+            {
+                "end_ts": "2020-06-01 11:34:47.516726",
+                "start_ts": "2020-06-01 11:34:46.806994",
+                "duration": 0,
+                "output": "https://web.archive.org/web/20200601113447/https://www.bbc.com/news/world-us-canada-52872401",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bbc.com/news/world-us-canada-52872401"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "end_ts": "2020-06-01 11:33:39.151375",
+                "start_ts": "2020-06-01 11:33:38.983418",
+                "duration": 0,
+                "output": "favicon.ico",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bbc.com"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "succeeded"
+            }
+        ],
+        "screenshot": [
+            {
+                "end_ts": "2020-06-01 11:34:43.530293",
+                "start_ts": "2020-06-01 11:34:41.407651",
+                "duration": 2,
+                "output": "screenshot.png",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bbc.com/news/world-us-canada-52872401"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "end_ts": "2020-06-01 11:34:39.103975",
+                "start_ts": "2020-06-01 11:33:39.153824",
+                "duration": 59,
+                "output": "Command 'wget' timed out after 60 seconds",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591011219",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bbc.com/news/world-us-canada-52872401"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "failed"
+            }
+        ],
+        "title": [
+            {
+                "end_ts": "2020-06-01 11:33:38.980253",
+                "start_ts": "2020-06-01 11:33:38.396946",
+                "duration": 0,
+                "output": "George Floyd death: Violence erupts on sixth day of protests - BBC News",
+                "cmd": [
+                    "curl",
+                    "https://www.bbc.com/news/world-us-canada-52872401",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "end_ts": "2020-06-01 11:34:41.407040",
+                "start_ts": "2020-06-01 11:34:39.108255",
+                "duration": 2,
+                "output": "output.pdf",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bbc.com/news/world-us-canada-52872401"
+                ],
+                "pwd": "/data/archive/1591010969.3",
+                "status": "succeeded"
+            }
+        ],
+        "git": []
+    },
+    "updated": "1591011287.527916",
+    "timestamp": "1591010969.3",
+    "sources": [
+        "/data/sources/stdin-1591010969.txt"
+    ],
+    "title": null,
+    "url": "https://www.bbc.com/news/world-us-canada-52872401",
+    "tags": ""
+}

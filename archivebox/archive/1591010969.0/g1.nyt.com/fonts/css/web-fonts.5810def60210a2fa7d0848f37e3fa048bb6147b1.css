@@ -1,0 +1,1329 @@
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-italic-200.64dd3cfc209bc73fb3279ba16dd3d09f.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-italic-200.a9e372cb4c5086e3924e23b9dad94ff6.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-italic-200.57d2121fab27583198550b38ed84c4a6.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-italic-300.5278551441f9d1ce9cd247421e26a143.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-italic-300.55c933f230696eae11a43a9a2995b24d.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-italic-300.574eeb5bb2bf407111d0789ef94a6504.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-italic-400.0020c60e1c956444040efc53cd3e7be0.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-italic-400.b892fe8e85ceee8640c8b9dd33035349.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-italic-400.b8fcda1bedf33a4ad1e4d11fac428e3a.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-italic-500.c149a85a3db3ccc3cd9e1e217a1e8e4c.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-italic-500.b0a9f31ef2ab8b3f06024843e8b463cf.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-italic-500.0037bc2b5f7715117712e6e1b21d2ae4.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-italic-700.f99a0459024509f157a3352e5de4f873.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-italic-700.d53eaf3b784c4b50d1c331e1278cda67.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-italic-700.c690b74328fddd7feff3bc4c1c1a0cd8.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-italic-800.f3240492eb08ad76f293c523796ec139.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-italic-800.070143a714bc4e4b377c2507e1f67797.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-italic-800.f9bf10941e7cc67f21594eb0d55dfc75.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-normal-200.40ccfe2cc61a71e6617e56162d49b896.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-normal-200.9214ccbb3fe30220fe1fa1129c1906ac.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-normal-200.453c9d3203dec6095bc3f9469e7f87a4.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-normal-300.7ea91ebd036309e1fe756ee3aab272da.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-normal-300.82cb795d8c57bbe367d0ffbeba88eb53.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-normal-300.cecc961ed849c01655ce98886cb1ab47.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-normal-400.a3ed7afe3eaa0a873f3fbd379f8c491b.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-normal-400.23bd4e5c0c27259b064aa9ae6d787980.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-normal-400.4bffe18a586b3b49c9c6d44e382be438.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-normal-500.a22ae3ed1e775ce90ced16f1822f4ddc.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-normal-500.229eebd8069abe2c2253b203c9179e25.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-normal-500.fe8ceaea50c19a1dfffe1bbfa15e283e.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-normal-700.530cfb72378419eedb60da7e266ad5f1.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-normal-700.738608727fc7c5797889e17788508b26.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-normal-700.85ca4d109571e1e0084aace5a31f049c.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham';
+  src: url('/fonts/family/cheltenham/cheltenham-normal-800.78ace43907be7e8789003cfd692c3ba4.woff2') format('woff2'),
+       url('/fonts/family/cheltenham/cheltenham-normal-800.3759c9080a568598a298f0b0bc5a5d12.woff') format('woff'),
+       url('/fonts/family/cheltenham/cheltenham-normal-800.beea606b16c50bd15a1851fba1dd2411.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-cond';
+  src: url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-300.2cb26d329110670c84ee9a2dd6b7c6b5.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-300.19f2f814e16bfb8758011e282d29cf6c.woff') format('woff'),
+       url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-300.4bc8d8aaeff0c83ccd7a0f0b4afe0773.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-cond';
+  src: url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-500.38f188555d0faca9cd04d05711b7d430.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-500.b8fc087f0a2a14ffe9f19ba28e2cdf96.woff') format('woff'),
+       url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-500.0147dbedb654edf4d74ebd6b583f32a7.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-cond';
+  src: url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-700.9d3e47dbcdfcd125da0457426ac86b9b.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-700.e0e9236c90dcd6d8e4df7eaa6f0e6179.woff') format('woff'),
+       url('/fonts/family/cheltenham-cond/cheltenham-cond-normal-700.7e76992f464ec6bd7697564857874277.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-scaps';
+  src: url('/fonts/family/cheltenham-scaps/cheltenham-scaps-normal-300.13fdf410c073060582642dff102318e4.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-scaps/cheltenham-scaps-normal-300.75e6e19fa03e172c6807d47fd1741cce.woff') format('woff'),
+       url('/fonts/family/cheltenham-scaps/cheltenham-scaps-normal-300.edb7f0629cd611fa2c82b0ecca0df4ad.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-small';
+  src: url('/fonts/family/cheltenham-small/cheltenham-small-italic-400.cdfa0ec29cca8c2d2f54c79d898e15c1.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-italic-400.0569e2004101151b08b333589119e3f3.woff') format('woff'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-italic-400.53a6a1844466d6c1eb4a1a902ad289f7.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-small';
+  src: url('/fonts/family/cheltenham-small/cheltenham-small-italic-700.4d88cc14057ed010aa281da2202f928c.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-italic-700.af2a0cfe9b9297ce4a6d0231d2ec85f1.woff') format('woff'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-italic-700.47c0a5ef660342477afdbaf083b93caf.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-small';
+  src: url('/fonts/family/cheltenham-small/cheltenham-small-normal-400.108ce298d451197b23fefceb3e36959f.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-normal-400.9dfa21a5aff2f7bdf7b929b8967700bd.woff') format('woff'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-normal-400.8b8141b3a4ec5c4f8028ee735f8c3107.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-small';
+  src: url('/fonts/family/cheltenham-small/cheltenham-small-normal-700.1a0b316424cdebd18086b8dbbc768eef.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-normal-700.eccd7f6517b300fee245af2242b63837.woff') format('woff'),
+       url('/fonts/family/cheltenham-small/cheltenham-small-normal-700.c7e511fa120d6691a4a7f58ab8d0a593.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-wide';
+  src: url('/fonts/family/cheltenham-wide/cheltenham-wide-italic-400.19e805a3794fd4f35778d44a2946951a.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-wide/cheltenham-wide-italic-400.a20e6161351159d37d8f2ffb18019bdb.woff') format('woff'),
+       url('/fonts/family/cheltenham-wide/cheltenham-wide-italic-400.2b76b7720b2349e00b65149847e44089.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-wide';
+  src: url('/fonts/family/cheltenham-wide/cheltenham-wide-normal-400.c5a9ae48f6d972c4f7ebcc149fc97d1f.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-wide/cheltenham-wide-normal-400.e8bb25c51e19a6eb5626e13b3de277ea.woff') format('woff'),
+       url('/fonts/family/cheltenham-wide/cheltenham-wide-normal-400.1aa2f0e72b06528c43aece2f313a442b.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-cheltenham-xcond';
+  src: url('/fonts/family/cheltenham-xcond/cheltenham-xcond-normal-700.bffb8d224e2391e6238da2f1d663d77c.woff2') format('woff2'),
+       url('/fonts/family/cheltenham-xcond/cheltenham-xcond-normal-700.8cbd9f80d2a7c24732581bb07f5d5c55.woff') format('woff'),
+       url('/fonts/family/cheltenham-xcond/cheltenham-xcond-normal-700.e3f1620f5ccc4286d1375215b0e3169d.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact';
+  src: url('/fonts/family/fact/fact-italic-400.5d2889527a70729f99f29ae105e4256d.woff2') format('woff2'),
+       url('/fonts/family/fact/fact-italic-400.e51e66a5b461576c8529f9a0db00cd43.woff') format('woff'),
+       url('/fonts/family/fact/fact-italic-400.d9e7f7608647dfc498d20d79eb6ddf32.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact';
+  src: url('/fonts/family/fact/fact-normal-400.6a83a5be17ef5c648763d91eb3c35f24.woff2') format('woff2'),
+       url('/fonts/family/fact/fact-normal-400.1147dd3a7d298f8e32546870b6583363.woff') format('woff'),
+       url('/fonts/family/fact/fact-normal-400.ec4c410e9c8ceb37b8d961f7f4ddfbc9.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact';
+  src: url('/fonts/family/fact/fact-normal-700.76e8e60b9be9e83113cffab049549269.woff2') format('woff2'),
+       url('/fonts/family/fact/fact-normal-700.c6b78d42e1c9685c88072850e170ee5c.woff') format('woff'),
+       url('/fonts/family/fact/fact-normal-700.e08d9c0adaa564ccc06736e288399f82.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-deck';
+  src: url('/fonts/family/fact-deck/fact-deck-normal-400.d0862e99e748e1a826b82efbe5d96589.woff2') format('woff2'),
+       url('/fonts/family/fact-deck/fact-deck-normal-400.4b27484bb2983f19b302fb51cb0ff54d.woff') format('woff'),
+       url('/fonts/family/fact-deck/fact-deck-normal-400.b84ef8de05997136c25fd0b113f0a2cd.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-deck';
+  src: url('/fonts/family/fact-deck/fact-deck-normal-500.cc9729a718e9dbcb901b9b7a0f280aa9.woff2') format('woff2'),
+       url('/fonts/family/fact-deck/fact-deck-normal-500.6d33016ed94ab817c95b620ee9531540.woff') format('woff'),
+       url('/fonts/family/fact-deck/fact-deck-normal-500.0c4be7c84430e64c9fdf5e9655a91928.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-deck';
+  src: url('/fonts/family/fact-deck/fact-deck-normal-700.5e63cf15df2ea54c1ce85160f409b4f6.woff2') format('woff2'),
+       url('/fonts/family/fact-deck/fact-deck-normal-700.a2128d24dcc3851ddf188d4b01ceb847.woff') format('woff'),
+       url('/fonts/family/fact-deck/fact-deck-normal-700.d170f34f5e9a4721facad7f3429c0180.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-deck-condensed';
+  src: url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-400.52bee2457c8325d139d1d9b75d5db962.woff2') format('woff2'),
+       url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-400.496c7a25ee91137105036c6de4b1247e.woff') format('woff'),
+       url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-400.c46c7dfdb0a5fecd115b5914c8296a75.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-deck-condensed';
+  src: url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-500.dcf83dbe9fc152ee37ad253f107f3af4.woff2') format('woff2'),
+       url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-500.356f9583f3b0e9cc06c3adbebf4b14d1.woff') format('woff'),
+       url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-500.eba6f7c2f2b822a85815817ac8ef75b7.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-deck-condensed';
+  src: url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-700.bff8033471155254c380febf7d0e27f4.woff2') format('woff2'),
+       url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-700.af4d87972f652609a85cc6eec4994f2b.woff') format('woff'),
+       url('/fonts/family/fact-deck-condensed/fact-deck-condensed-normal-700.7ee58662696741d0284571ee91b7c367.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display';
+  src: url('/fonts/family/fact-display/fact-display-normal-200.f3b3f8705bf0f901a28bf62b6c417a50.woff2') format('woff2'),
+       url('/fonts/family/fact-display/fact-display-normal-200.6f917af3605c02e72ff5965addaa14a2.woff') format('woff'),
+       url('/fonts/family/fact-display/fact-display-normal-200.b51d7955e71a11387acf4c83d1ae5729.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display';
+  src: url('/fonts/family/fact-display/fact-display-normal-300.2ee8c2bb364f912a80d2dcdba63a1a42.woff2') format('woff2'),
+       url('/fonts/family/fact-display/fact-display-normal-300.b1c7247ab9a555a0840dd44b60ab213f.woff') format('woff'),
+       url('/fonts/family/fact-display/fact-display-normal-300.cab14c86a07aa1ea7dab64b181671f2a.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display';
+  src: url('/fonts/family/fact-display/fact-display-normal-400.b6e0d57d97c9de639d9fe6d4ed27a861.woff2') format('woff2'),
+       url('/fonts/family/fact-display/fact-display-normal-400.e2014cfe60e3e239021a01f67d9fa1b0.woff') format('woff'),
+       url('/fonts/family/fact-display/fact-display-normal-400.a255a45949340b6bcc9769a13b938f82.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display';
+  src: url('/fonts/family/fact-display/fact-display-normal-500.6d1e723a3adb5ad548f337f90dc5439b.woff2') format('woff2'),
+       url('/fonts/family/fact-display/fact-display-normal-500.679cbec9205d94a12cb814be527f6368.woff') format('woff'),
+       url('/fonts/family/fact-display/fact-display-normal-500.f2d6d71f0ba720d1d99110c75d642b8d.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display';
+  src: url('/fonts/family/fact-display/fact-display-normal-700.7d88e15c1079186f4ac62548620c571b.woff2') format('woff2'),
+       url('/fonts/family/fact-display/fact-display-normal-700.98d68b3f3aef286cf439f796faa17e35.woff') format('woff'),
+       url('/fonts/family/fact-display/fact-display-normal-700.38fbcc83f42623db042305752dbd3260.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display';
+  src: url('/fonts/family/fact-display/fact-display-normal-800.58c94cce24fdaee8447711076a6e3ab8.woff2') format('woff2'),
+       url('/fonts/family/fact-display/fact-display-normal-800.edd6d368f8a65764d0bb811be12947c5.woff') format('woff'),
+       url('/fonts/family/fact-display/fact-display-normal-800.dd1be1d45fd27f2804ad48d67a35c826.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display-condensed';
+  src: url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-400.209c2c8c0815de7d83aa4438f269b6f5.woff2') format('woff2'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-400.a16874b5137e836e073386f8c48cf689.woff') format('woff'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-400.905bb2fb9d25e9cb1c852114020881f4.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display-condensed';
+  src: url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-500.7b3e82b624a0d2e8d44dfc3f0793ff10.woff2') format('woff2'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-500.69e2f8d9966aae17e05c549c217635b5.woff') format('woff'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-500.f9341a404898a3a3ee564520a00733d5.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display-condensed';
+  src: url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-700.e896406487ab7b6af200bfc962434efe.woff2') format('woff2'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-700.efebe69be04ee9b3e68cb0339065e438.woff') format('woff'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-700.b9d126b0283daab1ab5a6179748e4087.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-fact-display-condensed';
+  src: url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-800.45e3ebbe3c6f78df41f72b5e3e04f0cd.woff2') format('woff2'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-800.a845b511e164555465ca79d9dc11c543.woff') format('woff'),
+       url('/fonts/family/fact-display-condensed/fact-display-condensed-normal-800.a9647a5faf4c24372f4c8cde10e00282.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-italic-300.c2b633d8ab72fe0bedee28c06bf0d670.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-italic-300.d5331cde5e4a49694ed0157c23ec7fec.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-italic-300.65cdf42a9726f89ca9c14ffad87308d8.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-italic-500.2931ceac226baa7c240c4e483040b0c2.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-italic-500.27edc27f40df36c0a6945f6d1d73e167.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-italic-500.e22c69bd6a37ef4446f43b6865b15850.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-italic-600.e45166ea8a537cee27368f60b3c15bb3.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-italic-600.7c6a93c684714e03fc6a085eb06110a2.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-italic-600.806fcb2d2b3a99b15e96596046ea8f92.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-italic-700.aff6e05b305e7cf33e1f757735045876.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-italic-700.62ad1d675b21069c67430cd671b66f38.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-italic-700.a5d605ccf65e790384c19126565ee1f6.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-italic-800.be53478fd7c32b04647c16795817c00a.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-italic-800.7528246ef94af7fbf426e92d1a234593.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-italic-800.392e85363c515d58d504069f5bff16cc.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-italic-900.93f61fe226df92cc8d8c7aa742f291e7.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-italic-900.b9511ff3ec4a8ab7178d19c1b655c84a.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-italic-900.eb0ff72a1864b509d830becfb3ff9c1f.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-normal-300.bc7be4c5d8cacb780f896c5cbe0c0d7f.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-normal-300.173315ff36fdf628bbfbabac0c03a76d.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-normal-300.d1bf0bccfda41b1a77ea392b7a26d4cf.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-normal-500.d6c06a3d84a57100edad5bf9b84ff739.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-normal-500.414758de098dc644b688afa031d35f9b.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-normal-500.1b6dc8a3d86d2a28b825482c9497a633.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-normal-600.abe1b34d5a429f8e034860c86c483446.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-normal-600.8a86998af9a6f5487758d78fef54920d.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-normal-600.d274c9e68918ea101e79552dc9da086d.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-normal-700.b44c88f09ca7ce914b836d4ae72891b8.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-normal-700.a192db310935d8a882832e2cc83f2119.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-normal-700.aaec3c198ea6e3efd97b2b19823bf861.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-normal-800.fdc7cad17deeec2db1fe2f9f8c0520ed.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-normal-800.932fec957ef6d36632bd5494d05ad13b.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-normal-800.1dc34c8d18e3128867d8e77368f0da56.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin';
+  src: url('/fonts/family/franklin/franklin-normal-900.c7663abf5510617900d31a082a9c2e8d.woff2') format('woff2'),
+       url('/fonts/family/franklin/franklin-normal-900.a872cf7b59306d8146237e98fb6be2fa.woff') format('woff'),
+       url('/fonts/family/franklin/franklin-normal-900.2c951d5351ef934b47077105a883d2d1.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-cword';
+  src: url('/fonts/family/franklin-cword/franklin-cword-normal-500.0064a6e6a668783e309e6d3bea1d46cc.woff2') format('woff2'),
+       url('/fonts/family/franklin-cword/franklin-cword-normal-500.9d7b6ba34231ebd53f1cd4e003f6515d.woff') format('woff'),
+       url('/fonts/family/franklin-cword/franklin-cword-normal-500.ab3b309eadc6024a155fe0771a2a000b.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-small';
+  src: url('/fonts/family/franklin-small/franklin-small-normal-500.0c3067e7ff2be53d0645203b6c2d3dd0.woff2') format('woff2'),
+       url('/fonts/family/franklin-small/franklin-small-normal-500.18393241b759664027d71923d9ec4ff7.woff') format('woff'),
+       url('/fonts/family/franklin-small/franklin-small-normal-500.a956f1e6b0909d3b049cafec905cbe47.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-small';
+  src: url('/fonts/family/franklin-small/franklin-small-normal-700.02e1ddab47b92bab4e740aaaac922204.woff2') format('woff2'),
+       url('/fonts/family/franklin-small/franklin-small-normal-700.f3f88905f8f569c81a9a0d4eebf0e4e6.woff') format('woff'),
+       url('/fonts/family/franklin-small/franklin-small-normal-700.e908b49dea29a7f00a95859770c06b9a.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-tv';
+  src: url('/fonts/family/franklin-tv/franklin-tv-normal-300.afe95a157afb95a163b72c02724ed615.woff2') format('woff2'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-300.f46cdf8d3092071d3d4baff08892032e.woff') format('woff'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-300.fbe64393c9b7405c93e7be6761890923.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-tv';
+  src: url('/fonts/family/franklin-tv/franklin-tv-normal-500.626994fecf25073d939409b8a1aea453.woff2') format('woff2'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-500.6a87829ce8e404ef792f8cca4c5a99cb.woff') format('woff'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-500.510de4aa210cc711dab33c31d0e7398a.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-tv';
+  src: url('/fonts/family/franklin-tv/franklin-tv-normal-600.22f8a0d358c1417a041732eae5cafe6c.woff2') format('woff2'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-600.bf4bbe5057e26fd30565b1603f19c1b3.woff') format('woff'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-600.18619c6bc19731ceb333fbdd3a4def07.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-franklin-tv';
+  src: url('/fonts/family/franklin-tv/franklin-tv-normal-700.9f5d9a89231f67aa612fb6afecd764a6.woff2') format('woff2'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-700.7458a425ba50c5ac25ca368f74d79c82.woff') format('woff'),
+       url('/fonts/family/franklin-tv/franklin-tv-normal-700.8e62e074b39e27ea22ed9f0a40948697.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik';
+  src: url('/fonts/family/graphik/graphik-normal-300.67a19eb3735b6e1dd52822a690975edc.woff2') format('woff2'),
+       url('/fonts/family/graphik/graphik-normal-300.a5f80b65662c781d6deade9df0900578.woff') format('woff'),
+       url('/fonts/family/graphik/graphik-normal-300.95d49a4afa6ac8cd439127e699f7c619.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik';
+  src: url('/fonts/family/graphik/graphik-normal-400.9d01ad88cd62c083955691afef8ad8f0.woff2') format('woff2'),
+       url('/fonts/family/graphik/graphik-normal-400.1ba9d0463caafd42221d54c8383ef1ad.woff') format('woff'),
+       url('/fonts/family/graphik/graphik-normal-400.904938b42d4c7b54f472a5a541d45a2f.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik';
+  src: url('/fonts/family/graphik/graphik-normal-500.cd5971e674c9569c9972e1460e61b61c.woff2') format('woff2'),
+       url('/fonts/family/graphik/graphik-normal-500.5d47df34623e6cdc64cdaddff98e028f.woff') format('woff'),
+       url('/fonts/family/graphik/graphik-normal-500.6a688be37026efdebe80de55a4b5e5a5.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik';
+  src: url('/fonts/family/graphik/graphik-normal-600.6d193a8fa844a9fe6bace987104dc8bb.woff2') format('woff2'),
+       url('/fonts/family/graphik/graphik-normal-600.8ee7f5c71579718260fb313d615a5f8f.woff') format('woff'),
+       url('/fonts/family/graphik/graphik-normal-600.83c6e3ad2451be038dbcce69ab8832f1.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik';
+  src: url('/fonts/family/graphik/graphik-normal-700.5873177fe782d543c3ea9f999e6712a8.woff2') format('woff2'),
+       url('/fonts/family/graphik/graphik-normal-700.525b030a9256c836bc4814272aabe5b4.woff') format('woff'),
+       url('/fonts/family/graphik/graphik-normal-700.f71c343b98805edbd007ded41ff1a1fc.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik-cond';
+  src: url('/fonts/family/graphik-cond/graphik-cond-normal-400.5d16f1d4c51ee3fa708dba45c6be72c9.woff2') format('woff2'),
+       url('/fonts/family/graphik-cond/graphik-cond-normal-400.316bea6db239f4e8751b524a493f3ef5.woff') format('woff'),
+       url('/fonts/family/graphik-cond/graphik-cond-normal-400.8750ce88b3d162670f94832b1c51b764.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-graphik-xcond';
+  src: url('/fonts/family/graphik-xcond/graphik-xcond-normal-600.307b244de785a412768c48449e1f4ed4.woff2') format('woff2'),
+       url('/fonts/family/graphik-xcond/graphik-xcond-normal-600.09dc367ad0694df886c2f743990f21d5.woff') format('woff'),
+       url('/fonts/family/graphik-xcond/graphik-xcond-normal-600.5c5f8eca64b39c7e75b1ed61508c3980.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-italic-400.8e3dae6216687021f9ac60be5482cc72.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-italic-400.bdb1930796cedc086de3c98924ac8ff4.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-italic-400.f26ee19f4d36b16468749fbe89adacfe.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-italic-500.be90b9014bec8b915cae5e68091b57b5.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-italic-500.21a113c248b580e88b75a665ae93c743.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-italic-500.5b949c0c1a951a7dadb35f94e3b59d69.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-italic-600.780572ba4492de355819e80cc55c45e4.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-italic-600.60f8d41ad024e84b83464e9ba4a93570.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-italic-600.d9f2d7a9cf25d04b3039c72d084b5b85.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-italic-700.40b02b2fba5d4f5436bd57340ad293f7.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-italic-700.7b30b8422b09c02ff3d388f0fa5c7723.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-italic-700.7a49706be9639a50e964794d84e2b03d.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-normal-400.2531995fefd3b997f9c4d564ebe89268.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-normal-400.e4d8bd522cfcbc36c1b2368baeb54c32.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-normal-400.a5270edf37ca346207a3a6ff637a022a.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-normal-500.40c94ccc25e2212b8946a7d732251d86.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-normal-500.587f29a3d9c4159f8b8bceb6f31a59ff.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-normal-500.22fa3f7bdef0c76b5a58cb6c89f82bbb.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-normal-600.66d76360a629574bcb420777bfe81396.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-normal-600.8ca9b447bfa092b1e83918e3693643a3.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-normal-600.5a1f77a42d1d1c56d79e3beca0afeee4.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-imperial';
+  src: url('/fonts/family/imperial/imperial-normal-700.796334d8a16a55d6fa9e4cbf896ac9de.woff2') format('woff2'),
+       url('/fonts/family/imperial/imperial-normal-700.a9670f80042b4daa8a7f0a8e58cd856a.woff') format('woff'),
+       url('/fonts/family/imperial/imperial-normal-700.b41c6e33cfd281d679e8586dfd1b7a9e.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-100.68318cfe79ed3292eaa8986498e1184c.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-100.e1499c03e026ce49bca5841459fa4e6d.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-100.bb1a81334d55deb60efb607b1af55312.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-200.c9e3af78fc17d90acd4c1c556db57338.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-200.718f1b353f74c8b2ade21568591c3443.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-200.6cb8ee737cd061cad3900f9997ed8c35.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-300.7d2582db82f419e45720d9e28476199d.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-300.c0ac68e0cd4a90d50e48369619bfba3e.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-300.9ac508ce898176263be0dd08e32dfca0.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-500.0e939423d2f153db40cca99c956535cf.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-500.05560c6999d7839f2d9bff41b1248421.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-500.39dbc74a33e9f6889ee54dc709a97877.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-600.d848d786cf0d4b455700779640afa7e8.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-600.b0e573ec696bb309b82bcb6672c89d22.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-600.276e3c0d2a51a00e826a925443e415b8.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-700.8f7bd9925d45259466cb9cb526fc9c15.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-700.31e552c38b4363d91d4d2fa97d3a0d31.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-700.481f5f52e2c9c9afb49da7a0507a343a.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-cursive-900.2cf5ce93bf0510b7707cedfaa1ef6316.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-cursive-900.830d2a9aca732504efdc6144af408bf2.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-cursive-900.8d9ab4dc989f01fce5e9c77c3b542c9d.ttf') format('truetype');
+  font-style: cursive;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-100.759139add975b0fd825a1000d3b17307.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-100.976f19204101e3ab0a92bba1043d9e60.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-100.70cde3c86fb2a3daa76b8a8e23c6369d.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-200.ec0493139fe443c700cd5bc51656edcb.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-200.c3da1e6cb7d9a46c1a25e3d6c701fa9d.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-200.fbb194e99135d76b79b51a618a3b972a.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-300.d62989a979215ad49d1d0c3f4f486c79.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-300.3f18f4e0639afc303edfdf3682303fb1.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-300.c95919a57104667c771a5f680c8984e3.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-500.f64a02dc6568e52e99a82d91a1fdf8ca.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-500.51016e03be8716f452dd8a135667e341.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-500.65a5ff7a66cc0dbb044ccef93519f173.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-600.72c3d19049de86da0bc9c9147f57193a.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-600.8ff5e5f74154a1415318e4f0d4098bd1.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-600.8cd6430caa051c612317ae12523e6856.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-700.6525ea60a7d32466827b652f1a11a08a.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-700.44b1da462309bd49c77addcf7ee10537.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-700.3b1ebc94e9880f4470be536ea4df11c6.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-italic-900.88b63bd51a705930c6cb750d083b782e.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-italic-900.f3ca679c471730e0fcff11b24a74af78.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-italic-900.ab2616032426ad6841540049a08e405d.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-100.1c971167052b6cf7b62837996d7375fa.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-100.525ba54bfeb3c1849d60900fdbfc3988.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-100.55820981541c8814d5d23bcbb2ac5064.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-200.5d58c4a8a4e5efec8e4c6ed45090e311.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-200.d4ff7d538911a6818bc8da218bd0d462.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-200.548808a5c688b58fd5ce4bf7c36d04eb.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-300.e92a0bf485a4d57db75604c4bd7ff52a.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-300.9b81d288c19c41716ebf96e258985423.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-300.3cd5245a5d3f21bc7d8f2ab1f44762f6.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-400.b2143e2f1890f4d516078da14aebab03.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-400.84acbc9da487cd224bca2110576931b2.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-400.47b3a0f972c189b289e35bfc51ec5cbe.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-500.7f87722cb5a30e7d78c232ed0369ff58.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-500.ab8b9a8e903e1d17eeb58457af85149b.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-500.1859e88c825bd176aa456f4c37418d37.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-600.dfde90ccdc80d8d2df3d0d8236059f87.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-600.f81673f8b24ee3011ed4b281ca5cc4f0.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-600.11feb636f20485d51b7d6cb6fd69fd66.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-700.4a0c7e79ac2f009f12f9106482c961c4.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-700.efa8e2af8edb1e22c4e3265ba460b62b.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-700.ccbb185fe764789fce1299ee9925ac8c.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak';
+  src: url('/fonts/family/karnak/karnak-normal-900.7552fe3fdd9952aeda91e6c5a2adc59f.woff2') format('woff2'),
+       url('/fonts/family/karnak/karnak-normal-900.4e04312f79ccd18304eeb79d262cc200.woff') format('woff'),
+       url('/fonts/family/karnak/karnak-normal-900.7201addd7d6495655be07f5982a5d62c.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak-cond';
+  src: url('/fonts/family/karnak-cond/karnak-cond-normal-700.419b9165ed7359a0043e71df908941c5.woff2') format('woff2'),
+       url('/fonts/family/karnak-cond/karnak-cond-normal-700.773b3977fe35837aece9ace87240a733.woff') format('woff'),
+       url('/fonts/family/karnak-cond/karnak-cond-normal-700.83e320a71e8a13c9354947820b693ab3.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak-small';
+  src: url('/fonts/family/karnak-small/karnak-small-normal-400.c909a35022008e989e12f943950cb610.woff2') format('woff2'),
+       url('/fonts/family/karnak-small/karnak-small-normal-400.c364aea22560f51b6d521a68ee5e6a71.woff') format('woff'),
+       url('/fonts/family/karnak-small/karnak-small-normal-400.918d14a28ff01436142f639108a086fc.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-karnak-small';
+  src: url('/fonts/family/karnak-small/karnak-small-normal-700.b619f38a330814d65ff0b4c50603ed45.woff2') format('woff2'),
+       url('/fonts/family/karnak-small/karnak-small-normal-700.53ca06c015f75a73b42974cdfe66d0e0.woff') format('woff'),
+       url('/fonts/family/karnak-small/karnak-small-normal-700.f23894eff239fbee27c74ec5be6d10fd.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger';
+  src: url('/fonts/family/kippenberger/kippenberger-normal-400.f7a78c5c172da46cd47c4770efce7fb4.woff2') format('woff2'),
+       url('/fonts/family/kippenberger/kippenberger-normal-400.0382444272ac15c13f8f522e3020282b.woff') format('woff'),
+       url('/fonts/family/kippenberger/kippenberger-normal-400.adb341dc9d94303465b60779d1ed5e89.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger';
+  src: url('/fonts/family/kippenberger/kippenberger-normal-500.61348fec329c54c077228f564405cc45.woff2') format('woff2'),
+       url('/fonts/family/kippenberger/kippenberger-normal-500.f9909681669859de528dea0ff944d5d1.woff') format('woff'),
+       url('/fonts/family/kippenberger/kippenberger-normal-500.5d50f3ac793990c2945159283997beba.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger';
+  src: url('/fonts/family/kippenberger/kippenberger-normal-700.a9bdcb1e9d3fa26cc208ff990d3323ed.woff2') format('woff2'),
+       url('/fonts/family/kippenberger/kippenberger-normal-700.fdfd597b949e561fb77c5be011300001.woff') format('woff'),
+       url('/fonts/family/kippenberger/kippenberger-normal-700.29d2240e0ff72c533ac368f8aa1f3407.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger';
+  src: url('/fonts/family/kippenberger/kippenberger-normal-900.73d8cffdebf511efdadfe18e211f554f.woff2') format('woff2'),
+       url('/fonts/family/kippenberger/kippenberger-normal-900.2a780f63cc9d143bc5c9c08e16ee68b9.woff') format('woff'),
+       url('/fonts/family/kippenberger/kippenberger-normal-900.17c23a00f419fbb5ecfe9bca7a4f368b.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger-condensed';
+  src: url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-400.6b293905be519d2924ab3150ef2e948a.woff2') format('woff2'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-400.08785095ac7f6f414ebdbaa17f8d5ac9.woff') format('woff'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-400.7d64e97561b74531797ac10a36f55c7d.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger-condensed';
+  src: url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-500.aed0c99ef47b52bf523770c08aff88c3.woff2') format('woff2'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-500.bdf1d58f214066997643ba055b40fcb3.woff') format('woff'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-500.3d75f42c5f5ce9a98babe99522594cc9.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger-condensed';
+  src: url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-700.51324832188e83c97a86a5066e18146b.woff2') format('woff2'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-700.adee262909a5c895872330e665998aa5.woff') format('woff'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-700.c6e88ea7df72156720a603de77308390.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger-condensed';
+  src: url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-900.629fa1ec756f6d66246f243758ab2830.woff2') format('woff2'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-900.335ebfff9a3810eec7730db3df046658.woff') format('woff'),
+       url('/fonts/family/kippenberger-condensed/kippenberger-condensed-normal-900.89014348281a3fcac133760685e86c6f.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger-poster';
+  src: url('/fonts/family/kippenberger-poster/kippenberger-poster-normal-700.a5cf8180d14195fc15e4db1abc8e8118.woff2') format('woff2'),
+       url('/fonts/family/kippenberger-poster/kippenberger-poster-normal-700.ff10a52453a9c68144bac9c6a573c0cc.woff') format('woff'),
+       url('/fonts/family/kippenberger-poster/kippenberger-poster-normal-700.bb5b50eba46b71b023560d1a7f6f56c5.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-kippenberger-poster';
+  src: url('/fonts/family/kippenberger-poster/kippenberger-poster-normal-900.ccadc5b8ad4bb1689d99cd644f3b5334.woff2') format('woff2'),
+       url('/fonts/family/kippenberger-poster/kippenberger-poster-normal-900.4ec00a6de00cfa1b04fe4de3cfa5619e.woff') format('woff'),
+       url('/fonts/family/kippenberger-poster/kippenberger-poster-normal-900.b91522150800ca67f5d4d72c37bf0a18.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-magsans';
+  src: url('/fonts/family/magsans/magsans-normal-500.4f26f7d03a65d1d6e0888e034bd3bcca.woff2') format('woff2'),
+       url('/fonts/family/magsans/magsans-normal-500.37a40684fa4c2f836b160f2b4afe46a1.woff') format('woff'),
+       url('/fonts/family/magsans/magsans-normal-500.871342d57f65fa37e12412f03794a7b5.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-magsans';
+  src: url('/fonts/family/magsans/magsans-normal-700.540b6986e349e0c3584cf51bbcda1224.woff2') format('woff2'),
+       url('/fonts/family/magsans/magsans-normal-700.fd8c0e1f2d8e6a266118baa962776a78.woff') format('woff'),
+       url('/fonts/family/magsans/magsans-normal-700.b7dd14b5d3f5dc7a189aa22708d00052.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-magserif';
+  src: url('/fonts/family/magserif/magserif-normal-700.db190e43f947d485c782ddcb3eb2d0ca.woff2') format('woff2'),
+       url('/fonts/family/magserif/magserif-normal-700.296aaf3d284d540e77e9bf4848d8d4ba.woff') format('woff'),
+       url('/fonts/family/magserif/magserif-normal-700.4905a23855009747f6321068055e5306.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-magslab';
+  src: url('/fonts/family/magslab/magslab-normal-700.32ddc16a2c925830897e56e134696ade.woff2') format('woff2'),
+       url('/fonts/family/magslab/magslab-normal-700.f86ab8d02ce01903977bcf0fc0b707b5.woff') format('woff'),
+       url('/fonts/family/magslab/magslab-normal-700.ccbe3f8874421dea5d6db0afe80a1471.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-schnyder-s';
+  src: url('/fonts/family/schnyder-s/schnyder-s-normal-600.9c12687a0244f74a50ae23a2dfe25626.woff2') format('woff2'),
+       url('/fonts/family/schnyder-s/schnyder-s-normal-600.f089a4c6e47638fe67c2c388172060e7.woff') format('woff'),
+       url('/fonts/family/schnyder-s/schnyder-s-normal-600.1e1de9675d47828ac6c29d1fd4879c63.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-schnyder-s';
+  src: url('/fonts/family/schnyder-s/schnyder-s-normal-700.bc2cfae168f0438ed4f677e1d95aa615.woff2') format('woff2'),
+       url('/fonts/family/schnyder-s/schnyder-s-normal-700.c97ad205d7abaea5d1b0166f18f3d36c.woff') format('woff'),
+       url('/fonts/family/schnyder-s/schnyder-s-normal-700.b1bb98834347ea4e39d8868580ff9a2c.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-schnyder-scond';
+  src: url('/fonts/family/schnyder-scond/schnyder-scond-normal-300.ee2843eac9f368c56a0efe5fe4121bdf.woff2') format('woff2'),
+       url('/fonts/family/schnyder-scond/schnyder-scond-normal-300.b3b20332473531ad134e08383f6fe06c.woff') format('woff'),
+       url('/fonts/family/schnyder-scond/schnyder-scond-normal-300.8235e42d246d7f3e0f58bdee2b10d791.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-schnyder-scond';
+  src: url('/fonts/family/schnyder-scond/schnyder-scond-normal-600.e1209a23462c0d9a75909f8fcec860ae.woff2') format('woff2'),
+       url('/fonts/family/schnyder-scond/schnyder-scond-normal-600.530da27b33ce9ad5548bc34c714ade6c.woff') format('woff'),
+       url('/fonts/family/schnyder-scond/schnyder-scond-normal-600.ad486f53e8218b6da4455b82e71bf434.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-schnyder-scond';
+  src: url('/fonts/family/schnyder-scond/schnyder-scond-normal-700.a9c82a5a3fe90803076759bb1f40c95f.woff2') format('woff2'),
+       url('/fonts/family/schnyder-scond/schnyder-scond-normal-700.5078b335b44aacd62866b2dcf8182f09.woff') format('woff'),
+       url('/fonts/family/schnyder-scond/schnyder-scond-normal-700.d45b09d2e222c1e8729e995a8f3f1400.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-italic-300.3ade490ed877c9d018b33f3d9d06aa5d.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-italic-300.eb5b2ee3c6f0ce06bb38e94238e4b34a.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-italic-300.67040603b438bc1ae91d9a7e209828c6.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-italic-500.89182edc21dd7a1d0c8f6d44f02330ad.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-italic-500.8ae893fb678da91c4ab6a3f57d5fba8f.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-italic-500.3d3de4feb9f7a498a1ccdcadae8dd4f3.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-italic-700.5e184ceaa0adf5be282d727a85f4b420.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-italic-700.b92b536f96aa28ee431c98569d22dd86.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-italic-700.059c3a5a1327def3cfb38059a7732b87.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-italic-800.9441632e25b2c8ce57209d119838c55f.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-italic-800.e9ebcb62a6d8c24d5eb6dd06b097cd50.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-italic-800.ca157ebd825c75cb6c5bdc1d4266a3b9.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-100.19b34fc08819af0db05c6665a99cac3b.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-100.360949dedb59a4ad749b735519f49e21.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-100.6bfe85365c91b1d1a79daf22e4cfe7bc.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-200.384ec9119480de5090c34cc9255dc506.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-200.9cf7898c3e05cb7485cfa8cd383987e4.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-200.5bb2fddf3975705355de8f48a091b326.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-300.2c4be4791fef334371fc75231b4dcd48.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-300.e5636b23d0dadf36c1ef5734e6ee6236.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-300.8f88d1fcdd202c6c00d4c093e12f4cf2.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-500.ec9f78173e35b6bcbd87562b3507f882.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-500.78d381f262b5b4c472e19bb00cea727f.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-500.9009ce45bdeaab015d8cbd48811962d4.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-700.ccfafe3adc8820a9b158a4f86cb08b19.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-700.d1d7d67c8fe25719d4d8fd74b2f86dc9.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-700.8a7e3ee06582c0731687c7e4efde3110.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-800.173c124a0fe27066d1707e50fc254c4e.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-800.865108e60244d1f5c02ac8a7f2384123.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-800.e2901af6d0b435a2dc33e6b4cf14ea12.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie';
+  src: url('/fonts/family/stymie/stymie-normal-900.6e496674da2916aca9992c2706f9e9d3.woff2') format('woff2'),
+       url('/fonts/family/stymie/stymie-normal-900.7ca32227f17f14dc52d34c09f70f26e3.woff') format('woff'),
+       url('/fonts/family/stymie/stymie-normal-900.6d28152e1fe79b6b42edcdddbfd9b519.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie-small';
+  src: url('/fonts/family/stymie-small/stymie-small-italic-800.6d1b8d0169989bb045e0aba5c0c3cafb.woff2') format('woff2'),
+       url('/fonts/family/stymie-small/stymie-small-italic-800.358004f358322bdab696b46f645a906b.woff') format('woff'),
+       url('/fonts/family/stymie-small/stymie-small-italic-800.93f0f66a809ae3c89d8c3a4bba6cfa96.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nyt-stymie-small';
+  src: url('/fonts/family/stymie-small/stymie-small-normal-800.dfe151d1a8ffa95d4ee87295ed2ca3a9.woff2') format('woff2'),
+       url('/fonts/family/stymie-small/stymie-small-normal-800.fd57ac8b0b2e8a080e406a8d033f4f74.woff') format('woff'),
+       url('/fonts/family/stymie-small/stymie-small-normal-800.06c21294370ab2ba0e9fed0cd26983b2.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
