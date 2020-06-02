@@ -46,11 +46,28 @@ map(xdf$geometry$coordinates, set_names, c("lng", "lat")) %>%
 st_write(protests_100, here::here("data/2020-06-02-wikipedia-protests-100.geojson"))
 
 # map them to check
+library(rnaturalearth)
 
-ggplot(protests_100) +
-  geom_sf() +
-  coord_sf(crs = "+proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs", datum = NA) +
-  theme_ipsum_es(grid="")
+ne110 <- filter(ne_countries(returnclass="sf"), region_un != "Antarctica")
+
+ggplot() +
+  geom_sf(data = ne110, size = 0.125, color = "#2b2b2b88", fill = NA) +
+  geom_sf(data = protests_100, shape = 15, size = 0.5, color = "#7f0000") +
+  coord_sf(crs = 54019, datum = NA) +
+  labs(
+    title = sprintf("%s Protests", Sys.Date()-1),
+    subtitle = "Locations where 100+ came together",
+    caption = "Source: <https://en.wikipedia.org/wiki/List_of_George_Floyd_protests>\nCode: <https://github.com/hrbrmstr/2020-george-floyd-protests>"
+  ) +
+  theme_ipsum_es(grid="") -> gg
+
+ggsave(
+  filename = "protests-map.png",
+  plot = gg,
+  width = 900/96,
+  height = 600/96,
+  dpi = "retina"
+)
 
 # day/locale/counts (>=100) table -----------------------------------------
 
