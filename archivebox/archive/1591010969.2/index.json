@@ -1,11 +1,103 @@
 {
+    "updated": "1591098829.287728",
+    "url": "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
+    "title": "George Floyd protest live updates: Hundreds arrested in police clashes",
+    "sources": [
+        "/data/sources/stdin-1591098398.txt",
+        "/data/sources/stdin-1591010969.txt"
+    ],
     "history": {
+        "screenshot": [
+            {
+                "start_ts": "2020-06-01 11:33:32.754476",
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1591010969.2",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                ],
+                "end_ts": "2020-06-01 11:33:34.628428",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "title": [
+            {
+                "start_ts": "2020-06-01 11:32:29.545852",
+                "output": "George Floyd protest live updates: Hundreds arrested in police clashes",
+                "pwd": "/data/archive/1591010969.2",
+                "cmd": [
+                    "curl",
+                    "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-06-01 11:32:30.154747",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "start_ts": "2020-06-01 11:32:30.157153",
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1591010969.2",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.cnbc.com"
+                ],
+                "end_ts": "2020-06-01 11:32:30.371598",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "start_ts": "2020-06-01 11:32:30.376322",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "pwd": "/data/archive/1591010969.2",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591011150",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                ],
+                "end_ts": "2020-06-01 11:33:30.314490",
+                "duration": 59,
+                "status": "failed"
+            }
+        ],
         "dom": [
             {
-                "end_ts": "2020-06-01 11:33:35.721686",
                 "start_ts": "2020-06-01 11:33:34.629353",
-                "duration": 1,
                 "output": "output.html",
+                "pwd": "/data/archive/1591010969.2",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -17,16 +109,16 @@
                     "--dump-dom",
                     "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
                 ],
-                "pwd": "/data/archive/1591010969.2",
+                "end_ts": "2020-06-01 11:33:35.721686",
+                "duration": 1,
                 "status": "succeeded"
             }
         ],
         "media": [
             {
-                "end_ts": "2020-06-01 11:33:37.027759",
                 "start_ts": "2020-06-01 11:33:35.724404",
-                "duration": 1,
                 "output": "media",
+                "pwd": "/data/archive/1591010969.2",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -49,121 +141,16 @@
                     "--add-metadata",
                     "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
                 ],
-                "pwd": "/data/archive/1591010969.2",
-                "status": "succeeded"
-            }
-        ],
-        "archive_org": [
-            {
-                "end_ts": "2020-06-01 11:33:38.325843",
-                "start_ts": "2020-06-01 11:33:37.028343",
+                "end_ts": "2020-06-01 11:33:37.027759",
                 "duration": 1,
-                "output": "https://web.archive.org/web/20200601113337/https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
-                "cmd": [
-                    "curl",
-                    "--location",
-                    "--head",
-                    "--user-agent",
-                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
-                    "--max-time",
-                    "60",
-                    "https://web.archive.org/save/https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
-                ],
-                "pwd": "/data/archive/1591010969.2",
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [
-            {
-                "end_ts": "2020-06-01 11:32:30.371598",
-                "start_ts": "2020-06-01 11:32:30.157153",
-                "duration": 0,
-                "output": "favicon.ico",
-                "cmd": [
-                    "curl",
-                    "--max-time",
-                    "60",
-                    "--location",
-                    "--output",
-                    "favicon.ico",
-                    "https://www.google.com/s2/favicons?domain=www.cnbc.com"
-                ],
-                "pwd": "/data/archive/1591010969.2",
-                "status": "succeeded"
-            }
-        ],
-        "screenshot": [
-            {
-                "end_ts": "2020-06-01 11:33:34.628428",
-                "start_ts": "2020-06-01 11:33:32.754476",
-                "duration": 1,
-                "output": "screenshot.png",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--screenshot",
-                    "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
-                ],
-                "pwd": "/data/archive/1591010969.2",
-                "status": "succeeded"
-            }
-        ],
-        "wget": [
-            {
-                "end_ts": "2020-06-01 11:33:30.314490",
-                "start_ts": "2020-06-01 11:32:30.376322",
-                "duration": 59,
-                "output": "Command 'wget' timed out after 60 seconds",
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1591011150",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
-                ],
-                "pwd": "/data/archive/1591010969.2",
-                "status": "failed"
-            }
-        ],
-        "title": [
-            {
-                "end_ts": "2020-06-01 11:32:30.154747",
-                "start_ts": "2020-06-01 11:32:29.545852",
-                "duration": 0,
-                "output": "George Floyd protest live updates: Hundreds arrested in police clashes",
-                "cmd": [
-                    "curl",
-                    "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "pwd": "/data/archive/1591010969.2",
                 "status": "succeeded"
             }
         ],
         "pdf": [
             {
-                "end_ts": "2020-06-01 11:33:32.753463",
                 "start_ts": "2020-06-01 11:33:30.316661",
-                "duration": 2,
                 "output": "output.pdf",
+                "pwd": "/data/archive/1591010969.2",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -175,18 +162,32 @@
                     "--print-to-pdf",
                     "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
                 ],
-                "pwd": "/data/archive/1591010969.2",
+                "end_ts": "2020-06-01 11:33:32.753463",
+                "duration": 2,
                 "status": "succeeded"
             }
         ],
-        "git": []
+        "archive_org": [
+            {
+                "start_ts": "2020-06-01 11:33:37.028343",
+                "output": "https://web.archive.org/web/20200601113337/https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
+                "pwd": "/data/archive/1591010969.2",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html"
+                ],
+                "end_ts": "2020-06-01 11:33:38.325843",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ]
     },
-    "updated": "1591011218.336138",
     "timestamp": "1591010969.2",
-    "sources": [
-        "/data/sources/stdin-1591010969.txt"
-    ],
-    "title": null,
-    "url": "https://www.cnbc.com/2020/05/31/george-floyd-protests-live-udpates.html",
     "tags": ""
 }

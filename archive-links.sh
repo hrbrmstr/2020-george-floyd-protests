@@ -7,4 +7,4 @@
 # Image: docker pull nikisweeting/archivebox
 #
 
-cat data/links-to-preserve.txt | docker run -i -v -v $(pwd)/archivebox:/data nikisweeting/archivebox
+cat data/links-to-preserve.txt | docker run -i -v $(pwd)/archivebox:/data nikisweeting/archivebox

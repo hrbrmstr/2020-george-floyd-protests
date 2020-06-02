@@ -1,0 +1,192 @@
+{
+    "updated": "1591098754.246181",
+    "url": "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326",
+    "title": null,
+    "sources": [
+        "/data/sources/stdin-1591098398.txt"
+    ],
+    "history": {
+        "screenshot": [
+            {
+                "start_ts": "2020-06-02 11:52:22.410744",
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326"
+                ],
+                "end_ts": "2020-06-02 11:52:26.234595",
+                "duration": 3,
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "title": [
+            {
+                "start_ts": "2020-06-02 11:51:17.872959",
+                "output": "Trump says he will deploy military if state officials can&#x27;t contain protest violence",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "curl",
+                    "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-06-02 11:51:18.286495",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "start_ts": "2020-06-02 11:51:18.288482",
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.nbcnews.com"
+                ],
+                "end_ts": "2020-06-02 11:51:18.503099",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "start_ts": "2020-06-02 11:52:26.235474",
+                "output": "output.html",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326"
+                ],
+                "end_ts": "2020-06-02 11:52:29.785735",
+                "duration": 3,
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "start_ts": "2020-06-02 11:51:18.506370",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591098678",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326"
+                ],
+                "end_ts": "2020-06-02 11:52:18.450561",
+                "duration": 59,
+                "status": "failed"
+            }
+        ],
+        "media": [
+            {
+                "start_ts": "2020-06-02 11:52:29.789040",
+                "output": "Failed to download media",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326"
+                ],
+                "end_ts": "2020-06-02 11:52:30.920100",
+                "duration": 1,
+                "status": "failed"
+            }
+        ],
+        "pdf": [
+            {
+                "start_ts": "2020-06-02 11:52:18.456047",
+                "output": "output.pdf",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326"
+                ],
+                "end_ts": "2020-06-02 11:52:22.410063",
+                "duration": 3,
+                "status": "succeeded"
+            }
+        ],
+        "archive_org": [
+            {
+                "start_ts": "2020-06-02 11:52:30.920731",
+                "output": "https://web.archive.org/web/20200602115231/https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326",
+                "pwd": "/data/archive/1591098398.4",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.nbcnews.com/politics/white-house/trump-considering-move-invoke-insurrection-act-n1221326"
+                ],
+                "end_ts": "2020-06-02 11:52:34.224238",
+                "duration": 3,
+                "status": "succeeded"
+            }
+        ]
+    },
+    "timestamp": "1591098398.4",
+    "tags": ""
+}

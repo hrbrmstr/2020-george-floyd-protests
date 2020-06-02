@@ -1,0 +1,192 @@
+{
+    "updated": "1591098823.413685",
+    "url": "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate",
+    "title": null,
+    "sources": [
+        "/data/sources/stdin-1591098398.txt"
+    ],
+    "history": {
+        "screenshot": [
+            {
+                "start_ts": "2020-06-02 11:53:37.453795",
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate"
+                ],
+                "end_ts": "2020-06-02 11:53:39.244207",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "title": [
+            {
+                "start_ts": "2020-06-02 11:52:34.311695",
+                "output": "In call with governors, President Donald Trump urges arrests, saying they \u2018have to dominate\u2019 or look \u2018like a bunch of jerks\u2019 - Chicago Sun-Times",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "curl",
+                    "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-06-02 11:52:34.928970",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "start_ts": "2020-06-02 11:52:34.931615",
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=chicago.suntimes.com"
+                ],
+                "end_ts": "2020-06-02 11:52:35.112683",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "start_ts": "2020-06-02 11:53:39.244867",
+                "output": "output.html",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate"
+                ],
+                "end_ts": "2020-06-02 11:53:40.738138",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "start_ts": "2020-06-02 11:52:35.118138",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591098755",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate"
+                ],
+                "end_ts": "2020-06-02 11:53:35.064173",
+                "duration": 59,
+                "status": "failed"
+            }
+        ],
+        "media": [
+            {
+                "start_ts": "2020-06-02 11:53:40.739951",
+                "output": "media",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate"
+                ],
+                "end_ts": "2020-06-02 11:53:42.238128",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "start_ts": "2020-06-02 11:53:35.068794",
+                "output": "output.pdf",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate"
+                ],
+                "end_ts": "2020-06-02 11:53:37.453155",
+                "duration": 2,
+                "status": "succeeded"
+            }
+        ],
+        "archive_org": [
+            {
+                "start_ts": "2020-06-02 11:53:42.238890",
+                "output": "https://web.archive.org/web/20200602115342/https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate",
+                "pwd": "/data/archive/1591098398.5",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://chicago.suntimes.com/politics/2020/6/1/21276990/in-call-governors-president-donald-trump-urges-arrests-you-have-dominate"
+                ],
+                "end_ts": "2020-06-02 11:53:43.395195",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ]
+    },
+    "timestamp": "1591098398.5",
+    "tags": ""
+}

@@ -1,0 +1,105 @@
+@font-face {
+	font-family: "hf-icons";
+	src: url("https://nodeassets.nbcnews.com/assets/header-footer/1.5.2/iconfont/hf-icons.woff?a50f35e1f43b2114ca519ff318e9a635") format("woff"),
+url("https://nodeassets.nbcnews.com/assets/header-footer/1.5.2/iconfont/hf-icons.woff2?a50f35e1f43b2114ca519ff318e9a635") format("woff2"),
+url("https://nodeassets.nbcnews.com/assets/header-footer/1.5.2/iconfont/hf-icons.ttf?a50f35e1f43b2114ca519ff318e9a635") format("truetype");
+}
+
+.hfs-i {
+	line-height: 1;
+}
+
+.hfs-i:before {
+	font-family: hf-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.hfs-i-close:before {
+	content: "\f101";
+}
+.hfs-i-logo-msnbc:before {
+	content: "\f102";
+}
+.hfs-i-logo-nbcnews:before {
+	content: "\f103";
+}
+.hfs-i-logo-news:before {
+	content: "\f104";
+}
+.hfs-i-logo-today:before {
+	content: "\f105";
+}
+.hfs-i-peacock:before {
+	content: "\f106";
+}
+.hfs-i-search:before {
+	content: "\f107";
+}
+.hfs-i-share-email:before {
+	content: "\f108";
+}
+.hfs-i-share-facebook:before {
+	content: "\f109";
+}
+.hfs-i-share-flipboard:before {
+	content: "\f10a";
+}
+.hfs-i-share-instagram:before {
+	content: "\f10b";
+}
+.hfs-i-share-link:before {
+	content: "\f10c";
+}
+.hfs-i-share-linkedin:before {
+	content: "\f10d";
+}
+.hfs-i-share-pinterest:before {
+	content: "\f10e";
+}
+.hfs-i-share-pocket:before {
+	content: "\f10f";
+}
+.hfs-i-share-print:before {
+	content: "\f110";
+}
+.hfs-i-share-reddit:before {
+	content: "\f111";
+}
+.hfs-i-share-sms:before {
+	content: "\f112";
+}
+.hfs-i-share-snapchat:before {
+	content: "\f113";
+}
+.hfs-i-share-twitter:before {
+	content: "\f114";
+}
+.hfs-i-share-whatsapp:before {
+	content: "\f115";
+}
+.hfs-i-share-youtube:before {
+	content: "\f116";
+}
+.hfs-i-sunrise:before {
+	content: "\f117";
+}
+.hfs-i-vertical-better:before {
+	content: "\f118";
+}
+.hfs-i-vertical-mach:before {
+	content: "\f119";
+}
+.hfs-i-vertical-msnbc:before {
+	content: "\f11a";
+}
+.hfs-i-vertical-news:before {
+	content: "\f11b";
+}
+.hfs-i-vertical-think:before {
+	content: "\f11c";
+}
+.hfs-i-vertical-today:before {
+	content: "\f11d";
+}

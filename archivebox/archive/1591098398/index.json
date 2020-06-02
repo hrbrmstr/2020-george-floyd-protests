@@ -1,0 +1,192 @@
+{
+    "updated": "1591098422.357545",
+    "url": "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/",
+    "title": null,
+    "sources": [
+        "/data/sources/stdin-1591098398.txt"
+    ],
+    "history": {
+        "screenshot": [
+            {
+                "start_ts": "2020-06-02 11:46:42.717686",
+                "output": "screenshot.png",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/"
+                ],
+                "end_ts": "2020-06-02 11:46:44.941553",
+                "duration": 2,
+                "status": "succeeded"
+            }
+        ],
+        "git": [],
+        "title": [
+            {
+                "start_ts": "2020-06-02 11:46:38.816263",
+                "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "curl",
+                    "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-06-02 11:46:39.456512",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "favicon": [
+            {
+                "start_ts": "2020-06-02 11:46:39.458789",
+                "output": "favicon.ico",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
+                ],
+                "end_ts": "2020-06-02 11:46:39.724361",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "dom": [
+            {
+                "start_ts": "2020-06-02 11:46:44.942237",
+                "output": "output.html",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/"
+                ],
+                "end_ts": "2020-06-02 11:46:46.888372",
+                "duration": 1,
+                "status": "succeeded"
+            }
+        ],
+        "wget": [
+            {
+                "start_ts": "2020-06-02 11:46:39.728761",
+                "output": "www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/index.html",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591098399",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/"
+                ],
+                "end_ts": "2020-06-02 11:46:40.387674",
+                "duration": 0,
+                "status": "succeeded"
+            }
+        ],
+        "media": [
+            {
+                "start_ts": "2020-06-02 11:46:46.890686",
+                "output": "media",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/"
+                ],
+                "end_ts": "2020-06-02 11:46:56.695009",
+                "duration": 9,
+                "status": "succeeded"
+            }
+        ],
+        "pdf": [
+            {
+                "start_ts": "2020-06-02 11:46:40.388360",
+                "output": "output.pdf",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/"
+                ],
+                "end_ts": "2020-06-02 11:46:42.716619",
+                "duration": 2,
+                "status": "succeeded"
+            }
+        ],
+        "archive_org": [
+            {
+                "start_ts": "2020-06-02 11:46:56.697357",
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out",
+                "pwd": "/data/archive/1591098398",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.washingtonpost.com/opinions/2020/06/01/we-saw-it-with-our-own-eyes-trump-wants-go-war-against-america/"
+                ],
+                "end_ts": "2020-06-02 11:47:02.357298",
+                "duration": 5,
+                "status": "failed"
+            }
+        ]
+    },
+    "timestamp": "1591098398",
+    "tags": ""
+}

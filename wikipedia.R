@@ -43,7 +43,7 @@ map(xdf$geometry$coordinates, set_names, c("lng", "lat")) %>%
     crs = 4326
   ) -> protests_100
 
-st_write(protests_100, here::here("data/2020-06-01-wikipedia-protests-100.geojson"))
+st_write(protests_100, here::here("data/2020-06-02-wikipedia-protests-100.geojson"))
 
 # map them to check
 
@@ -73,7 +73,7 @@ html_node(pg, xpath=".//table[caption]") %>%
   ) %>%
   separate(Location, c("locale", "state"), sep=", ") -> locale_ts_gt_100
 
-write_csv(locale_ts_gt_100, here::here("data/2020-06-01-wikipedia-locale-ts-100.csv"))
+write_csv(locale_ts_gt_100, here::here("data/2020-06-02-wikipedia-locale-ts-100.csv"))
 
 # locale details ----------------------------------------------------------
 
@@ -99,7 +99,7 @@ html_nodes(pg, xpath=".//h2[contains(., 'International')]/preceding-sibling::h3"
     entry = paste0(entry, collapse = " ")
   ) -> protest_entries
 
-write_csv(protest_entries, here::here("data/2020-06-01-wikipedia-locale-entries.csv"))
+write_csv(protest_entries, here::here("data/2020-06-02-wikipedia-locale-entries.csv"))
 
 # NOTE: as of 2020-06-01 0635 ET many entries noting either the presence of
 #       the national guard or the calling for the presence of the national

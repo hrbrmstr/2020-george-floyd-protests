@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'FoundersGroteskCond'; 
+	font-weight: 600; 
+	font-style: normal; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/FoundersGroteskCondensedWeb-Semibold.6797c94d7e9d7972e1dda6ed5248e1f4.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/FoundersGroteskCondensedWeb-Semibold.64d738f4f5f0d64b8e62912047fab98b.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'FoundersGroteskText'; 
+	font-weight: 600; 
+	font-style: normal; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/FoundersGroteskTextWeb-Semibold.a9c99757bb4eb7230f0fb0b9b7c309c7.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/FoundersGroteskTextWeb-Semibold.bb768afd1592f895fe4b8fcbe9b4c152.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'FoundersGroteskMono'; 
+	font-weight: 400; 
+	font-style: normal; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/FoundersGroteskMonoWeb-Regular.861757adb72039160d3707fc6508e252.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/FoundersGroteskMonoWeb-Regular.64da8859cec6a96a541f4757624a9a11.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'PublicoText'; 
+	font-weight: 400; 
+	font-style: normal; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-Roman-Web.752edd6cce510289581b5e8ecea31abd.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-Roman-Web.b794374b809c8d96b167bf14e453b777.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'PublicoText'; 
+	font-weight: 400; 
+	font-style: italic; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-Italic-Web.869ae526cd4f67819cc74afb6374ecd1.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-Italic-Web.97dd716218dfc19c1d3d25f1b850a760.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'PublicoText'; 
+	font-weight: 700; 
+	font-style: normal; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-Bold-Web.f54c94b85a1c944380bf1bc3e5efc767.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-Bold-Web.cafe28c70952bf99aafc451d864c6047.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'PublicoText'; 
+	font-weight: 700; 
+	font-style: italic; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-BoldItalic-Web.4242cd37a672fbb81852bc6b903d1382.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoText-BoldItalic-Web.1879d3e034fd02691e80a3182feb1777.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'PublicoHeadline'; 
+	font-weight: 300; 
+	font-style: normal; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoHeadline-Light-Web.558b657c534cf850fc1e341ff9df48b9.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoHeadline-Light-Web.b0786ddf38db6aaeaa962575ffc9cb4f.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'PublicoHeadline'; 
+	font-weight: 300; 
+	font-style: italic; 
+	font-display: swap; 
+	src:
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoHeadline-LightItalic-Web.1ad62109f992e79f6c731ced93016646.woff2) format('woff2'),
+		url(https://nodeassets.nbcnews.com/assets/fonts/shared/PublicoHeadline-LightItalic-Web.68ba310dd22d42f57ab9de0b0333081b.woff) format('woff');
+}
