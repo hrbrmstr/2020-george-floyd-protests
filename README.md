@@ -2,6 +2,13 @@ Code to collect data from various sources on the 2020 George Floyd protests.
 
 ![](protests-map.png)
 
+## 2020-06-03
+
+- No external PRs or issues
+- Migrate to Git LFS for big files
+- A few new URLs to cover prev days info
+- Data sync from all current sourfes
+
 ## 2020-06-02
 
 - No external PRs or issues
