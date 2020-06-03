@@ -1,75 +1,19 @@
 {
-    "updated": "1591098829.21299",
-    "url": "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
     "title": "Curfews go into effect in cities around the country as George Floyd protests continue",
+    "timestamp": "1591010969.1",
     "sources": [
         "/data/sources/stdin-1591098398.txt",
-        "/data/sources/stdin-1591010969.txt"
+        "/data/sources/stdin-1591010969.txt",
+        "/data/sources/stdin-1591183828.txt"
     ],
+    "url": "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
     "history": {
-        "screenshot": [
-            {
-                "start_ts": "2020-06-01 11:32:20.936610",
-                "output": "screenshot.png",
-                "pwd": "/data/archive/1591010969.1",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--screenshot",
-                    "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
-                ],
-                "end_ts": "2020-06-01 11:32:24.357774",
-                "duration": 3,
-                "status": "succeeded"
-            }
-        ],
-        "git": [],
-        "title": [
-            {
-                "start_ts": "2020-06-01 11:31:15.913946",
-                "output": "Curfews go into effect in cities around the country as George Floyd protests continue",
-                "pwd": "/data/archive/1591010969.1",
-                "cmd": [
-                    "curl",
-                    "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "end_ts": "2020-06-01 11:31:16.196066",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [
-            {
-                "start_ts": "2020-06-01 11:31:16.197890",
-                "output": "favicon.ico",
-                "pwd": "/data/archive/1591010969.1",
-                "cmd": [
-                    "curl",
-                    "--max-time",
-                    "60",
-                    "--location",
-                    "--output",
-                    "favicon.ico",
-                    "https://www.google.com/s2/favicons?domain=www.nbcnews.com"
-                ],
-                "end_ts": "2020-06-01 11:31:16.401908",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
         "wget": [
             {
-                "start_ts": "2020-06-01 11:31:16.405625",
-                "output": "Command 'wget' timed out after 60 seconds",
                 "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:31:16.405625",
+                "end_ts": "2020-06-01 11:32:16.345513",
+                "status": "failed",
                 "cmd": [
                     "wget",
                     "--no-verbose",
@@ -88,16 +32,95 @@
                     "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
                     "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
                 ],
-                "end_ts": "2020-06-01 11:32:16.345513",
                 "duration": 59,
-                "status": "failed"
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:32:16.348586",
+                "end_ts": "2020-06-01 11:32:20.935324",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                ],
+                "duration": 4,
+                "output": "output.pdf"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:31:15.913946",
+                "end_ts": "2020-06-01 11:31:16.196066",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "output": "Curfews go into effect in cities around the country as George Floyd protests continue"
+            }
+        ],
+        "git": [],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:31:16.197890",
+                "end_ts": "2020-06-01 11:31:16.401908",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.nbcnews.com"
+                ],
+                "duration": 0,
+                "output": "favicon.ico"
+            }
+        ],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:32:20.936610",
+                "end_ts": "2020-06-01 11:32:24.357774",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
+                ],
+                "duration": 3,
+                "output": "screenshot.png"
             }
         ],
         "dom": [
             {
-                "start_ts": "2020-06-01 11:32:24.358781",
-                "output": "output.html",
                 "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:32:24.358781",
+                "end_ts": "2020-06-01 11:32:27.623333",
+                "status": "succeeded",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -109,16 +132,16 @@
                     "--dump-dom",
                     "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
                 ],
-                "end_ts": "2020-06-01 11:32:27.623333",
                 "duration": 3,
-                "status": "succeeded"
+                "output": "output.html"
             }
         ],
         "media": [
             {
-                "start_ts": "2020-06-01 11:32:27.626311",
-                "output": "Failed to download media",
                 "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:32:27.626311",
+                "end_ts": "2020-06-01 11:32:28.720774",
+                "status": "failed",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -141,37 +164,16 @@
                     "--add-metadata",
                     "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
                 ],
-                "end_ts": "2020-06-01 11:32:28.720774",
                 "duration": 1,
-                "status": "failed"
-            }
-        ],
-        "pdf": [
-            {
-                "start_ts": "2020-06-01 11:32:16.348586",
-                "output": "output.pdf",
-                "pwd": "/data/archive/1591010969.1",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
-                ],
-                "end_ts": "2020-06-01 11:32:20.935324",
-                "duration": 4,
-                "status": "succeeded"
+                "output": "Failed to download media"
             }
         ],
         "archive_org": [
             {
-                "start_ts": "2020-06-01 11:32:28.721563",
-                "output": "https://web.archive.org/web/20200601113229/https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801",
                 "pwd": "/data/archive/1591010969.1",
+                "start_ts": "2020-06-01 11:32:28.721563",
+                "end_ts": "2020-06-01 11:32:29.452877",
+                "status": "succeeded",
                 "cmd": [
                     "curl",
                     "--location",
@@ -182,12 +184,11 @@
                     "60",
                     "https://web.archive.org/save/https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
                 ],
-                "end_ts": "2020-06-01 11:32:29.452877",
                 "duration": 0,
-                "status": "succeeded"
+                "output": "https://web.archive.org/web/20200601113229/https://www.nbcnews.com/news/us-news/curfews-go-effect-cities-around-country-george-floyd-protests-continue-n1219801"
             }
         ]
     },
-    "timestamp": "1591010969.1",
-    "tags": ""
+    "tags": "",
+    "updated": "1591184537.056269"
 }

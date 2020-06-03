@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:34:07.188967",
+                "duration": 59,
+                "status": "failed",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591183987",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+                ],
+                "start_ts": "2020-06-03 11:33:07.246867",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:33:07.031158",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:33:06.420020",
+                "output": "'Words of a dictator': Trump's threat to deploy military raises spectre of fascism | US news | The Guardian"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:34:10.642879",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+                ],
+                "start_ts": "2020-06-03 11:34:07.193292",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:33:07.244280",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.theguardian.com"
+                ],
+                "start_ts": "2020-06-03 11:33:07.033928",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:34:13.661036",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+                ],
+                "start_ts": "2020-06-03 11:34:10.643627",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:34:16.256005",
+                "duration": 2,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+                ],
+                "start_ts": "2020-06-03 11:34:13.661730",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:34:17.696208",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+                ],
+                "start_ts": "2020-06-03 11:34:16.258889",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.2",
+                "end_ts": "2020-06-03 11:34:18.668490",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+                ],
+                "start_ts": "2020-06-03 11:34:17.696862",
+                "output": "https://web.archive.org/web/20200603113418/https://www.theguardian.com/us-news/2020/jun/02/donald-trump-george-floyd-protests-military-threat"
+            }
+        ]
+    },
+    "timestamp": "1591183828.2",
+    "updated": "1591184058.690061"
+}

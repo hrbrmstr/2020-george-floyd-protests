@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:38:15.841566",
+                "duration": 59,
+                "status": "failed",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591184235",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+                ],
+                "start_ts": "2020-06-03 11:37:15.894668",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:37:15.723979",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:37:15.470202",
+                "output": "Democrats request briefing on police actions towards protesters at White House | TheHill"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:38:18.126511",
+                "duration": 2,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+                ],
+                "start_ts": "2020-06-03 11:38:15.846360",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:37:15.891932",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thehill.com"
+                ],
+                "start_ts": "2020-06-03 11:37:15.727156",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:38:20.223509",
+                "duration": 2,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+                ],
+                "start_ts": "2020-06-03 11:38:18.127174",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:38:22.360041",
+                "duration": 2,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+                ],
+                "start_ts": "2020-06-03 11:38:20.224126",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:38:23.322853",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+                ],
+                "start_ts": "2020-06-03 11:38:22.362185",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.7",
+                "end_ts": "2020-06-03 11:38:24.274131",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+                ],
+                "start_ts": "2020-06-03 11:38:23.323448",
+                "output": "https://web.archive.org/web/20200603113823/https://thehill.com/policy/energy-environment/500816-democrats-request-briefing-on-police-actions-towards-protesters-at"
+            }
+        ]
+    },
+    "timestamp": "1591183828.7",
+    "updated": "1591184304.298263"
+}

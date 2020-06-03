@@ -1,95 +1,18 @@
 {
-    "updated": "1591098447.49217",
-    "url": "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/",
-    "title": null,
+    "title": "Washington Post: Breaking News, World, US, DC News & Analysis - The Washington Post",
+    "timestamp": "1591098398.0",
     "sources": [
-        "/data/sources/stdin-1591098398.txt"
+        "/data/sources/stdin-1591098398.txt",
+        "/data/sources/stdin-1591183828.txt"
     ],
+    "url": "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/",
     "history": {
-        "screenshot": [
-            {
-                "start_ts": "2020-06-02 11:47:06.629138",
-                "output": "screenshot.png",
-                "pwd": "/data/archive/1591098398.0",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--screenshot",
-                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
-                ],
-                "end_ts": "2020-06-02 11:47:09.577050",
-                "duration": 2,
-                "status": "succeeded"
-            }
-        ],
-        "git": [],
-        "title": [
-            {
-                "start_ts": "2020-06-02 11:47:02.430302",
-                "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post",
-                "pwd": "/data/archive/1591098398.0",
-                "cmd": [
-                    "curl",
-                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "end_ts": "2020-06-02 11:47:02.847250",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [
-            {
-                "start_ts": "2020-06-02 11:47:02.849421",
-                "output": "favicon.ico",
-                "pwd": "/data/archive/1591098398.0",
-                "cmd": [
-                    "curl",
-                    "--max-time",
-                    "60",
-                    "--location",
-                    "--output",
-                    "favicon.ico",
-                    "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
-                ],
-                "end_ts": "2020-06-02 11:47:03.037806",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "dom": [
-            {
-                "start_ts": "2020-06-02 11:47:09.578096",
-                "output": "output.html",
-                "pwd": "/data/archive/1591098398.0",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--dump-dom",
-                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
-                ],
-                "end_ts": "2020-06-02 11:47:12.087976",
-                "duration": 2,
-                "status": "succeeded"
-            }
-        ],
         "wget": [
             {
-                "start_ts": "2020-06-02 11:47:03.040663",
-                "output": "www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/index.html",
                 "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:03.040663",
+                "end_ts": "2020-06-02 11:47:03.552898",
+                "status": "succeeded",
                 "cmd": [
                     "wget",
                     "--no-verbose",
@@ -108,16 +31,116 @@
                     "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
                     "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
                 ],
-                "end_ts": "2020-06-02 11:47:03.552898",
                 "duration": 0,
-                "status": "succeeded"
+                "output": "www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/index.html"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:03.553431",
+                "end_ts": "2020-06-02 11:47:06.628168",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
+                ],
+                "duration": 3,
+                "output": "output.pdf"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:02.430302",
+                "end_ts": "2020-06-02 11:47:02.847250",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post"
+            }
+        ],
+        "git": [],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:02.849421",
+                "end_ts": "2020-06-02 11:47:03.037806",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
+                ],
+                "duration": 0,
+                "output": "favicon.ico"
+            }
+        ],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:06.629138",
+                "end_ts": "2020-06-02 11:47:09.577050",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
+                ],
+                "duration": 2,
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:09.578096",
+                "end_ts": "2020-06-02 11:47:12.087976",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
+                ],
+                "duration": 2,
+                "output": "output.html"
             }
         ],
         "media": [
             {
-                "start_ts": "2020-06-02 11:47:12.090838",
-                "output": "media",
                 "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:12.090838",
+                "end_ts": "2020-06-02 11:47:21.967272",
+                "status": "succeeded",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -140,37 +163,16 @@
                     "--add-metadata",
                     "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
                 ],
-                "end_ts": "2020-06-02 11:47:21.967272",
                 "duration": 9,
-                "status": "succeeded"
-            }
-        ],
-        "pdf": [
-            {
-                "start_ts": "2020-06-02 11:47:03.553431",
-                "output": "output.pdf",
-                "pwd": "/data/archive/1591098398.0",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
-                ],
-                "end_ts": "2020-06-02 11:47:06.628168",
-                "duration": 3,
-                "status": "succeeded"
+                "output": "media"
             }
         ],
         "archive_org": [
             {
-                "start_ts": "2020-06-02 11:47:21.967866",
-                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out",
                 "pwd": "/data/archive/1591098398.0",
+                "start_ts": "2020-06-02 11:47:21.967866",
+                "end_ts": "2020-06-02 11:47:27.491720",
+                "status": "failed",
                 "cmd": [
                     "curl",
                     "--location",
@@ -181,12 +183,29 @@
                     "60",
                     "https://web.archive.org/save/https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
                 ],
-                "end_ts": "2020-06-02 11:47:27.491720",
                 "duration": 5,
-                "status": "failed"
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
+            },
+            {
+                "pwd": "/data/archive/1591098398.0",
+                "end_ts": "2020-06-03 11:41:42.667397",
+                "duration": 5,
+                "status": "failed",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.washingtonpost.com/dc-md-va/2020/06/02/dc-protest-george-floyd-white-house/"
+                ],
+                "start_ts": "2020-06-03 11:41:37.000169",
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
             }
         ]
     },
-    "timestamp": "1591098398.0",
-    "tags": ""
+    "tags": "",
+    "updated": "1591184502.667643"
 }

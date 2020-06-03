@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+    <head>
+        <!-- Piano ad blocker -->
+        <script>
+            document.cookie = "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+            var setNptTechAdblockerCookie = function(adblocker) {
+                var d = new Date();
+                d.setTime(d.getTime() + 60 * 60 * 24 * 2 * 1000);
+                document.cookie = "__adblocker=" + (adblocker ? "true" : "false") + "; expires=" + d.toUTCString() + "; path=/";
+            }
+            var script = document.createElement("script");
+            script.setAttribute("async", true);
+            script.setAttribute("src", "//www.npttech.com/advertising.js");
+            script.setAttribute("onerror", "setNptTechAdblockerCookie(true);");
+            document.getElementsByTagName("head")[0].appendChild(script);
+        </script>
+        <!-- End Piano ad blocker -->
+
+        <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"f5b9626936",applicationID:"224917688"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>U.S. Standing in World Undercut by Police Violence at Home</title>
+
+        <meta name="wapoGroupsX" content="default">
+        <meta name="google-site-verification" content="7Z5A6Xlt7BhqqooipJUtw0cu2IjSQ-_RnNbEA2c6pfc">
+        <meta name="apple-itunes-app" content="app-id=1034756405">
+        <meta name="pocket-site-verification" content="21de1071947281ccc893fa0bbfb1f6" />
+        
+                <!-- CANONICAL -->
+        <link rel="canonical" href="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/">
+
+                    <!-- FB Tags -->
+            <meta property="og:title" content="With Scenes of Police Brutality, America’s Beacon to the World Winks Out">
+            <meta property="og:image" content="https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg">
+            <meta property="og:url" content="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/">
+            <meta property="og:description" content="U.S. soft power was already dwindling under Trump. But the new wave of police violence and racial injustice may be drying up the reserves.">
+            <meta property="og:site_name" content="Foreign Policy">
+            <meta property="fb:app_id" content="107151292643652" />
+            <meta property="og:type" content="article" />
+
+            <!-- Twitter Tags -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@ForeignPolicy">
+            <meta name="twitter:title" content="With Scenes of Police Brutality, America’s Beacon to the World Winks Out">
+            <meta name="twitter:description" content="America&#039;s soft power reserves are drying up as the world. Trump&#039;s reaction to the country-wide protests is only making things worse">
+            <meta name="twitter:image" content="https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg">
+            <meta property="twitter:domain" value="foreignpolicy.com"/>
+
+            <!-- Author Tags -->
+            <meta property="article:author" content="Colum Lynch, Robbie Gramer">
+            <meta name="author" content="Colum Lynch, Robbie Gramer">
+
+        
+                
+        
+
+        <!-- Preload fonts -->
+        <link rel="preload" href="/wp-content/themes/foreign-policy-2017/assets/dist/fonts/tiempos--normal--600.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/wp-content/themes/foreign-policy-2017/assets/dist/fonts/dala-moa--normal--800.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/wp-content/themes/foreign-policy-2017/assets/dist/fonts/solido--normal--400.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/wp-content/themes/foreign-policy-2017/assets/dist/fonts/tiempos--normal--400.woff2" as="font" type="font/woff2" crossorigin>
+                <link rel="preload" href="/wp-content/themes/foreign-policy-2017/assets/dist/fonts/solido-condensed--normal--600.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/wp-content/themes/foreign-policy-2017/assets/dist/fonts/solido--normal--800.woff2" as="font" type="font/woff2" crossorigin>
+        
+
+        <meta
+    name="application-name"
+    content="Foreign Policy">
+<meta
+    name="apple-mobile-web-app-title"
+    content="Foreign Policy">
+<meta name="theme-color" content="#eb372e">
+<meta name="msapplication-TileColor" content="#eb372e">
+<meta
+    name="msapplication-TileImage"
+    content="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/logos/favicon-256.png">
+<link
+    rel="apple-touch-icon"
+    sizes="192x192"
+    type="image/png"
+    href="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/logos/favicon-192.png">
+<link
+    rel="icon"
+    sizes="192x192"
+    type="image/png"
+    href="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/logos/favicon-192.png">
+<link
+    rel="icon"
+    sizes="16x16 32x32"
+    type="image/x-icon"
+    href="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/logos/favicon.ico">
+        <script>
+    window.FP = window.FP || {};
+    FP.Config = {"api":{"ip_access":"https:\/\/foreignpolicy.com\/r\/api\/ip-access\/","link_access":"https:\/\/foreignpolicy.com\/r\/api\/link-access\/{0}\/","users_by_id":"https:\/\/foreignpolicy.com\/r\/api\/users\/{0}\/"},"context":{"is_home":false,"is_sponsored":false,"is_events":false,"is_chinadaily":false},"current_site_admin_hostname":"foreignpolicy.com","current_site_hostname":"foreignpolicy.com","fonts":[{"family":"Dala Moa","option":{"style":"normal","weight":800}},{"family":"Solido","option":{"style":"normal","weight":400}},{"family":"Tiempos","option":{"style":"normal","weight":400}},{"family":"Tiempos","option":{"style":"normal","weight":600}},{"family":"Solido","option":{"style":"normal","weight":800}},{"family":"Solido Condensed","option":{"style":"normal","weight":600}}],"is_production":true,"marketing":{"after_content_messaging":"<p>Like this article? Read an unlimited number of articles, plus access to our entire 47-year printed archive, the FP App, and the Digital Magazine when you <strong><a href=\"https:\/\/foreignpolicy.com\/subscribe?utm_source=AMP%20-%20Launched%2018_08_23&amp;utm_medium=AMP&amp;utm_campaign=Premium\">subscribe to FP Premium<\/a><\/strong>!<\/p>","after_content_messaging_fbia":"<p>Like this article? Read an unlimited number of articles, plus access to our entire 47-year printed archive, the FP App, and the Digital Magazine when you <strong><a href=\"https:\/\/foreignpolicy.com\/subscribe?utm_source=FBIA%20-%20Launched%2018_09_04&amp;utm_medium=FBIA&amp;utm_campaign=Premium\">subscribe to FP Premium<\/a><\/strong>!<\/p>"},"misc":{"current_magazine_issue":{"isset":true,"link":"https:\/\/foreignpolicy.com\/the-magazine\/"}},"referrers":["google.com"],"user":{"login_url":"https:\/\/fp-reg.onecount.net\/onecount\/login\/loginlogout.cgi","logout_url":"https:\/\/fp-reg.onecount.net\/onecount\/login\/loginlogout.cgi","edit_profile_url":"https:\/\/fp-reg.onecount.net\/onecount\/flexreg\/displayform.php?g=0&form=387","registration_url":"http:\/\/fp-reg.onecount.net\/onecount\/flexreg\/displayform.php?form=137&brand=fp","customer_service_url":"https:\/\/subscribe.foreignpolicy.com\/FRP\/?f=custcare","view_count_limit":null,"paywall_resource_id":null,"registration_product_ids":[34],"subscription_product_ids":[26,235],"premium_product_ids":[145],"newsletter_ids":[177,185,129,161,227,317]},"widgets":[]};
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    lazySizesConfig = {"lazyClass":"-lazy","preloadClass":"-preloaded","loadingClass":"-loading","loadedClass":"-loaded"};
+</script>
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//cdn.taboola.com' />
+<link rel='dns-prefetch' href='//c.jsrdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Foreign Policy &raquo; With Scenes of Police Brutality, America’s Beacon to the World Winks Out Comments Feed" href="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/foreignpolicy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0' href='https://foreignpolicy.com/_static/??-eJytksFqw0AMRH+oipKUYnIo/ZQg7yr21trVspIT/Pd1gm+9tb4JMfMGDcJHhVSCzJENgxnGZI69aJhAUt+oLWi+CB9yKodV8IarI2hxLo4+cl59N22chgJVJYUFzsdTh2TGvuFeAMOejPGa6d+goLlqWX2GNlLjuDd1ZIrc9qZWXdc7MzMVGnZv9abqf7nfnDyFDTjyM4GiAQk3N+BedYJKy4NEwGlivXMzyNonYaB4zckCCA8Ull+xeYYq85CK4Td7pTC9/nWbn/Kv/Hn6uBy77v1yOf8A6OEPIA==' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<script type="application/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[];googletag.cmd.push(	function(){googletag.pubads().disableInitialLoad()});</script><script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type='text/javascript' src='https://foreignpolicy.com/_static/??-eJytkcuKwzAMRX9oHLUd2pBFmW9RbCVRsCVjuRmar28K3XbRx0YIwTmCe+E/O69SSSrUiRIZDFqIR3FZI/urO+z2LaAZVQMrHswXztu+kAQtQHZyuWhiowYvVZvZfuBT6bDBA3rS3qgsVBqrKAGjCn3mf5zufnvBtL2v7GE2mGqKR5t4eYsuZFklvMWOUXuMX4k34no1XumVCJ7bMOGq4noOgWV0to14r+kvnffHbte2v113mG9rvOMc'></script>
+<script src='//c.jsrdn.com/s/cs.js?p=22420'></script>
+<script>
+var FPSharesEndpoint = {"endpoint":"https:\/\/foreignpolicy.com\/_share_count\/"};
+var ajaxurl = {"ajaxurl":"https:\/\/foreignpolicy.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script type='text/javascript' src='https://foreignpolicy.com/_static/??-eJyVzFEKgzAQRdENdTpqKSEfxbWEMDUTNJG8UXH31SX078KFw8dKsRaTYmxJFgF/axOdCq111njS0PWOYcE0cgYj7Fqma8IIKTTBM+PB/zKhxaS7EOQuuphttpsal0//9p1zL++H/ANFkjkA'></script>
+<link rel='https://api.w.org/' href='https://foreignpolicy.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://foreignpolicy.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://foreignpolicy.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.1" />
+<link rel="canonical" href="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/" />
+<link rel='shortlink' href='https://bit.ly/3eDEQ5t' />
+<link rel="alternate" type="application/json+oembed" href="https://foreignpolicy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fforeignpolicy.com%2F2020%2F06%2F01%2Fprotests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://foreignpolicy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fforeignpolicy.com%2F2020%2F06%2F01%2Fprotests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality%2F&#038;format=xml" />
+<style type='text/css'>img#wpstats{display:none}</style>		<style>
+		.getty.alignleft {
+			margin-right: 5px;
+		}
+		.getty.alignright {
+			margin-left: 5px;
+		}
+		</style>
+		<link rel="icon" href="https://foreignpolicy.com/wp-content/uploads/2017/12/cropped-favicon-512_2017.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://foreignpolicy.com/wp-content/uploads/2017/12/cropped-favicon-512_2017.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://foreignpolicy.com/wp-content/uploads/2017/12/cropped-favicon-512_2017.png?w=180" />
+<meta name="msapplication-TileImage" content="https://foreignpolicy.com/wp-content/uploads/2017/12/cropped-favicon-512_2017.png?w=270" />
+
+        
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6874192-41"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    // Add additional data for GA / GTM
+    dataLayer.push({
+        'author': "Colum Lynch, Robbie Gramer",
+        'category': "Report", 
+        'datePublished': "2020-06-01",
+        'editor': "Michael Hirsch",
+        'region': "",
+        'tags': "Diplomacy, Human Rights, Report, Trump", 
+        'vertical': "News",
+        'pageType': "Article",
+        'inMagazine': "",
+        // Values below defined after OC JS runs
+        'accessId': "",
+        'accessGroup': "",
+        'subscriberState': ""
+    });
+
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // Remove for now - gtag('config', 'UA-6874192-41');
+
+    // GA set config and WP post content group
+    // GA track page group -  syntax: gtag('config', 'GA_TRACKING_ID', {'content_group5': '/news/sports'});
+    if ('undefined' !== typeof realReferer && '' !== document.referrer && realReferer !== document.referrer) {
+        // ONECount tracking override
+        dataLayer.push({
+            'dimension2': 'LID',
+            'dimension3': 'RGRP',
+            'dimension4': 'VID',
+            'realReferer': realReferer,
+            // track category as content group, may be replaced by dataLayer below
+            'content_group1': "Report"        });
+    } else {
+        // Standard tracking
+        dataLayer.push({
+            'dimension2': 'LID',
+            'dimension3': 'RGRP',
+            'dimension4': 'VID',
+            // track category as content group, may be replaced by dataLayer below
+            'content_group1': "Report"        });
+    }
+</script>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KVBCHJC');</script>
+        <!-- End Google Tag Manager -->
+
+        
+        <script type="text/javascript">googletag.cmd.push( function(){ googletag.pubads().setTargeting("tags",["Diplomacy","Human Rights","Report","Trump","Report"]) });</script><script type="text/javascript">googletag.cmd.push( function(){ googletag.pubads().setTargeting("postID","1008150") });</script><script type="text/javascript">googletag.cmd.push( function(){ googletag.pubads().setTargeting("author",["Colum Lynch","Robbie Gramer"]) });</script>            </head>
+    <body class="post-template-default single single-post postid-1008150 single-format-standard site-root">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBCHJC"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div id="site-wrapper">            <header class="site-header">
+                <a href="https://foreignpolicy.com/" class="logo">
+    <svg class="site-icon -inline -textonly" width="75" height="47.5" viewBox="0 0 75 47.5"><path fill="#EE3524" d="M39.4,8.7H40V0.5H0v0.8c4.5,0.2,7.4,0.8,7.4,4.9v36c0,4.2-2.9,4.8-7.4,4.9V48h26.2v-0.8c-5.2-0.3-9-0.8-9-4.9
+		V25.2h8.7c3,0,4.2,2.2,4.9,6.2h0.5V18h-0.5c-0.7,4-1.9,6.2-4.9,6.2h-8.7V1.3h13.3C35.9,1.3,37.7,2.8,39.4,8.7 M52.9,25.2h6.2
+		c11.1,0,15.9-5.8,15.9-13.1c0-6.4-4.5-11.7-17.3-11.7H40.9l0,41.8c0,4.2-2.9,4.8-7.4,4.9V48h27.3v-0.8c-5.2-0.3-9-0.8-9-4.9V1.5
+		h3.4c6.1,0,9.5,5.5,9.5,12c0,7.5-3.5,10.8-9.6,10.8h-2.4V25.2z"/></svg><!--hide-mobile-->
+<!--svg class="site-icon -inline -textonly hide-desktop" width="75" height="47.5" viewBox="0 0 75 47.5"><path fill="#FFFFFF" d="M39.4,8.7H40V0.5H0v0.8c4.5,0.2,7.4,0.8,7.4,4.9v36c0,4.2-2.9,4.8-7.4,4.9V48h26.2v-0.8c-5.2-0.3-9-0.8-9-4.9
+		V25.2h8.7c3,0,4.2,2.2,4.9,6.2h0.5V18h-0.5c-0.7,4-1.9,6.2-4.9,6.2h-8.7V1.3h13.3C35.9,1.3,37.7,2.8,39.4,8.7 M52.9,25.2h6.2
+		c11.1,0,15.9-5.8,15.9-13.1c0-6.4-4.5-11.7-17.3-11.7H40.9l0,41.8c0,4.2-2.9,4.8-7.4,4.9V48h27.3v-0.8c-5.2-0.3-9-0.8-9-4.9V1.5
+		h3.4c6.1,0,9.5,5.5,9.5,12c0,7.5-3.5,10.8-9.6,10.8h-2.4V25.2z"/></svg-->    <span class="hide">Foreign Policy Magazine</span>
+</a>
+
+                <div class="header-nav-wrapper">
+                    <nav class="header-nav">
+                        <div class="header-mobile-subnav">
+                            <ul class="manage-account account">
+                                <li class="header-menu-item">
+                                    <a href="#" class="navlink -top -user -signin FP-paywall--login">Sign In</a>
+                                </li>
+                                <li class="header-menu-item subscribe-link">
+                                    <a href="/subscribe" class="navlink -top -user -emph subscribe-prompt">
+                                        <span class="subscribe--long">Subscribe</span>
+                                        <span class="subscribe--short">Subscribe</span>
+                                    </a>
+                                    <a href="/subscribe" class="navlink -top -user -emph upgrade-to-insider-prompt">
+                                        <span class="subscribe--long">Upgrade to Insider</span>
+                                        <span class="subscribe--short">Upgrade to Insider</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-nav-main">
+                            <ul class="header-menu -top">
+                                <li class="header-menu-item hide-desktop">
+                                    <a href="/category/latest/" class="navlink red">Latest</a>
+                                </li>
+                                <li class="header-menu-item">
+                                    <a href="/channel/news/" class="navlink">News</a>
+                                </li>
+                                <li class="header-menu-item">
+                                    <a href="/channel/analysis/" class="navlink">Analysis</a>
+                                </li>
+                                <li class="header-menu-item">
+                                    <a href="/podcasts/" class="navlink">Podcasts</a>
+                                </li>
+                                <li class="header-menu-item">
+                                    <a href="/the-magazine/" class="navlink">The Magazine</a>
+                                </li>
+                                <li class="header-menu-item -parent">
+                                    <a class="navlink">Channels</a>
+                                    <ul class="header-menu -top">
+                                        <li class="header-menu-item"><a href="/channel/economics/" class="navlink">Economics</a></li>
+                                        <li class="header-menu-item"><a href="/channel/security-2/" class="navlink">Security</a></li>
+                                        <li class="header-menu-item"><a href="/category/elephants-in-the-room/" class="navlink">Elephants in the Room</a></li>
+                                        <li class="header-menu-item"><a href="/category/shadow-government/" class="navlink">Shadow Government</a></li>
+                                        <li class="header-menu-item"><a href="/channel/her-power/" class="navlink">Her Power</a></li>
+                                    </ul>
+                                    <span class="close-nav">
+                                        <img draggable="false" class="emoji" alt="❌" src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/icons/close.svg" />&nbsp;&nbsp;Close
+                                    </span>
+                                </li>
+                                <li class="header-menu-item">
+                                    <a href="/newsletters/" class="navlink">Newsletters</a>
+                                </li>
+                            </ul>
+
+                            <div class="header-insider-menu">
+                                <p><a href="/fpinsider/" class="red"><span class="insider-only-text hide">Your </span>FP Insider Access:</a></p>
+                                <ul>
+                                    <li><a href="/power-maps">Power Maps</a></li>
+                                    <li><a href="/conference-calls">Conference Calls</a></li>
+                                    <li><a href="/special-reports">Special Reports</a></li>
+                                    <li><a href="/podcasts/ispy">I Spy Plus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-mobile-subnav">
+                            <div class="expando-search">
+    <div class="icon">
+        <svg viewBox="0 0 18 18">
+	<circle class="search-icon" cx="7.5" cy="7.3" r="6.5"/>
+	<line class="search-icon" x1="12.1" y1="11.9" x2="17.5" y2="17.3"/>
+</svg>    </div>
+        <form role="search" method="get" id="searchform-mobile" class="searchform" action="/">
+    	<label class="hide" for="searchfield-mobile">Search</label>
+    	<input class="search" type="search" name="s" id="searchfield-mobile" />
+    	<input type="submit" value="search-submit" style="display:none" />
+    </form>
+</div>
+                                                        <div class="latest-posts-nav">
+                                <h2 class="title">latest</h2>
+                                <div class="grid--container">
+                                    <div class="grid--flex no-border grid__fourth">
+                                                                                <div>
+                                            <div class="excerpt-content -noimage">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/03/mexico-next-coronavirus-epicenter/">
+    <h3 class="hed">Is Mexico Is The Next Coronavirus Epicenter?</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">The country has dismissed a mass testing program as &quot;costly&quot; and &quot;useless&quot; as new daily cases reached a record high on Tuesday.</p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/morning-brief/"
+        class="department-name -excerpt">
+        Morning Brief    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/colm-quinn/"
+        rel="author"
+        class="author">
+    Colm Quinn</a></address>
+
+</div>
+</div>
+                                        </div>
+                                                                                <div>
+                                            <div class="excerpt-content -noimage">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/03/netanyahu-could-be-a-statesman-but-he-prefers-to-be-a-provocateur/">
+    <h3 class="hed">Netanyahu Could Be a Statesman, but He Prefers to Be a Provocateur</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">Israel’s prime minister has always been Janus-faced. Any hope that his good side would emerge in a unity government is quickly evaporating.</p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/analysis/argument/"
+        class="department-name -excerpt">
+        Argument    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/david-rosenberg/"
+        rel="author"
+        class="author">
+    David E. Rosenberg</a></address>
+
+</div>
+</div>
+                                        </div>
+                                                                                <div>
+                                            <div class="excerpt-content -noimage">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/03/coronavirus-boris-johnson-dominic-cummings-made-himself-irrelevant-lockdown-uk-britain/">
+    <h3 class="hed">How Dominic Cummings Made Himself Irrelevant</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">By getting caught violating lockdown rules, Boris Johnson’s advisor has thrown away a massive polling lead—and with it, his almost total power over Britain.</p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/analysis/argument/"
+        class="department-name -excerpt">
+        Argument    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/garvan-walshe/"
+        rel="author"
+        class="author">
+    Garvan Walshe</a></address>
+
+</div>
+</div>
+                                        </div>
+                                                                                <div>
+                                            <div class="excerpt-content -noimage">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/02/us-cant-monitor-aid-egypt-anti-terrorism-isis-sinai/">
+    <h3 class="hed">U.S. Unable to Monitor Military Aid to Egypt’s Anti-Terrorism Fight</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">Limits on U.S. visibility come as the Pentagon considers pulling out of Egypt’s Sinai Peninsula altogether.</p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/news/exclusive/"
+        class="department-name -excerpt">
+        Exclusive    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/jack-detsch/"
+        rel="author"
+        class="author">
+    Jack Detsch</a></address>
+
+</div>
+</div>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                <div class="read-more">
+                                    <a href="/category/latest/">See All Stories</a>
+                                </div>
+                            </div>
+
+                            <div class="header-footer-nav">
+                                <span>
+                                    <ul id="menu-footer-column-1" class="mobile-subnav-menu"><li id="menu-item-783354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-783354 header-menu-item"><a href="https://foreignpolicy.com/staff/" class="navlink">Meet the Staff</a></li>
+<li id="menu-item-988928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988928 header-menu-item"><a href="https://foreignpolicy.com/events" class="navlink">FP Events</a></li>
+<li id="menu-item-993024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993024 header-menu-item"><a href="https://foreignpolicy.com/fp-analytics/" class="navlink">FP Analytics</a></li>
+<li id="menu-item-1002749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002749 header-menu-item"><a href="https://foreignpolicy.com/fp-peacegames/" class="navlink">FP PeaceGames</a></li>
+</ul><ul id="menu-footer-column-2" class="mobile-subnav-menu"><li id="menu-item-993038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993038 header-menu-item"><a href="https://foreignpolicy.com/subscription-services/" class="navlink">Subscription Services</a></li>
+<li id="menu-item-988929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988929 header-menu-item"><a href="https://foreignpolicy.com/reprint-permissions/" class="navlink">Reprint Permissions</a></li>
+<li id="menu-item-939400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-939400 header-menu-item"><a href="https://foreignpolicy.submittable.com/submit" class="navlink">Writer&#8217;s Guidelines</a></li>
+<li id="menu-item-1002750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002750 header-menu-item"><a href="/employment-opportunities/" class="navlink">Work at FP</a></li>
+</ul>                                </span>
+                                <span>
+                                    <ul id="menu-footer-column-3" class="mobile-subnav-menu"><li id="menu-item-927960" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-927960 header-menu-item"><a href="https://fpguide.foreignpolicy.com/2020-career" class="navlink">FP Guides &#8211; Graduate Education</a></li>
+<li id="menu-item-996597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-996597 header-menu-item"><a href="https://foreignpolicy.com/fp-for-education/" class="navlink">FP For Education</a></li>
+<li id="menu-item-660886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660886 header-menu-item"><a href="/magazine" class="navlink">FP Archive</a></li>
+<li id="menu-item-660961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660961 header-menu-item"><a href="https://foreignpolicy.com/buy-back-issues/" class="navlink">Buy Back Issues</a></li>
+</ul><ul id="menu-footer-column-4" class="mobile-subnav-menu"><li id="menu-item-993026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993026 header-menu-item"><a href="https://foreignpolicy.com/advertise-with-foreign-policy/" class="navlink">Advertise with FP</a></li>
+<li id="menu-item-988932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988932 header-menu-item"><a href="https://foreignpolicy.com/privacy/" class="navlink">Privacy Policy</a></li>
+<li id="menu-item-660967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660967 header-menu-item"><a href="https://foreignpolicy.com/contact-us/" class="navlink">Contact Us</a></li>
+</ul>                                </span>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+
+                <div class="header-subnav-wrapper">
+                    <nav class="header-subnav">
+                        <ul class="header-menu -top">
+                            <li class="header-menu-item">
+                                <a href="#" class="navlink -top -user -signin FP-paywall--login">Sign In</a>
+                            </li>
+                            <li class="header-menu-item subscribe-link">
+                                <a href="/subscribe" class="navlink -top -user -emph subscribe-prompt">
+                                    <span class="subscribe--long">Subscribe</span>
+                                    <span class="subscribe--short">Subscribe</span>
+                                </a>
+                                <a href="/subscribe" class="navlink -top -user -emph upgrade-to-insider-prompt">
+                                    <span class="subscribe--long">Upgrade to Insider</span>
+                                    <span class="subscribe--short">Upgrade</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="expando-search">
+    <div class="icon">
+        <svg viewBox="0 0 18 18">
+	<circle class="search-icon" cx="7.5" cy="7.3" r="6.5"/>
+	<line class="search-icon" x1="12.1" y1="11.9" x2="17.5" y2="17.3"/>
+</svg>    </div>
+        <form role="search" method="get" id="searchform-desktop" class="searchform" action="/">
+    	<label class="hide" for="searchfield-desktop">Search</label>
+    	<input class="search" type="search" name="s" id="searchfield-desktop" />
+    	<input type="submit" value="search-submit" style="display:none" />
+    </form>
+</div>
+                    </nav>
+                </div>
+                
+                <button class="hamburger-button">
+    <span class="line"></span>
+    <span class="hide">Toggle display of website navigation</span>
+</button>
+
+                                <div class="header-alt-layout__title">
+                    <p class="header-alt-title">
+                                                <span class="department-title">
+                            Report:
+                        </span>
+                                                <span class="header-alt-title__desktop">
+                            With Scenes of Police Brutality, America’s Beacon to the World Winks Out                        </span>
+                        <span class="header-alt-title__mobile">
+                            With Scenes of Police Brutality, America’s B...                        </span>
+                    </p>
+                    <div class="header-social-shares">
+                        <span class="share-title">SHARE:</span>
+                        <a data-endpoint="facebook" data-title="With Scenes of Police Brutality, America’s Beacon to the World Winks Out" data-text="U.S. soft power was already dwindling under Trump. But the new wave of police violence and racial injustice may be drying up the reserves." data-url="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/" onclick="socialshares.share(this);">
+                            <img src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/icons/facebook_blue.svg" alt="Share on Facebook" class="facebook-button" />
+                        </a>
+                        <a data-endpoint="twitter" data-title="America&#039;s soft power reserves are drying up as the world. Trump&#039;s reaction to the country-wide protests is only making things worse" data-text="America&#039;s soft power reserves are drying up as the world. Trump&#039;s reaction to the country-wide protests is only making things worse" data-url="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/" onclick="socialshares.share(this);">
+                            <img src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/icons/twitter_blue.svg" alt="Share on Twitter" class="twitter-button" />
+                        </a>
+                        <a data-endpoint="linkedin" data-title="With Scenes of Police Brutality, America’s Beacon to the World Winks Out" data-text="U.S. soft power was already dwindling under Trump. But the new wave of police violence and racial injustice may be drying up the reserves." data-url="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/" onclick="socialshares.share(this);">
+                            <img src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/icons/linkedin_blue.svg" alt="Share on LinkedIn" class="linkedin-button" />
+                        </a>
+                        <a href="#" title="Print" onclick="window.print();">
+                            <img src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/icons/print_black.svg" alt="Print this page" class="print-button" />
+                        </a>
+                        <a href="mailto:?subject=Check%20out%20this%20story%20on%20Foreign%20Policy&amp;body=With Scenes of Police Brutality, America’s Beacon to the World Winks Out%20-%20https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/%2F" title="Share via Email">
+                            <img src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/icons/email_black.svg" alt="Share via Email" class="email-button" />
+                        </a>
+                                            </div>
+                </div>
+                        
+
+        </header>
+
+<script type="text/javascript">/* Load GPT asynchronously */var googletag = googletag || {};googletag.cmd = googletag.cmd || [];(function() {var gads = document.createElement("script");gads.async = true;gads.type = "text/javascript";var useSSL = "https:" == document.location.protocol;gads.src = (useSSL ? "https:" : "http:") +"//securepubads.g.doubleclick.net/tag/js/gpt.js";var node = document.getElementsByTagName("script")[0];node.parentNode.insertBefore(gads, node);})();googletag.cmd.push( function() { window.FP_gtagBannerSlots = {};/* Define a size mapping object. The first parameter to addSize is a viewport size, while the second is a list of allowed ad sizes. */var mappingMobileFooter = googletag.sizeMapping()./* Mobile fixed footer ad */addSize([320, 50], [320, 50]).build();var mappingSidebar = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250]).build();var mappingSidebarLarge = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250])./* Taller desktop sidebar and mobile ad */addSize([300, 600], [[300, 250], [300, 600]]).build();var mappingMainLarge = googletag.sizeMapping()./* Do not display these ads on smaller screens */addSize([0, 0], [])./* Small banner ad */addSize([728, 90], [728, 90])./* Large banner ad */addSize([970, 90], [[970, 90], [728, 90]]).build();var mappingMainLargeAndSmall = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250])./* Small banner ad */addSize([728, 90], [728, 90])./* Large banner ad */addSize([970, 90], [[970, 90], [728, 90]]).build();var mappingMainSmall = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250])./* Small banner ad */addSize([728, 90], [])./* Large banner ad */addSize([970, 90], []).build();googletag.defineSlot("/7971222/global_superleaderboard_top", [[970, 90], [728, 90]], "div-gpt-ad-1452807828370-0").defineSizeMapping(mappingMainLarge).addService(googletag.pubads());googletag.pubads().disableInitialLoad();googletag.pubads().enableLazyLoad({fetchMarginPercent: 0,renderMarginPercent: 0,mobileScaling: 2.0});
+			googletag.enableServices(); } );</script><div id="div-gpt-ad-1452807828370-0" class="home-ad-region-1 _970">
+
+			<script type="text/javascript">
+
+				googletag.cmd.push( function() {
+
+					googletag.display( "div-gpt-ad-1452807828370-0" );
+
+				} );
+
+			</script>
+
+		</div>
+<div id="main" data-context="article" class="default default_text_style text_above_photo  ">
+
+	<div class="post-content" data-post-id="1008150" data-premium="no" data-premium-trigger="yes" data-whitelist="">
+
+		<article class="article" data-post-id="1008150" data-post-url="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/" data-lfcollectionmeta="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IldpdGggU2NlbmVzIG9mIFBvbGljZSBCcnV0YWxpdHksIEFtZXJpY2FcdTIwMTlzIEJlYWNvbiB0byB0aGUgV29ybGQgV2lua3MgT3V0IiwidXJsIjoiaHR0cHM6XC9cL2ZvcmVpZ25wb2xpY3kuY29tXC8yMDIwXC8wNlwvMDFcL3Byb3Rlc3RzLXRydW1wLXNvZnQtcG93ZXItd2FuZXMtcmFjaWFsLWluanVzdGljZS1wb2xpY2UtdmlvbGVuY2UtZ2VvcmdlLWZsb3lkLXdvcmxkLXJlYWN0aW9uLXBvbGljZS1icnV0YWxpdHlcLyIsInN0cmVhbV90eXBlIjoibGl2ZWNvbW1lbnRzIiwiY2hlY2tzdW0iOiJkNDE4YWQ3MWEwNDgxNDY5YmU1NTM4ZjZhYjBiYzdjYSIsImFydGljbGVJZCI6ImZvcmVpZ25wb2xpY3lfd3BfMTAwODE1MCJ9.fWhbf0et_2DZ3dFXiiJ_O53WHghhWBDMlb8NYR7DBtY" data-lfchecksum="d418ad71a0481469be5538f6ab0bc7ca" data-lfarticleid="foreignpolicy_wp_1008150">
+
+			<div class="ip-access-note-in-post">
+				<div>
+					<p><b>DON'T LOSE ACCESS:<br />Your IP access to ForeignPolicy.com will expire on June 15</b>.</p>
+					<p>To ensure uninterrupted reading, please contact Rachel Mines, sales director, at <a href="mailto:rachel.mines@foreignpolicy.com">rachel.mines@foreignpolicy.com</a>.</p>
+				</div>
+			</div>
+
+			
+				
+
+
+<a
+    href="https://foreignpolicy.com/category/news/report/"
+    class="department-name">
+    <h3 class="department">Report</h3></a>
+<span
+    class="hed-heading"
+    href="https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/">
+    <h1 class="hed">With Scenes of Police Brutality, America’s Beacon to the World Winks Out</h1>
+</span>
+<h2 class="dek-heading">U.S. soft power was already dwindling under Trump. But the new wave of police violence and racial injustice may be drying up the reserves. </h2>
+<div class="meta-data ">
+    <address class="author-list">
+    <span class="pre">By</span>
+    <a
+        href="https://foreignpolicy.com/author/colum-lynch/"
+        rel="author"
+        class="author">
+    Colum Lynch</a><span class="separator">,</span> <a
+        href="https://foreignpolicy.com/author/robbie-gramer/"
+        rel="author"
+        class="author">
+    Robbie Gramer</a></address>
+    <span class="separator">|</span>
+    <time
+    pubdate
+    datetime="2020-06-01"
+    title="June 1st, 2020"
+    class="date-time">
+June 1, 2020, 3:52 PM</time>
+</div>
+
+
+
+
+				<figure class="figure-image ">
+            <span
+            style="padding-bottom:66.666666666667%;
+        "
+                class="image-attachment -ratioscale  horizontal-orientation">
+        <img
+            data-sizes="(max-width: 800px) 100vw, 800px"
+            data-srcset="https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?quality=90 1500w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=150,100&amp;quality=90 150w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=550,367&amp;quality=90 550w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=768,512&amp;quality=90 768w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=400,267&amp;quality=90 400w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=401,267&amp;quality=90 401w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=800,533&amp;quality=90 800w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=275,183&amp;quality=90 275w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=325,217&amp;quality=90 325w, https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?resize=600,400&amp;quality=90 600w"
+            data-src="https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?w=800&#038;h=533&#038;quality=90"
+            sizes="(max-width: 800px) 100vw, 800px"
+            src=""
+            alt="A man holds up his fist during a protest near the White House in Washington on May 31."
+            style="width:auto;"
+            class="image -fit -lazy"
+        >
+        <noscript>
+            <img
+                src="https://foreignpolicy.com/wp-content/uploads/2020/06/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?w=800&#038;h=533&#038;quality=90"
+                alt="A man holds up his fist during a protest near the White House in Washington on May 31."
+                class="image -fit-3-2">
+        </noscript>
+        </span>
+                    <div class="caption">
+            A man holds up his fist during a protest near the White House in Washington on May 31.             <span class="attribution">Alex Wong/Getty Images</span>
+        </div>
+    </figure>
+
+
+				
+			
+			
+						
+			<div class="post-content-main initial-drop-cap shares-position">
+				
+				
+				<p><span style="font-weight: 400;">A world that once looked to the United States to champion democracy and human rights watched with dismay and alarm as police departments across the nation unleashed violent crackdowns on anti-police protesters, targeting looters, demonstrators, and journalists alike, even as President Donald Trump on Monday criticized state governors for their “weak” response. </span></p>
+<p><span style="font-weight: 400;">Meanwhile, from </span><a href="https://www.cbc.ca/news/canada/british-columbia/vancouver-police-protest-1.5592620"><span style="font-weight: 400;">Canada</span></a><span style="font-weight: 400;"> to </span><a href="https://www.theguardian.com/world/2020/jun/01/thousands-in-new-zealand-protest-against-george-floyd-killing"><span style="font-weight: 400;">New Zealand</span></a><span style="font-weight: 400;">, tens of thousands of people gathered around the world to protest the killing of an African American man, George Floyd, who was suffocated on May 25 in Minneapolis by a white police officer who kneeled on his neck. The officer has since been charged with murder. Floyd’s death a week ago touched off U.S. demonstrations that swiftly turned into riots in more than 100 American cities. But memorials also sprouted up in cities around the globe, from a candlelight </span><a href="https://twitter.com/Shirinj/status/1266753355721904129?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1266753355721904129&amp;ref_url=https%3A%2F%2Fwww.npr.org%2F2020%2F05%2F31%2F866428272%2Fgeorge-floyd-reverberates-globally-thousands-protest-in-germany-u-k-canada"><span style="font-weight: 400;">vigil</span></a><span style="font-weight: 400;"> in Mashhad, Iran, to a mural painted on the Berlin Wall bearing Floyd’s likeness along with his dying plea: “I can’t breathe.”</span></p>
+<p><span style="font-weight: 400;">What shocked observers around the world more than anything was the often brutal response of police, some of whom were videotaped ramming demonstrators with SUVs and tasing college students in their car. One heavily armed Minneapolis police officer fired paint rounds Saturday night at a resident watching the events unfold from her porch while another officer called out, “Light ’em up.”</span></p>
+<p><span style="font-weight: 400;">Trump only appeared to encourage official violence, telling U.S. governors in a video conference call on Monday: “</span><span style="font-weight: 400;">You have to dominate, if you don’t dominate you’re wasting your time. They’re going to run over you. You’re going to look like a bunch of jerks. You have to dominate.”</span></p>
+<p><span style="font-weight: 400;">The overwhelmingly negative international reaction to the crackdown showed how far the United States’ reputation has fallen in the eyes of the world under the Trump presidency, evoking the international opprobrium directed at previous U.S. governments during the Vietnam War and civil rights era, when police in Southern states turned attack dogs on black freedom marchers. </span></p>
+<p><span style="font-weight: 400;">“The erosion of U.S. global leadership has been faster than expected,” a senior European diplomat told </span><i><span style="font-weight: 400;">Foreign Policy</span></i><span style="font-weight: 400;">. “Military supremacy and financial leverage is still there. However, reserves of political and ‘soft’ power are being depleted rapidly.”</span></p>
+<p><span style="font-weight: 400;">“This is placing traditional allies in a difficult position—trying to cling to a traditional value-based connection [with the United States] which is diminishing fast,” the diplomat said. “Europe is hoping for a turning point, although everyone is realizing that there is no absolute return to 2016.” </span></p>
+<p><span style="font-weight: 400;">The protests have also laid bare to the world deeply rooted societal problems in the United States, undercutting America’s standing as a standard-bearer of modern liberal values, including the promotion of human rights, democracy, and free-market capitalism.</span></p>
+<p><span style="font-weight: 400;">“I’m very concerned about how this will impact our leadership and our voice overseas,” said Linda Thomas-Greenfield, a former career diplomat who was the seniormost-ranking African American woman in the U.S. foreign service when she retired in 2017. “People look to the United States for leadership, they look to us for support. They are worried that we’re losing ground.”</span></p>
+<p><span style="font-weight: 400;">In his call with the governors, Trump urged them to increase law enforcement efforts and noted that foreign countries were watching—and judging. “You know, when other countries watch this, they’re watching this, the next day wow, they’re really a pushover. And we can’t be a pushover. And we have all the resources—it’s not like we don’t have the resources. So, I don’t know what you’re doing,” he told the governors. </span></p>
+<p><span style="font-weight: 400;">Trump’s national security advisor, Robert O’Brien, said that U.S. rivals were trying to exploit the situation and rebuked their criticisms as hypocritical. “I want to tell our foreign adversaries, whether it’s Zimbabwe or China, that the difference between us and you is that that officer who killed George Floyd … he’ll be investigated and he’ll be prosecuted, and he’s going to receive a fair trial,” O’Brien told ABC’s on Sunday. “The American people that want to go out and protest peacefully, they’re going to be allowed to seek redress from their government. They’re not going to be thrown in jail for peaceful protesting.” (Peaceful protesters and <a href="https://cpj.org/2020/05/cpj-condemns-targeting-of-journalists-covering-protests-across-the-u-s/">journalists</a> were among some 4,000 arrested across the United States over the weekend.)</span></p>
+<p><span style="font-weight: 400;">Some senior U.S. diplomats have weighed in from afar, explaining how they defend American values abroad even as they condemn Floyd’s killing and struggle to grapple with the reality of racial injustice at home.</span></p>
+<p><span style="font-weight: 400;">“As an African American, for as long as I can remember I have known that my rights and my body were not fully my own. I have also always known that America, conceived in liberty, has always aspired to be better—a shining city on a hill—and that is why I have dedicated my life to her service,” Brian Nichols, a senior U.S. diplomat and the ambassador to Zimbabwe, wrote in a letter the embassy published.</span><b> </b></p>
+<p><span style="font-weight: 400;">Nichols’s letter reflects how U.S. diplomatic outposts abroad are now </span><a href="https://foreignpolicy.com/2020/05/29/africa-countries-condemn-george-floyd-minneapolis-killing-diplomatic-fallout-racial-injustice-police-violence/"><span style="font-weight: 400;">being compelled</span></a><span style="font-weight: 400;"> to address domestic strife amid a chorus of outcry from foreign countries on systemic racial injustices and police violence in the United States.</span></p>
+<p><span style="font-weight: 400;">In his letter, Nichols tied the struggle of protesters in the United States to civil society activists detained and abused by the Zimbabwean government, noting that a police officer has been charged with murder in Floyd’s death, while Zimbabwean authorities abducted and assaulted democracy activists without consequence.</span></p>
+<p><span style="font-weight: 400;">“In a long, unbroken line of black men and women, George Floyd gave the last full measure of devotion to point us toward a new birth in freedom,” he wrote. “Americans will continue to speak out for justice whether at home or abroad. We can meet the ideals of our founding, we will change this world for the better.”</span></p>
+<p><span style="font-weight: 400;">Thomas-Greenfield, however, said that while the messages coming from U.S. diplomatic outposts abroad are important, they don’t make up for the void in Washington.</span></p>
+<p><span style="font-weight: 400;">“It has to be extraordinarily hard for ambassadors to try to explain what is happening in the United States in the context of human rights and justice, where we had been the voice that people have looked to,” she said. “They’re doing the best with what they have.” </span></p>
+<p><span style="font-weight: 400;">The scenes of protesters over the weekend pressing in on the White House, where the president was reported to be holed up in a secure bunker, served to highlight the isolation for a president who has found little solidarity from allies. </span></p>
+<p><span style="font-weight: 400;">Indeed, Trump’s apparent failure to demonstrate leadership over the issue of police abuse and nationwide street protests was only the latest blow to a reputation that was already in tatters around the world, following his fumbling, “America first” approach to the global coronavirus pandemic and his repeated insults to U.S. allies as well as his withdrawals from one major agreement after another—from the Paris climate pact to, most recently, the Open Skies Treaty. Last month, Trump abruptly announced that he would also seek to withdraw from the World Health Organization, a move that has virtually no support from key allies. Trump was also forced to reschedule a June Camp David summit of the G-7 industrial powers after Germany’s Chancellor Angela Merkel declined to participate, citing the health risks of the ongoing pandemic—but the U.S. president indicated he would invite non-member nations to the rescheduled meeting, including Russia.</span></p>
+<p><span style="font-weight: 400;">Trump’s closest European ally, British Prime Minister Boris Johnson, on Monday appeared to break with his U.S. counterpart, threatening to block any move by the White House to restore Russia’s membership in the big-power club. Asked about Trump’s call for expanding the G-7 membership and inviting Russia, which was forced out of the group following its annexation of Crimea, Johnson’s chief spokesman said, “We are yet to see evidence of [Russia’s] changed behavior which would justify readmittance.”</span></p>
+<p><span style="font-weight: 400;">The latest string of police violence and protests are “a piece of a larger puzzle,” said Thomas-Greenfield. “I think our face in the world had already diminished … because of our lack of leadership in the world and on this issue it’s just an added reason for countries to question our leadership”</span></p>
+<p><span style="font-weight: 400;">U.S. adversaries—many of which are regarded to have the worst human rights records in the world—piled onto the protests, relishing the sight of a rival power engulfed in the pandemic lockdown and social unrest that exposed enduring racism and inequality.</span></p>
+<p><span style="font-weight: 400;">“Some don’t think #BlackLivesMatter,” </span><a href="https://twitter.com/JZarif/status/1266782297887514624"><span style="font-weight: 400;">tweeted</span></a><span style="font-weight: 400;"> Mohammad Javad Zarif, Iran’s foreign minister, sharing a marked-up version of a statement from the U.S. State Department on protests in Iran. “To those of us who do: it is long overdue for the entire world to wage war against racism. Time for a #WorldAgainstRacism.” </span></p>
+<p><span style="font-weight: 400;">U.S. Secretary of State Mike Pompeo, a longtime critic of same-sex marriage who once </span><a href="https://www.google.com/amp/s/www.washingtonpost.com/news/the-fix/wp/2018/04/12/cory-booker-grills-mike-pompeo-on-whether-he-believes-being-gay-is-a-perversion/%3foutputType=amp"><span style="font-weight: 400;">described</span></a><span style="font-weight: 400;"> homosexuality as a “perversion,” </span><a href="https://twitter.com/SecPompeo/status/1266875321590087685"><span style="font-weight: 400;">then countered</span></a><span style="font-weight: 400;">: “You hang homosexuals, stone women and exterminate Jews.”</span></p>
+<p><span style="font-weight: 400;">Beijing, still reeling from the fallout of </span><a href="https://foreignpolicy.com/2020/04/15/chinas-racism-is-wrecking-its-success-in-africa/"><span style="font-weight: 400;">racist attacks</span></a><span style="font-weight: 400;"> against African migrants in China in April, seized on the U.S. protests to detract attention from its own crackdown on pro-democratic demonstrators in Hong Kong. When State Department spokesperson Morgan Ortagus chided Beijing on Twitter for reneging on its commitment to grant political freedom to the former British colony, her Chinese counterpart, Hua Chunying, <a href="https://twitter.com/SpokespersonCHN/status/1266741986096107520">retweeted</a> the message with the line “I can’t breathe.”</span></p>
+<p><span style="font-weight: 400;">“All lives matter,” she <a href="https://twitter.com/SpokespersonCHN/status/1267417514335539201">added</a> in a subsequent tweet. “We stand firmly with our African friends. We strongly oppose all forms of racial discrimination and inflammatory expressions of racism and hatred.”</span></p>
+<p><span style="font-weight: 400;">The official social media accounts of the Russian Embassy in Washington condemned police violence toward members of the media after a correspondent from the Russian state-owned news agency Ria Novosti was hit with pepper spray. “We are concerned about the increased number of police violence cases and unjustified detentions of journalists during their coverage of protests in the United States that broke out after the murder of George Floyd,” the embassy posted on </span><a href="https://www.facebook.com/RusEmbUSA/posts/1321082974768756"><span style="font-weight: 400;">Facebook</span></a><span style="font-weight: 400;">. </span></p>
+<p><span style="font-weight: 400;">The post came just days after several prominent Russian reporters were detained and later released for holding one-person pickets in support of the arrested Russian journalist Ilya Azar. Azar was arrested and sentenced to 15 days’ imprisonment earlier last week for holding a single-person demonstration against the imprisonment of activist Vladimir Vorontsov, who runs an </span><a href="https://www.themoscowtimes.com/2020/05/12/officers-launch-flashmob-to-demand-freedom-for-russias-police-ombudsman-a70244"><span style="font-weight: 400;">online community</span></a><span style="font-weight: 400;"> that seeks to expose abuses of power within Russian law enforcement.</span></p>
+<p><span style="font-weight: 400;">For many traditional allies, the events in the United States underscore the degree to which the rest of the world is being forced to align themselves with two increasingly problematic superpowers. “The choice is between an unreliable and increasingly transactional and autocratic democracy (U.S.) and a reliably transactional and unforgiving autocratic rising power (China),” one senior Asian diplomat told </span><i><span style="font-weight: 400;">Foreign Policy.</span></i></p>
+<p><span style="font-weight: 400;">“The United States is and appears to the world divided, diminished, &amp; distracted,” Richard Haass, the president of the Council on Foreign Relations, <a href="https://twitter.com/RichardHaass/status/1267408629050871809">tweeted</a> on Monday. “Hard to believe we will not be challenged somewhere somehow by someone wanting to take advantage of these circumstances. To add a 4th ‘D,’ these are truly dangerous times.” </span></p>
+<p><i><span style="font-weight: 400;">Staff reporter Amy Mackinnon contributed to this report.</span></i></p>
+<div data-fp-lazy-load-image></div>							</div>
+			
+			
+<section class="bio-no-photo">
+	<div>
+		<p><strong>Colum Lynch</strong> is a senior staff writer at <em>Foreign Policy</em>.&nbsp;Twitter:&nbsp;<a href="http://www.twitter.com/columlynch" target="_blank">@columlynch</a></p>	</div>
+	<div class="last-author">
+		<p><strong>Robbie Gramer</strong> is a diplomacy and national security reporter at <em>Foreign Policy</em>.&nbsp;Twitter:&nbsp;<a href="http://www.twitter.com/RobbieGramer" target="_blank">@RobbieGramer</a></p>	</div>
+</section>
+			<div class="the-comments">
+				<a href="/comments_view/?view_post_comments=https%3A%2F%2Fforeignpolicy.com%2F2020%2F06%2F01%2Fprotests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality%2F" style="color:#fff">View<br />Comments</a>
+			</div>
+
+			<div class="the-tags">
+    <span class="title">Tags:</span>
+    <a
+        href="https://foreignpolicy.com/tag/diplomacy/"
+        class="tag">
+        Diplomacy</a><span class="separator">,</span><a
+        href="https://foreignpolicy.com/tag/human-rights/"
+        class="tag">
+        Human Rights</a><span class="separator">,</span><a
+        href="https://foreignpolicy.com/tag/report/"
+        class="tag">
+        Report</a><span class="separator">,</span><a
+        href="https://foreignpolicy.com/tag/trump/"
+        class="tag">
+        Trump</a></div>
+
+						<div class="taboola">
+				<div class="taboola--inner border-top">
+					<p class="taboola--heading">Trending Now <a href="http://www.taboola.com/" class="taboola--subheading" target="_blank">Sponsored Links by Taboola</a></p>
+					<div id="taboola-below-article-thumbs"></div>
+					<div class="taboola--subheading taboola--subheading__right">By Taboola</div>
+				</div>
+			</div>
+
+			<div class="taboola taboola__fp">
+				<div class="taboola--inner">
+					<p class="taboola--heading heading__red">More from Foreign Policy</p>
+					<div id="taboola-below-article-thumbs_fp"></div>
+					<div class="taboola--subheading taboola--subheading__right">By Taboola</div>
+				</div>
+			</div>
+			<div class="fp-related-wrapper related-articles--no-video">
+    <div class="related-articles">
+        <p class="heading-container"><span class="heading">Read More</span></p>
+                    <div class="blog-list-layout" data-post-id="1007965">
+                <div class="excerpt-content--list --first-post content-block" data-post-id="1007965">
+    <figure class="figure-image -nocaption">
+            <a
+            style="padding-bottom:66.666666666667%;
+        "
+                    href="https://foreignpolicy.com/2020/05/29/africa-countries-condemn-george-floyd-minneapolis-killing-diplomatic-fallout-racial-injustice-police-violence/"
+                class="image-attachment -ratioscale  horizontal-orientation">
+        <img
+            data-sizes="(max-width: 800px) 100vw, 800px"
+            data-srcset="https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?quality=80 1500w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=150,99&amp;quality=80 150w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=550,363&amp;quality=80 550w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=768,506&amp;quality=80 768w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=400,264&amp;quality=80 400w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=401,264&amp;quality=80 401w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=800,527&amp;quality=80 800w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=275,181&amp;quality=80 275w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=325,214&amp;quality=80 325w, https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?resize=600,396&amp;quality=80 600w"
+            data-src="https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?w=800&#038;h=527&#038;quality=80"
+            sizes="(max-width: 800px) 100vw, 800px"
+            src=""
+            alt="Protesters face police in Minneapolis."
+            style="width:auto;"
+            class="image -fit -lazy"
+        >
+        <noscript>
+            <img
+                src="https://foreignpolicy.com/wp-content/uploads/2020/05/GettyImages-1215795659.jpg?w=800&#038;h=527&#038;quality=80"
+                alt="Protesters face police in Minneapolis."
+                class="image -fit-3-2">
+        </noscript>
+        </a>
+        </figure>
+    <div class="list-text">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/05/29/africa-countries-condemn-george-floyd-minneapolis-killing-diplomatic-fallout-racial-injustice-police-violence/">
+    <h3 class="hed">African Leaders, Joined by U.S. Embassies, Condemn Police Killing in Minneapolis</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">In highly unusual move, U.S. diplomats in Uganda and Kenya issue public pronouncements expressing distress over the death of George Floyd.</p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/news/report/"
+        class="department-name -excerpt">
+        Report    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/robbie-gramer/"
+        rel="author"
+        class="author">
+    Robbie Gramer</a></address>
+
+</div>
+    </div>
+</div>
+            </div> 
+                    <div class="blog-list-layout" data-post-id="1008027">
+                <div class="excerpt-content--list content-block" data-post-id="1008027">
+    <figure class="figure-image -nocaption">
+            <a
+            style="padding-bottom:66.666666666667%;
+        "
+                    href="https://foreignpolicy.com/2020/05/30/americas-race-problem-erupts-anew-layered-with-covid-19-tensions/"
+                class="image-attachment -ratioscale  horizontal-orientation">
+        <img
+            data-sizes="(max-width: 800px) 100vw, 800px"
+            data-srcset="https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?quality=80 5472w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=150,100&amp;quality=80 150w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=550,367&amp;quality=80 550w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=768,512&amp;quality=80 768w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=1536,1024&amp;quality=80 1536w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=2048,1365&amp;quality=80 2048w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=400,267&amp;quality=80 400w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=401,267&amp;quality=80 401w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=800,533&amp;quality=80 800w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=1920,1280&amp;quality=80 1920w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=275,183&amp;quality=80 275w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=325,217&amp;quality=80 325w, https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?resize=600,400&amp;quality=80 600w"
+            data-src="https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?w=800&#038;h=533&#038;quality=80"
+            sizes="(max-width: 800px) 100vw, 800px"
+            src=""
+            alt="A protester carries a U.S. flag past a burning building in Minneapolis on May 29 after a night of protests in reaction to the police slaying of George Floyd."
+            style="width:auto;"
+            class="image -fit -lazy"
+        >
+        <noscript>
+            <img
+                src="https://foreignpolicy.com/wp-content/uploads/2020/05/minneapolis-protest-flag-AP_20150187741174.jpg?w=800&#038;h=533&#038;quality=80"
+                alt="A protester carries a U.S. flag past a burning building in Minneapolis on May 29 after a night of protests in reaction to the police slaying of George Floyd."
+                class="image -fit-3-2">
+        </noscript>
+        </a>
+        </figure>
+    <div class="list-text">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/05/30/americas-race-problem-erupts-anew-layered-with-covid-19-tensions/">
+    <h3 class="hed">America’s Race Problem Erupts Anew, Layered With Coronavirus Tensions</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">Rioting in the aftermath of another police-inflicted death—this time in one of the most prosperous U.S. cities—reveals how little progress has been made. </p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/news/report/"
+        class="department-name -excerpt">
+        Report    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/allison-carlson/"
+        rel="author"
+        class="author">
+    Allison Carlson</a><span class="separator">,</span> <a
+        href="https://foreignpolicy.com/author/michael-hirsh/"
+        rel="author"
+        class="author">
+    Michael Hirsh</a></address>
+
+</div>
+    </div>
+</div>
+            </div> 
+                    <div class="blog-list-layout" data-post-id="1002483">
+                <div class="excerpt-content--list content-block" data-post-id="1002483">
+    <figure class="figure-image -nocaption">
+            <a
+            style="padding-bottom:66.666666666667%;
+        "
+                    href="https://foreignpolicy.com/2020/04/15/chinas-racism-is-wrecking-its-success-in-africa/"
+                class="image-attachment -ratioscale  horizontal-orientation">
+        <img
+            data-sizes="(max-width: 800px) 100vw, 800px"
+            data-srcset="https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?quality=80 3000w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=150,100&amp;quality=80 150w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=550,366&amp;quality=80 550w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=768,511&amp;quality=80 768w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=1538,1024&amp;quality=80 1538w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=1536,1023&amp;quality=80 1536w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=2048,1364&amp;quality=80 2048w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=400,266&amp;quality=80 400w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=401,267&amp;quality=80 401w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=800,533&amp;quality=80 800w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=1920,1279&amp;quality=80 1920w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=275,183&amp;quality=80 275w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=325,216&amp;quality=80 325w, https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?resize=600,400&amp;quality=80 600w"
+            data-src="https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?w=800&#038;h=533&#038;quality=80"
+            sizes="(max-width: 800px) 100vw, 800px"
+            src=""
+            alt="Nigerian President Muhammadu Buhari shakes hands with Chinese Premier Li Keqiang before their meeting in Beijing on April 13, 2016."
+            style="width:auto;"
+            class="image -fit -lazy"
+        >
+        <noscript>
+            <img
+                src="https://foreignpolicy.com/wp-content/uploads/2020/04/china-nigeria-diplomatic-meeting.jpg?w=800&#038;h=533&#038;quality=80"
+                alt="Nigerian President Muhammadu Buhari shakes hands with Chinese Premier Li Keqiang before their meeting in Beijing on April 13, 2016."
+                class="image -fit-3-2">
+        </noscript>
+        </a>
+        </figure>
+    <div class="list-text">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/04/15/chinas-racism-is-wrecking-its-success-in-africa/">
+    <h3 class="hed">China’s Racism Is Wrecking Its Success in Africa</h3>
+</a>
+<div class="dek-heading -excerpt">
+    <p class="dek">The expulsion of Africans from their homes in southern China is causing a diplomatic storm.</p>
+</div>
+<div class="meta-data -excerpt">
+        <a
+        href="https://foreignpolicy.com/category/analysis/argument/"
+        class="department-name -excerpt">
+        Argument    </a>
+        <span class="separator">|</span>
+        <address class="author-list -excerpt">
+    <a
+        href="https://foreignpolicy.com/author/celine-sui/"
+        rel="author"
+        class="author">
+    Celine Sui</a></address>
+
+</div>
+    </div>
+</div>
+            </div> 
+            </div>
+</div>
+
+		</article>
+
+		
+<div class="sidebar">
+	<div>
+		<script type="text/javascript">/* Load GPT asynchronously */var googletag = googletag || {};googletag.cmd = googletag.cmd || [];(function() {var gads = document.createElement("script");gads.async = true;gads.type = "text/javascript";var useSSL = "https:" == document.location.protocol;gads.src = (useSSL ? "https:" : "http:") +"//securepubads.g.doubleclick.net/tag/js/gpt.js";var node = document.getElementsByTagName("script")[0];node.parentNode.insertBefore(gads, node);})();googletag.cmd.push( function() { window.FP_gtagBannerSlots = {};/* Define a size mapping object. The first parameter to addSize is a viewport size, while the second is a list of allowed ad sizes. */var mappingMobileFooter = googletag.sizeMapping()./* Mobile fixed footer ad */addSize([320, 50], [320, 50]).build();var mappingSidebar = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250]).build();var mappingSidebarLarge = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250])./* Taller desktop sidebar and mobile ad */addSize([300, 600], [[300, 250], [300, 600]]).build();var mappingMainLarge = googletag.sizeMapping()./* Do not display these ads on smaller screens */addSize([0, 0], [])./* Small banner ad */addSize([728, 90], [728, 90])./* Large banner ad */addSize([970, 90], [[970, 90], [728, 90]]).build();var mappingMainLargeAndSmall = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250])./* Small banner ad */addSize([728, 90], [728, 90])./* Large banner ad */addSize([970, 90], [[970, 90], [728, 90]]).build();var mappingMainSmall = googletag.sizeMapping()./* Desktop sidebar and mobile ad */addSize([300, 250], [300, 250])./* Small banner ad */addSize([728, 90], [])./* Large banner ad */addSize([970, 90], []).build();googletag.defineSlot("/7971222/default_fp2_bigbox_ATF", [[300, 250],[300, 600]], "div-gpt-ad-1385102181603-0").defineSizeMapping(mappingSidebarLarge).addService(googletag.pubads());googletag.defineSlot("/7971222/default_fp2_bigbox_CENTER", [300, 250], "div-gpt-ad-1390433129530-0").defineSizeMapping(mappingSidebar).addService(googletag.pubads());googletag.defineSlot("/7971222/default_fp2_bigbox_BTF", [[300, 250],[300, 600]], "div-gpt-ad-1385071228815-0").defineSizeMapping(mappingSidebarLarge).addService(googletag.pubads());googletag.pubads().disableInitialLoad();googletag.pubads().enableLazyLoad({fetchMarginPercent: 0,renderMarginPercent: 0,mobileScaling: 2.0});
+			googletag.enableServices(); } );</script><div id="div-gpt-ad-1385102181603-0" class="channel-sidebar-big-box-ad _300">
+
+				<script type="text/javascript">
+
+					googletag.cmd.push( function() {
+
+						googletag.display( "div-gpt-ad-1385102181603-0" );
+
+					} );
+
+				</script>
+
+			</div>
+		<div class="sidebar-list">
+    <div class="title">Latest</div>
+<div class="excerpt-content">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/03/mexico-next-coronavirus-epicenter/">
+    <h3 class="hed">Is Mexico Is The Next Coronavirus Epicenter?</h3>
+</a>
+<div class="meta-data -ago">
+    <time
+    pubdate
+    datetime="2020-06-03"
+    title="June 3rd, 2020"
+    class="date-time">
+June 3, 2020, 4:42 AM</time>
+</div>
+</div>
+<div class="excerpt-content">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/03/netanyahu-could-be-a-statesman-but-he-prefers-to-be-a-provocateur/">
+    <h3 class="hed">Netanyahu Could Be a Statesman, but He Prefers to Be a Provocateur</h3>
+</a>
+<div class="meta-data -ago">
+    <time
+    pubdate
+    datetime="2020-06-03"
+    title="June 3rd, 2020"
+    class="date-time">
+June 3, 2020, 4:13 AM</time>
+</div>
+</div>
+<div class="excerpt-content">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/03/coronavirus-boris-johnson-dominic-cummings-made-himself-irrelevant-lockdown-uk-britain/">
+    <h3 class="hed">How Dominic Cummings Made Himself Irrelevant</h3>
+</a>
+<div class="meta-data -ago">
+    <time
+    pubdate
+    datetime="2020-06-03"
+    title="June 3rd, 2020"
+    class="date-time">
+June 3, 2020, 3:47 AM</time>
+</div>
+</div>
+<div class="excerpt-content">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/02/us-cant-monitor-aid-egypt-anti-terrorism-isis-sinai/">
+    <h3 class="hed">U.S. Unable to Monitor Military Aid to Egypt’s Anti-Terrorism Fight</h3>
+</a>
+<div class="meta-data -ago">
+    <time
+    pubdate
+    datetime="2020-06-02"
+    title="June 2nd, 2020"
+    class="date-time">
+June 2, 2020, 5:14 PM</time>
+</div>
+</div>
+<div class="excerpt-content">
+    <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/02/as-economies-reopen-its-the-law-of-the-jungle-for-workers/">
+    <h3 class="hed">As Economies Reopen, It&#8217;s the Law of the Jungle for Workers</h3>
+</a>
+<div class="meta-data -ago">
+    <time
+    pubdate
+    datetime="2020-06-02"
+    title="June 2nd, 2020"
+    class="date-time">
+June 2, 2020, 3:47 PM</time>
+</div>
+</div>
+</div>
+
+<div class="sidebar-list-more">
+    <a href="/category/latest/">See All Stories</a>
+</div>
+	</div>
+	<div class="fp-trending-wrapper trending-articles--no-video">
+    <div class="trending-articles top-ten-stories">
+        <p><span class="heading">Trending</span></p>
+        <ol>
+                    <li class="fp-trending-content">
+                <div class="fp-trending-count">1</div>
+                <div class="title">
+                    <a href="/2020/06/03/coronavirus-boris-johnson-dominic-cummings-made-himself-irrelevant-lockdown-uk-britain/">How Dominic Cummings Made Himself Irrelevant</a>
+                                    </div>
+            </li>
+                    <li class="fp-trending-content">
+                <div class="fp-trending-count">2</div>
+                <div class="title">
+                    <a href="/2020/06/02/incels-toronto-attack-terrorism-ideological-violence/">Incels Are Radicalized and Dangerous. But Are They Terrorists?</a>
+                                    </div>
+            </li>
+                    <li class="fp-trending-content">
+                <div class="fp-trending-count">3</div>
+                <div class="title">
+                    <a href="/2020/06/02/us-presidential-election-iran-syria-bashar-al-assad/">The U.S. Election Will Determine Assad’s Future</a>
+                                    </div>
+            </li>
+                    <li class="fp-trending-content">
+                <div class="fp-trending-count">4</div>
+                <div class="title">
+                    <a href="/2020/06/02/us-cant-monitor-aid-egypt-anti-terrorism-isis-sinai/">U.S. Unable to Monitor Military Aid to Egypt’s Anti-Terrorism Fight</a>
+                                    </div>
+            </li>
+                    <li class="fp-trending-content">
+                <div class="fp-trending-count">5</div>
+                <div class="title">
+                    <a href="/2020/06/02/autocrats-idolatry-trump-protests-george-floyd-america/">Autocrats Love Using the Bible as a Prop. Americans Shouldn’t.</a>
+                                    </div>
+            </li>
+                </ol>
+    </div>
+</div>
+	<div id="div-gpt-ad-1390433129530-0" class="ad-container _300">
+
+				<script type="text/javascript">
+
+					googletag.cmd.push( function() {
+
+						googletag.display( "div-gpt-ad-1390433129530-0" );
+
+					} );
+
+				</script>
+
+			</div>
+	<div class="sidebar-list">
+    <div class="title">Voices</div>
+
+    <div class="excerpt-content">
+        <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/06/01/travel-bubbles-borders-flights-coronavirus-uk-france-air-bridge/">
+    <h3 class="hed">Welcome to a World of Bubbles</h3>
+</a>
+                <div class="meta-data -excerpt">
+            <address class="author-list -excerpt">
+                <a href="https://foreignpolicy.com/author/james-crabtree/" rel="author" class="author">
+    James Crabtree</a>            </address>
+        </div>
+    </div>
+
+    <div class="excerpt-content">
+        <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/05/30/trump-scapegoats-china-and-who-and-americans-will-suffer/">
+    <h3 class="hed">Trump Scapegoats China and WHO—and Americans Will Suffer</h3>
+</a>
+                <div class="meta-data -excerpt">
+            <address class="author-list -excerpt">
+                <a href="https://foreignpolicy.com/author/laurie-garrett/" rel="author" class="author">
+    Laurie Garrett</a>            </address>
+        </div>
+    </div>
+
+    <div class="excerpt-content last">
+        <a
+    class="hed-heading -excerpt"
+    href="https://foreignpolicy.com/2020/05/27/who-health-china-coronavirus-tedros/">
+    <h3 class="hed">Yes, Blame WHO for Its Disastrous Coronavirus Response</h3>
+</a>
+                <div class="meta-data -excerpt">
+            <address class="author-list -excerpt">
+                <a href="https://foreignpolicy.com/author/salvatore-babones/" rel="author" class="author">
+    Salvatore Babones</a>            </address>
+        </div>
+    </div>
+</div>
+
+	<div id="div-gpt-ad-1385071228815-0" class="channel-sidebar-big-box-ad _300">
+
+				<script type="text/javascript">
+
+					googletag.cmd.push( function() {
+
+						googletag.display( "div-gpt-ad-1385071228815-0" );
+
+					} );
+
+				</script>
+
+			</div></div>
+
+
+	</div>
+
+</div>
+
+<div class="piano-sticky-bar"></div>
+
+            <footer class="site-footer-wrapper">
+                <div class="site-footer">
+                    <div class="logo">
+                                    <a
+                style="padding-bottom:42%;
+        "
+                href="https://foreignpolicy.com/"
+            class="image-attachment -ratioscale">
+        <img
+            data-srcset=""
+            data-src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/logos/FP.svg"
+            alt="Foreign Policy Magazine"
+            class="image -fit -lazy">
+        <noscript>
+            <img
+                src="https://foreignpolicy.com/wp-content/themes/foreign-policy-2017/assets/src/images/logos/FP.svg"
+                alt="Foreign Policy Magazine"
+                class="image -fit">
+        </noscript>
+        </a>
+                            </div>
+                    <nav class="nav">
+                        <ul id="menu-footer-column-5" class="footer-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-783354 footer-menu-item"><a href="https://foreignpolicy.com/staff/" class="navlink">Meet the Staff</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988928 footer-menu-item"><a href="https://foreignpolicy.com/events" class="navlink">FP Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993024 footer-menu-item"><a href="https://foreignpolicy.com/fp-analytics/" class="navlink">FP Analytics</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1002749 footer-menu-item"><a href="https://foreignpolicy.com/fp-peacegames/" class="navlink">FP PeaceGames</a></li>
+</ul><ul id="menu-footer-column-6" class="footer-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993038 footer-menu-item"><a href="https://foreignpolicy.com/subscription-services/" class="navlink">Subscription Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988929 footer-menu-item"><a href="https://foreignpolicy.com/reprint-permissions/" class="navlink">Reprint Permissions</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-939400 footer-menu-item"><a href="https://foreignpolicy.submittable.com/submit" class="navlink">Writer&#8217;s Guidelines</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002750 footer-menu-item"><a href="/employment-opportunities/" class="navlink">Work at FP</a></li>
+</ul><ul id="menu-footer-column-7" class="footer-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-927960 footer-menu-item"><a href="https://fpguide.foreignpolicy.com/2020-career" class="navlink">FP Guides &#8211; Graduate Education</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-996597 footer-menu-item"><a href="https://foreignpolicy.com/fp-for-education/" class="navlink">FP For Education</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-660886 footer-menu-item"><a href="/magazine" class="navlink">FP Archive</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660961 footer-menu-item"><a href="https://foreignpolicy.com/buy-back-issues/" class="navlink">Buy Back Issues</a></li>
+</ul><ul id="menu-footer-column-8" class="footer-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-993026 footer-menu-item"><a href="https://foreignpolicy.com/advertise-with-foreign-policy/" class="navlink">Advertise with FP</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988932 footer-menu-item"><a href="https://foreignpolicy.com/privacy/" class="navlink">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660967 footer-menu-item"><a href="https://foreignpolicy.com/contact-us/" class="navlink">Contact Us</a></li>
+</ul>                        <span class="powered-by-wpcom--parent">
+                            <div>Powered by <a href="https://wpvip.com/?utm_source=vip_powered_wpcom&#038;utm_medium=web&#038;utm_campaign=VIP%20Footer%20Credit&#038;utm_term=foreignpolicy.com" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a></div>
+                            <div>&copy; 2020, The Slate Group</div>
+                        </span>
+                    </nav>
+                </div>
+            </footer>
+
+        </div><!-- end site-wrapper -->
+
+
+                                    <div
+                data-campaign="HSBC ROS nd Econ"
+                data-stay-closed="false"
+                data-mobile-ad="div-gpt-ad-1453402331387-0"
+                data-refresh="30000"
+                data-closeable="false"
+                class="FP-mobile-ad FP-mobile-ad_fixedbottom"></div>
+        
+
+        <script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nzlz2');
+twq('track','PageView');
+</script>
+
+        <script type="application/ld+json">{"@context":"http:\/\/schema.org","publisher":{"@type":"Organization","name":"Foreign Policy","url":"https:\/\/foreignpolicy.com","logo":{"@type":"ImageObject","height":60,"url":"https:\/\/foreignpolicy.com\/wp-content\/uploads\/2016\/04\/logo.png","width":74}},"@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/foreignpolicy.com\/2020\/06\/01\/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality\/"},"headline":"U.S. Standing in World Undercut by Police Violence at Home","description":"U.S. soft power was already dwindling under Trump. But the new wave of police violence and racial injustice may be drying up the reserves.","Articlebody":"<span style=\"font-weight: 400;\">A world that once looked to the United States to champion democracy and human rights watched with dismay and alarm as police departments across the nation unleashed violent crackdowns on anti-police protesters, targeting looters, demonstrators, and journalists alike, even as President Donald Trump on Monday criticized state governors for their \u201cweak\u201d response.\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Meanwhile, from <\/span><a href=\"https:\/\/www.cbc.ca\/news\/canada\/british-columbia\/vancouver-police-protest-1.5592620\"><span style=\"font-weight: 400;\">Canada<\/span><\/a><span style=\"font-weight: 400;\"> to <\/span><a href=\"https:\/\/www.theguardian.com\/world\/2020\/jun\/01\/thousands-in-new-zealand-protest-against-george-floyd-killing\"><span style=\"font-weight: 400;\">New Zealand<\/span><\/a><span style=\"font-weight: 400;\">, tens of thousands of people gathered around the world to protest the killing of an African American man, George Floyd, who was suffocated on May 25 in Minneapolis by a white police officer who kneeled on his neck. The officer has since been charged with murder. Floyd\u2019s death a week ago touched off U.S. demonstrations that swiftly turned into riots in more than 100 American cities. But memorials also sprouted up in cities around the globe, from a candlelight <\/span><a href=\"https:\/\/twitter.com\/Shirinj\/status\/1266753355721904129?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1266753355721904129&amp;ref_url=https%3A%2F%2Fwww.npr.org%2F2020%2F05%2F31%2F866428272%2Fgeorge-floyd-reverberates-globally-thousands-protest-in-germany-u-k-canada\"><span style=\"font-weight: 400;\">vigil<\/span><\/a><span style=\"font-weight: 400;\"> in Mashhad, Iran, to a mural painted on the Berlin Wall bearing Floyd\u2019s likeness along with his dying plea: \u201cI can\u2019t breathe.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">What shocked observers around the world more than anything was the often brutal response of police, some of whom were videotaped ramming demonstrators with SUVs and tasing college students in their car. One heavily armed Minneapolis police officer fired paint rounds Saturday night at a resident watching the events unfold from her porch while another officer called out, \u201cLight \u2019em up.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Trump only appeared to encourage official violence, telling U.S. governors in a video conference call on Monday: \u201c<\/span><span style=\"font-weight: 400;\">You have to dominate, if you don\u2019t dominate you\u2019re wasting your time. They\u2019re going to run over you. You\u2019re going to look like a bunch of jerks. You have to dominate.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">The overwhelmingly negative international reaction to the crackdown showed how far the United States\u2019 reputation has fallen in the eyes of the world under the Trump presidency, evoking the international opprobrium directed at previous U.S. governments during the Vietnam War and civil rights era, when police in Southern states turned attack dogs on black freedom marchers.\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cThe erosion of U.S. global leadership has been faster than expected,\u201d a senior European diplomat told <\/span><i><span style=\"font-weight: 400;\">Foreign Policy<\/span><\/i><span style=\"font-weight: 400;\">. \u201cMilitary supremacy and financial leverage is still there. However, reserves of political and \u2018soft\u2019 power are being depleted rapidly.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cThis is placing traditional allies in a difficult position\u2014trying to cling to a traditional value-based connection [with the United States] which is diminishing fast,\u201d the diplomat said. \u201cEurope is hoping for a turning point, although everyone is realizing that there is no absolute return to 2016.\u201d\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">The protests have also laid bare to the world deeply rooted societal problems in the United States, undercutting America\u2019s standing as a standard-bearer of modern liberal values, including the promotion of human rights, democracy, and free-market capitalism.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cI\u2019m very concerned about how this will impact our leadership and our voice overseas,\u201d said Linda Thomas-Greenfield, a former career diplomat who was the seniormost-ranking African American woman in the U.S. foreign service when she retired in 2017. \u201cPeople look to the United States for leadership, they look to us for support. They are worried that we\u2019re losing ground.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">In his call with the governors, Trump urged them to increase law enforcement efforts and noted that foreign countries were watching\u2014and judging. \u201cYou know, when other countries watch this, they\u2019re watching this, the next day wow, they\u2019re really a pushover. And we can\u2019t be a pushover. And we have all the resources\u2014it\u2019s not like we don\u2019t have the resources. So, I don\u2019t know what you\u2019re doing,\u201d he told the governors.\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Trump\u2019s national security advisor, Robert O\u2019Brien, said that U.S. rivals were trying to exploit the situation and rebuked their criticisms as hypocritical. \u201cI want to tell our foreign adversaries, whether it\u2019s Zimbabwe or China, that the difference between us and you is that that officer who killed George Floyd \u2026 he\u2019ll be investigated and he\u2019ll be prosecuted, and he\u2019s going to receive a fair trial,\u201d O\u2019Brien told ABC\u2019s on Sunday. \u201cThe American people that want to go out and protest peacefully, they\u2019re going to be allowed to seek redress from their government. They\u2019re not going to be thrown in jail for peaceful protesting.\u201d (Peaceful protesters and <a href=\"https:\/\/cpj.org\/2020\/05\/cpj-condemns-targeting-of-journalists-covering-protests-across-the-u-s\/\">journalists<\/a> were among some 4,000 arrested across the United States over the weekend.)<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Some senior U.S. diplomats have weighed in from afar, explaining how they defend American values abroad even as they condemn Floyd\u2019s killing and struggle to grapple with the reality of racial injustice at home.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cAs an African American, for as long as I can remember I have known that my rights and my body were not fully my own. I have also always known that America, conceived in liberty, has always aspired to be better\u2014a shining city on a hill\u2014and that is why I have dedicated my life to her service,\u201d Brian Nichols, a senior U.S. diplomat and the ambassador to Zimbabwe, wrote in a letter the embassy published.<\/span><b>\u00a0<\/b>\r\n\r\n<span style=\"font-weight: 400;\">Nichols\u2019s letter reflects how U.S. diplomatic outposts abroad are now <\/span><a href=\"https:\/\/foreignpolicy.com\/2020\/05\/29\/africa-countries-condemn-george-floyd-minneapolis-killing-diplomatic-fallout-racial-injustice-police-violence\/\"><span style=\"font-weight: 400;\">being compelled<\/span><\/a><span style=\"font-weight: 400;\"> to address domestic strife amid a chorus of outcry from foreign countries on systemic racial injustices and police violence in the United States.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">In his letter, Nichols tied the struggle of protesters in the United States to civil society activists detained and abused by the Zimbabwean government, noting that a police officer has been charged with murder in Floyd\u2019s death, while Zimbabwean authorities abducted and assaulted democracy activists without consequence.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cIn a long, unbroken line of black men and women, George Floyd gave the last full measure of devotion to point us toward a new birth in freedom,\u201d he wrote. \u201cAmericans will continue to speak out for justice whether at home or abroad. We can meet the ideals of our founding, we will change this world for the better.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Thomas-Greenfield, however, said that while the messages coming from U.S. diplomatic outposts abroad are important, they don\u2019t make up for the void in Washington.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cIt has to be extraordinarily hard for ambassadors to try to explain what is happening in the United States in the context of human rights and justice, where we had been the voice that people have looked to,\u201d she said. \u201cThey\u2019re doing the best with what they have.\u201d\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">The scenes of protesters over the weekend pressing in on the White House, where the president was reported to be holed up in a secure bunker, served to highlight the isolation for a president who has found little solidarity from allies.\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Indeed, Trump\u2019s apparent failure to demonstrate leadership over the issue of police abuse and nationwide street protests was only the latest blow to a reputation that was already in tatters around the world, following his fumbling, \u201cAmerica first\u201d approach to the global coronavirus pandemic and his repeated insults to U.S. allies as well as his withdrawals from one major agreement after another\u2014from the Paris climate pact to, most recently, the Open Skies Treaty. Last month, Trump abruptly announced that he would also seek to withdraw from the World Health Organization, a move that has virtually no support from key allies. Trump was also forced to reschedule a June Camp David summit of the G-7 industrial powers after Germany\u2019s Chancellor Angela Merkel declined to participate, citing the health risks of the ongoing pandemic\u2014but the U.S. president indicated he would invite non-member nations to the rescheduled meeting, including Russia.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Trump\u2019s closest European ally, British Prime Minister Boris Johnson, on Monday appeared to break with his U.S. counterpart, threatening to block any move by the White House to restore Russia\u2019s membership in the big-power club. Asked about Trump\u2019s call for expanding the G-7 membership and inviting Russia, which was forced out of the group following its annexation of Crimea, Johnson\u2019s chief spokesman said, \u201cWe are yet to see evidence of [Russia\u2019s] changed behavior which would justify readmittance.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">The latest string of police violence and protests are \u201ca piece of a larger puzzle,\u201d said Thomas-Greenfield. \u201cI think our face in the world had already diminished \u2026 because of our lack of leadership in the world and on this issue it\u2019s just an added reason for countries to question our leadership\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">U.S. adversaries\u2014many of which are regarded to have the worst human rights records in the world\u2014piled onto the protests, relishing the sight of a rival power engulfed in the pandemic lockdown and social unrest that exposed enduring racism and inequality.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cSome don\u2019t think #BlackLivesMatter,\u201d <\/span><a href=\"https:\/\/twitter.com\/JZarif\/status\/1266782297887514624\"><span style=\"font-weight: 400;\">tweeted<\/span><\/a><span style=\"font-weight: 400;\"> Mohammad Javad Zarif, Iran\u2019s foreign minister, sharing a marked-up version of a statement from the U.S. State Department on protests in Iran. \u201cTo those of us who do: it is long overdue for the entire world to wage war against racism. Time for a #WorldAgainstRacism.\u201d\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">U.S. Secretary of State Mike Pompeo, a longtime critic of same-sex marriage who once <\/span><a href=\"https:\/\/www.google.com\/amp\/s\/www.washingtonpost.com\/news\/the-fix\/wp\/2018\/04\/12\/cory-booker-grills-mike-pompeo-on-whether-he-believes-being-gay-is-a-perversion\/%3foutputType=amp\"><span style=\"font-weight: 400;\">described<\/span><\/a><span style=\"font-weight: 400;\"> homosexuality as a \u201cperversion,\u201d <\/span><a href=\"https:\/\/twitter.com\/SecPompeo\/status\/1266875321590087685\"><span style=\"font-weight: 400;\">then countered<\/span><\/a><span style=\"font-weight: 400;\">: \u201cYou hang homosexuals, stone women and exterminate Jews.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">Beijing, still reeling from the fallout of <\/span><a href=\"https:\/\/foreignpolicy.com\/2020\/04\/15\/chinas-racism-is-wrecking-its-success-in-africa\/\"><span style=\"font-weight: 400;\">racist attacks<\/span><\/a><span style=\"font-weight: 400;\"> against African migrants in China in April, seized on the U.S. protests to detract attention from its own crackdown on pro-democratic demonstrators in Hong Kong. When State Department spokesperson Morgan Ortagus chided Beijing on Twitter for reneging on its commitment to grant political freedom to the former British colony, her Chinese counterpart, Hua Chunying, <a href=\"https:\/\/twitter.com\/SpokespersonCHN\/status\/1266741986096107520\">retweeted<\/a> the message with the line \u201cI can\u2019t breathe.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">\u201cAll lives matter,\u201d she <a href=\"https:\/\/twitter.com\/SpokespersonCHN\/status\/1267417514335539201\">added<\/a> in a subsequent tweet. \u201cWe stand firmly with our African friends. We strongly oppose all forms of racial discrimination and inflammatory expressions of racism and hatred.\u201d<\/span>\r\n\r\n<span style=\"font-weight: 400;\">The official social media accounts of the Russian Embassy in Washington condemned police violence toward members of the media after a correspondent from the Russian state-owned news agency Ria Novosti was hit with pepper spray. \u201cWe are concerned about the increased number of police violence cases and unjustified detentions of journalists during their coverage of protests in the United States that broke out after the murder of George Floyd,\u201d the embassy posted on <\/span><a href=\"https:\/\/www.facebook.com\/RusEmbUSA\/posts\/1321082974768756\"><span style=\"font-weight: 400;\">Facebook<\/span><\/a><span style=\"font-weight: 400;\">.\u00a0<\/span>\r\n\r\n<span style=\"font-weight: 400;\">The post came just days after several prominent Russian reporters were detained and later released for holding one-person pickets in support of the arrested Russian journalist Ilya Azar. Azar was arrested and sentenced to 15 days\u2019 imprisonment earlier last week for holding a single-person demonstration against the imprisonment of activist Vladimir Vorontsov, who runs an <\/span><a href=\"https:\/\/www.themoscowtimes.com\/2020\/05\/12\/officers-launch-flashmob-to-demand-freedom-for-russias-police-ombudsman-a70244\"><span style=\"font-weight: 400;\">online community<\/span><\/a><span style=\"font-weight: 400;\"> that seeks to expose abuses of power within Russian law enforcement.<\/span>\r\n\r\n<span style=\"font-weight: 400;\">For many traditional allies, the events in the United States underscore the degree to which the rest of the world is being forced to align themselves with two increasingly problematic superpowers. \u201cThe choice is between an unreliable and increasingly transactional and autocratic democracy (U.S.) and a reliably transactional and unforgiving autocratic rising power (China),\u201d one senior Asian diplomat told <\/span><i><span style=\"font-weight: 400;\">Foreign Policy.<\/span><\/i>\r\n\r\n<span style=\"font-weight: 400;\">\u201cThe United States is and appears to the world divided, diminished, &amp; distracted,\u201d Richard Haass, the president of the Council on Foreign Relations, <a href=\"https:\/\/twitter.com\/RichardHaass\/status\/1267408629050871809\">tweeted<\/a> on Monday. \u201cHard to believe we will not be challenged somewhere somehow by someone wanting to take advantage of these circumstances. To add a 4th \u2018D,\u2019 these are truly dangerous times.\u201d\u00a0<\/span>\r\n\r\n<i><span style=\"font-weight: 400;\">Staff reporter Amy Mackinnon contributed to this report.<\/span><\/i>","datePublished":"2020-06-01T15:52:00+00:00","dateModified":"2020-06-01T16:51:08+00:00","url":"https:\/\/foreignpolicy.com\/2020\/06\/01\/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality\/","author":[{"@type":"Person","name":"Colum Lynch","url":"https:\/\/foreignpolicy.com\/author\/colum-lynch\/"},{"@type":"Person","name":"Robbie Gramer","url":"https:\/\/foreignpolicy.com\/author\/robbie-gramer\/"}],"image":{"@type":"ImageObject","url":"https:\/\/foreignpolicy.com\/wp-content\/uploads\/2020\/06\/White-House-Police-Violence-Protest-GettyImages-1239013106.jpg?w=1500","height":1000,"width":1500},"isAccessibleForFree":"False","hasPart":{"@type":"WebPageElement","isAccessibleForFree":"False","cssSelector":".post-content-main"}}</script>
+<script>
+var fpUtilsLoc = {"isDev":"","redirectUri":"https:\/\/foreignpolicy.com\/share_redirect\/"};
+</script>
+<script>
+var chartbeatData = {"category_name":"Report","author_list":"Colum Lynch, Robbie Gramer"};
+</script>
+<script>
+var postDataPiano = ["Diplomacy","Human Rights","Report","Trump","article"];
+</script>
+<script type='text/javascript' src='https://foreignpolicy.com/_static/??-eJytksFOw0AMRH+IrVukEnFAfErlLiZxulkva6dp/h5LlbiT7Mm++HlmNLCUECUbZQMbaCKFb6nEfQ5FEsc1vB5PHaAqmYLWCBorF9+vNOCdpSpknz0aSz6M+gItiLSEhfOXLIEeRjVjConzTfc9uJMjK0TU4R8gNfcWYVSYjZNCkohJTSr2tB3TKqoocmMKfqtb9VxKlcd6wRgdsokw/sxU18NTyz5nz4xd0cTaBKVWOfctSHNNDQuuicyrHdQP59Km2ANWuxLaPpp6Xi5OsltWV1gYs7RFYrLw17fP6eN0fj923dv51I2/1luxsg=='></script>
+<script src="//cdn.taboola.com/libtrc/foreignpolicy/loader.js" defer="defer" type="text/javascript"></script>
+<script>
+var myFpAlertsLoc = {"isVIPEnv":"1"};
+</script>
+<script>
+var zMoatADVERTISER = {"moatPassback":"editorial"};
+</script>
+<script type='text/javascript' src='https://foreignpolicy.com/_static/??-eJylksFuwjAMhl9oJcA0oR6mXfYC47SrmxrqyolD7DDx9rOQNs60pyRO/PnXnz/8lC5KNswWbMKEGk5Skc65K8IUb91+uzsEUEXToDUGjZWK76+YR6nBYBBh2Mz6EhazBpzgSlI1RODYGAzHzsgJBqk8wfb3RjHMGuZLw3rbnFqODqJ8XkOZSE18XYFQSoUxyQi8BhPdpEX9wFjd6fnrjvn+lASUj+hUtUVA0i7JQIzrvj5KKpK9z8t3izplGrEu0lQa86WJrdT0iCNUJ7umAudnmA9FScD+OtaJakbsFYkErBNU/M8B5chtdJLP8yOmAceNR97vP9L77q3fHg6vfb+ffwEp2nJ2'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202023.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.5',blog:'162972146',post:'1008150',tz:'-4',srv:'foreignpolicy.com'} ]);
+	_stq.push([ 'clickTrackerInit', '162972146', '1008150' ]);
+</script>
+
+
+        <!--START Lightbox Javascript-->
+<script type="text/javascript">
+    /*<![CDATA[*/ window.lightboxjs || function (c) { function g(b, d) { d && (d += (/\?/.test(d) ? "&" : "?") + "lv=1"); c[b] || function () { var i = window, h = document, j = b, g = h.location.protocol, l = "load", k = 0; (function () { function b() { a.P(l); a.w = 1; c[j]("_load") } c[j] = function () { function m() { m.id = e; return c[j].apply(m, arguments) } var b, e = ++k; b = this && this != i ? this.id || 0 : 0; (a.s = a.s || []).push([e, b, arguments]); m.then = function (b, c, h) { var d = a.fh[e] = a.fh[e] || [], j = a.eh[e] = a.eh[e] || [], f = a.ph[e] = a.ph[e] || []; b && d.push(b); c && j.push(c); h && f.push(h); return m }; return m }; var a = c[j]._ = {}; a.fh = {}; a.eh = {}; a.ph = {}; a.l = d ? d.replace(/^\/\//, (g == "https:" ? g : "http:") + "//") : d; a.p = { 0: +new Date }; a.P = function (b) { a.p[b] = new Date - a.p[0] }; a.w && b(); i.addEventListener ? i.addEventListener(l, b, !1) : i.attachEvent("on" + l, b); var q = function () { function b() { return ["<head></head><", c, ' onload="var d=', n, ";d.getElementsByTagName('head')[0].", d, "(d.", g, "('script')).", i, "='", a.l, "'\"></", c, ">"].join("") } var c = "body", e = h[c]; if (!e) return setTimeout(q, 100); a.P(1); var d = "appendChild", g = "createElement",
+    i = "src", k = h[g]("div"), l = k[d](h[g]("div")), f = h[g]("iframe"), n = "document", p; k.style.display = "none"; e.insertBefore(k, e.firstChild).id = o + "-" + j; f.frameBorder = "0"; f.id = o + "-frame-" + j; /MSIE[ ]+6/.test(navigator.userAgent) && (f[i] = "javascript:false"); f.allowTransparency = "true"; l[d](f); try { f.contentWindow[n].open() } catch (s) { a.domain = h.domain, p = "javascript:var d=" + n + ".open();d.domain='" + h.domain + "';", f[i] = p + "void(0);" } try { var r = f.contentWindow[n]; r.write(b()); r.close() } catch (t) { f[i] = p + 'd.write("' + b().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();' } a.P(2) }; a.l && q() })() }(); c[b].lv = "1"; return c[b] } var o = "lightboxjs", k = window[o] = g(o); k.require = g; k.modules = c }({}); /*]]>*/</script><script type="text/javascript">window.lightboxlib = lightboxjs.require("lightboxlib", "//www.lightboxcdn.com/vendor/044b8435-d6a0-427d-af56-eec8f6ae795a/lightbox.js?mb=" + (new Date().getTime()));</script>
+<!--END Lightbox Javascript-->
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f5b9626936","applicationID":"224917688","transactionName":"Z1cDYUFXXhVYWkINXF4dIFZHX18IFkpfClRcVw==","queueTime":0,"applicationTime":415,"atts":"SxAUFwlNTUobWBReSE1P","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

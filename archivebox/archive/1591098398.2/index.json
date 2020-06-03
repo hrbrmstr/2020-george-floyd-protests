@@ -1,95 +1,18 @@
 {
-    "updated": "1591098601.560159",
-    "url": "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html",
-    "title": null,
+    "title": "Protests Live Coverage: News Updates and Video - The New York Times",
+    "timestamp": "1591098398.2",
     "sources": [
-        "/data/sources/stdin-1591098398.txt"
+        "/data/sources/stdin-1591098398.txt",
+        "/data/sources/stdin-1591183828.txt"
     ],
+    "url": "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html",
     "history": {
-        "screenshot": [
-            {
-                "start_ts": "2020-06-02 11:49:51.192948",
-                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)",
-                "pwd": "/data/archive/1591098398.2",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--screenshot",
-                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-02 11:49:55.478315",
-                "duration": 4,
-                "status": "failed"
-            }
-        ],
-        "git": [],
-        "title": [
-            {
-                "start_ts": "2020-06-02 11:48:46.220433",
-                "output": "Protests Live Coverage: News Updates and Video - The New York Times",
-                "pwd": "/data/archive/1591098398.2",
-                "cmd": [
-                    "curl",
-                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "end_ts": "2020-06-02 11:48:46.545193",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [
-            {
-                "start_ts": "2020-06-02 11:48:46.547058",
-                "output": "favicon.ico",
-                "pwd": "/data/archive/1591098398.2",
-                "cmd": [
-                    "curl",
-                    "--max-time",
-                    "60",
-                    "--location",
-                    "--output",
-                    "favicon.ico",
-                    "https://www.google.com/s2/favicons?domain=www.nytimes.com"
-                ],
-                "end_ts": "2020-06-02 11:48:46.714594",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "dom": [
-            {
-                "start_ts": "2020-06-02 11:49:55.479227",
-                "output": "output.html",
-                "pwd": "/data/archive/1591098398.2",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--dump-dom",
-                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-02 11:49:59.733765",
-                "duration": 4,
-                "status": "succeeded"
-            }
-        ],
         "wget": [
             {
-                "start_ts": "2020-06-02 11:48:46.716934",
-                "output": "Command 'wget' timed out after 60 seconds",
                 "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:48:46.716934",
+                "end_ts": "2020-06-02 11:49:46.667021",
+                "status": "failed",
                 "cmd": [
                     "wget",
                     "--no-verbose",
@@ -108,16 +31,154 @@
                     "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
                     "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-02 11:49:46.667021",
                 "duration": 59,
-                "status": "failed"
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:49:46.671398",
+                "end_ts": "2020-06-02 11:49:51.191770",
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
+                ],
+                "duration": 4,
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "end_ts": "2020-06-03 11:41:55.412136",
+                "duration": 7,
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
+                ],
+                "start_ts": "2020-06-03 11:41:48.147422",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:48:46.220433",
+                "end_ts": "2020-06-02 11:48:46.545193",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "output": "Protests Live Coverage: News Updates and Video - The New York Times"
+            }
+        ],
+        "git": [],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:48:46.547058",
+                "end_ts": "2020-06-02 11:48:46.714594",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.nytimes.com"
+                ],
+                "duration": 0,
+                "output": "favicon.ico"
+            }
+        ],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:49:51.192948",
+                "end_ts": "2020-06-02 11:49:55.478315",
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
+                ],
+                "duration": 4,
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "end_ts": "2020-06-03 11:42:01.433726",
+                "duration": 6,
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
+                ],
+                "start_ts": "2020-06-03 11:41:55.413732",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:49:55.479227",
+                "end_ts": "2020-06-02 11:49:59.733765",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
+                ],
+                "duration": 4,
+                "output": "output.html"
             }
         ],
         "media": [
             {
-                "start_ts": "2020-06-02 11:49:59.736390",
-                "output": "Failed to download media",
                 "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:49:59.736390",
+                "end_ts": "2020-06-02 11:50:00.540690",
+                "status": "failed",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -140,37 +201,16 @@
                     "--add-metadata",
                     "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-02 11:50:00.540690",
                 "duration": 0,
-                "status": "failed"
-            }
-        ],
-        "pdf": [
-            {
-                "start_ts": "2020-06-02 11:49:46.671398",
-                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
-                "pwd": "/data/archive/1591098398.2",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-02 11:49:51.191770",
-                "duration": 4,
-                "status": "failed"
+                "output": "Failed to download media"
             }
         ],
         "archive_org": [
             {
-                "start_ts": "2020-06-02 11:50:00.541637",
-                "output": "https://web.archive.org/web/20200602115001/https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html",
                 "pwd": "/data/archive/1591098398.2",
+                "start_ts": "2020-06-02 11:50:00.541637",
+                "end_ts": "2020-06-02 11:50:01.544226",
+                "status": "succeeded",
                 "cmd": [
                     "curl",
                     "--location",
@@ -181,12 +221,11 @@
                     "60",
                     "https://web.archive.org/save/https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-02 11:50:01.544226",
                 "duration": 1,
-                "status": "succeeded"
+                "output": "https://web.archive.org/web/20200602115001/https://www.nytimes.com/2020/06/02/us/george-floyd-protests.html"
             }
         ]
     },
-    "timestamp": "1591098398.2",
-    "tags": ""
+    "tags": "",
+    "updated": "1591184521.438686"
 }

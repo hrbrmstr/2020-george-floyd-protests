@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:41:19.185818",
+                "duration": 59,
+                "status": "failed",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591184419",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+                ],
+                "start_ts": "2020-06-03 11:40:19.240794",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:40:19.013424",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:40:18.700890",
+                "output": "George W. Bush Calls George Floyd&#8217;s Death A &#8220;Shocking Failure&#8221; &#8211; Deadline"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:41:22.930096",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+                ],
+                "start_ts": "2020-06-03 11:41:19.189375",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:40:19.238899",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=deadline.com"
+                ],
+                "start_ts": "2020-06-03 11:40:19.016381",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:41:26.653930",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+                ],
+                "start_ts": "2020-06-03 11:41:22.930912",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:41:29.020428",
+                "duration": 2,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+                ],
+                "start_ts": "2020-06-03 11:41:26.654768",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:41:30.258919",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+                ],
+                "start_ts": "2020-06-03 11:41:29.022671",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.10",
+                "end_ts": "2020-06-03 11:41:31.146087",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+                ],
+                "start_ts": "2020-06-03 11:41:30.259704",
+                "output": "https://web.archive.org/web/20200603114130/https://deadline.com/2020/06/george-w-bush-george-floyd-racism-shocking-failure-letter-1202949681/"
+            }
+        ]
+    },
+    "timestamp": "1591183828.10",
+    "updated": "1591184491.172251"
+}

@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:31:29.694902",
+                "duration": 59,
+                "status": "failed",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591183829",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+                ],
+                "start_ts": "2020-06-03 11:30:29.755580",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:30:29.551348",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:30:28.827842",
+                "output": "Protests Spread Beyond Big Cities, From Raleigh to Santa Rosa  - WSJ"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:31:37.586592",
+                "duration": 7,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+                ],
+                "start_ts": "2020-06-03 11:31:29.699483",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:30:29.752495",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.wsj.com"
+                ],
+                "start_ts": "2020-06-03 11:30:29.555478",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:31:45.645114",
+                "duration": 8,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+                ],
+                "start_ts": "2020-06-03 11:31:37.587181",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:31:48.975822",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+                ],
+                "start_ts": "2020-06-03 11:31:45.645651",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:32:15.700459",
+                "duration": 26,
+                "status": "failed",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+                ],
+                "start_ts": "2020-06-03 11:31:48.978243",
+                "output": "Failed to download media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828",
+                "end_ts": "2020-06-03 11:32:17.189264",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+                ],
+                "start_ts": "2020-06-03 11:32:15.701666",
+                "output": "https://web.archive.org/web/20200603113216/https://www.wsj.com/articles/protests-spread-beyond-big-cities-from-raleigh-to-santa-rosa-11591099005?shareToken=st4f84932d5cda4c77a49975795e048350"
+            }
+        ]
+    },
+    "timestamp": "1591183828",
+    "updated": "1591183937.207361"
+}

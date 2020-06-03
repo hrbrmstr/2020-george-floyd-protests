@@ -1,75 +1,19 @@
 {
-    "updated": "1591098829.142711",
-    "url": "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
     "title": "Opinion | Destructive Power of Despair - The New York Times",
+    "timestamp": "1591010969.0",
     "sources": [
         "/data/sources/stdin-1591098398.txt",
-        "/data/sources/stdin-1591010969.txt"
+        "/data/sources/stdin-1591010969.txt",
+        "/data/sources/stdin-1591183828.txt"
     ],
+    "url": "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
     "history": {
-        "screenshot": [
-            {
-                "start_ts": "2020-06-01 11:31:03.134515",
-                "output": "screenshot.png",
-                "pwd": "/data/archive/1591010969.0",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--screenshot",
-                    "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-01 11:31:08.573008",
-                "duration": 5,
-                "status": "succeeded"
-            }
-        ],
-        "git": [],
-        "title": [
-            {
-                "start_ts": "2020-06-01 11:29:57.242407",
-                "output": "Opinion | Destructive Power of Despair - The New York Times",
-                "pwd": "/data/archive/1591010969.0",
-                "cmd": [
-                    "curl",
-                    "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "end_ts": "2020-06-01 11:29:57.593495",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [
-            {
-                "start_ts": "2020-06-01 11:29:57.596109",
-                "output": "favicon.ico",
-                "pwd": "/data/archive/1591010969.0",
-                "cmd": [
-                    "curl",
-                    "--max-time",
-                    "60",
-                    "--location",
-                    "--output",
-                    "favicon.ico",
-                    "https://www.google.com/s2/favicons?domain=www.nytimes.com"
-                ],
-                "end_ts": "2020-06-01 11:29:57.856983",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
         "wget": [
             {
-                "start_ts": "2020-06-01 11:29:57.862303",
-                "output": "Command 'wget' timed out after 60 seconds",
                 "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:29:57.862303",
+                "end_ts": "2020-06-01 11:30:57.801942",
+                "status": "failed",
                 "cmd": [
                     "wget",
                     "--no-verbose",
@@ -88,16 +32,95 @@
                     "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
                     "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:30:57.801942",
                 "duration": 59,
-                "status": "failed"
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:30:57.804034",
+                "end_ts": "2020-06-01 11:31:03.133841",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                ],
+                "duration": 5,
+                "output": "output.pdf"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:29:57.242407",
+                "end_ts": "2020-06-01 11:29:57.593495",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "output": "Opinion | Destructive Power of Despair - The New York Times"
+            }
+        ],
+        "git": [],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:29:57.596109",
+                "end_ts": "2020-06-01 11:29:57.856983",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.nytimes.com"
+                ],
+                "duration": 0,
+                "output": "favicon.ico"
+            }
+        ],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:31:03.134515",
+                "end_ts": "2020-06-01 11:31:08.573008",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
+                ],
+                "duration": 5,
+                "output": "screenshot.png"
             }
         ],
         "dom": [
             {
-                "start_ts": "2020-06-01 11:31:08.573960",
-                "output": "output.html",
                 "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:31:08.573960",
+                "end_ts": "2020-06-01 11:31:13.418196",
+                "status": "succeeded",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -109,16 +132,16 @@
                     "--dump-dom",
                     "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:31:13.418196",
                 "duration": 4,
-                "status": "succeeded"
+                "output": "output.html"
             }
         ],
         "media": [
             {
-                "start_ts": "2020-06-01 11:31:13.420549",
-                "output": "Failed to download media",
                 "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:31:13.420549",
+                "end_ts": "2020-06-01 11:31:14.182261",
+                "status": "failed",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -141,37 +164,16 @@
                     "--add-metadata",
                     "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:31:14.182261",
                 "duration": 0,
-                "status": "failed"
-            }
-        ],
-        "pdf": [
-            {
-                "start_ts": "2020-06-01 11:30:57.804034",
-                "output": "output.pdf",
-                "pwd": "/data/archive/1591010969.0",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-01 11:31:03.133841",
-                "duration": 5,
-                "status": "succeeded"
+                "output": "Failed to download media"
             }
         ],
         "archive_org": [
             {
-                "start_ts": "2020-06-01 11:31:14.182890",
-                "output": "https://web.archive.org/web/20200601113114/https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html",
                 "pwd": "/data/archive/1591010969.0",
+                "start_ts": "2020-06-01 11:31:14.182890",
+                "end_ts": "2020-06-01 11:31:15.834223",
+                "status": "succeeded",
                 "cmd": [
                     "curl",
                     "--location",
@@ -182,12 +184,11 @@
                     "60",
                     "https://web.archive.org/save/https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:31:15.834223",
                 "duration": 1,
-                "status": "succeeded"
+                "output": "https://web.archive.org/web/20200601113114/https://www.nytimes.com/2020/05/31/opinion/george-floyd-protests.html"
             }
         ]
     },
-    "timestamp": "1591010969.0",
-    "tags": ""
+    "tags": "",
+    "updated": "1591184536.974923"
 }

@@ -1,75 +1,19 @@
 {
-    "updated": "1591098829.053171",
-    "url": "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/",
     "title": "Washington Post: Breaking News, World, US, DC News & Analysis - The Washington Post",
+    "timestamp": "1591010969",
     "sources": [
         "/data/sources/stdin-1591098398.txt",
-        "/data/sources/stdin-1591010969.txt"
+        "/data/sources/stdin-1591010969.txt",
+        "/data/sources/stdin-1591183828.txt"
     ],
+    "url": "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/",
     "history": {
-        "screenshot": [
-            {
-                "start_ts": "2020-06-01 11:29:34.815665",
-                "output": "screenshot.png",
-                "pwd": "/data/archive/1591010969",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--screenshot",
-                    "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
-                ],
-                "end_ts": "2020-06-01 11:29:37.934407",
-                "duration": 3,
-                "status": "succeeded"
-            }
-        ],
-        "git": [],
-        "title": [
-            {
-                "start_ts": "2020-06-01 11:29:30.083049",
-                "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post",
-                "pwd": "/data/archive/1591010969",
-                "cmd": [
-                    "curl",
-                    "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "end_ts": "2020-06-01 11:29:30.523824",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [
-            {
-                "start_ts": "2020-06-01 11:29:30.527102",
-                "output": "favicon.ico",
-                "pwd": "/data/archive/1591010969",
-                "cmd": [
-                    "curl",
-                    "--max-time",
-                    "60",
-                    "--location",
-                    "--output",
-                    "favicon.ico",
-                    "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
-                ],
-                "end_ts": "2020-06-01 11:29:30.815167",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
         "wget": [
             {
-                "start_ts": "2020-06-01 11:29:30.818139",
-                "output": "www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/index.html",
                 "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:30.818139",
+                "end_ts": "2020-06-01 11:29:31.290065",
+                "status": "succeeded",
                 "cmd": [
                     "wget",
                     "--no-verbose",
@@ -88,16 +32,95 @@
                     "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
                     "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
                 ],
-                "end_ts": "2020-06-01 11:29:31.290065",
                 "duration": 0,
-                "status": "succeeded"
+                "output": "www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/index.html"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:31.290785",
+                "end_ts": "2020-06-01 11:29:34.815058",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                ],
+                "duration": 3,
+                "output": "output.pdf"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:30.083049",
+                "end_ts": "2020-06-01 11:29:30.523824",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post"
+            }
+        ],
+        "git": [],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:30.527102",
+                "end_ts": "2020-06-01 11:29:30.815167",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
+                ],
+                "duration": 0,
+                "output": "favicon.ico"
+            }
+        ],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:34.815665",
+                "end_ts": "2020-06-01 11:29:37.934407",
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                ],
+                "duration": 3,
+                "output": "screenshot.png"
             }
         ],
         "dom": [
             {
-                "start_ts": "2020-06-01 11:29:37.935011",
-                "output": "output.html",
                 "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:37.935011",
+                "end_ts": "2020-06-01 11:29:40.599206",
+                "status": "succeeded",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -109,16 +132,16 @@
                     "--dump-dom",
                     "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
                 ],
-                "end_ts": "2020-06-01 11:29:40.599206",
                 "duration": 2,
-                "status": "succeeded"
+                "output": "output.html"
             }
         ],
         "media": [
             {
-                "start_ts": "2020-06-01 11:29:40.603634",
-                "output": "media",
                 "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:40.603634",
+                "end_ts": "2020-06-01 11:29:51.398706",
+                "status": "succeeded",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -141,37 +164,16 @@
                     "--add-metadata",
                     "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
                 ],
-                "end_ts": "2020-06-01 11:29:51.398706",
                 "duration": 10,
-                "status": "succeeded"
-            }
-        ],
-        "pdf": [
-            {
-                "start_ts": "2020-06-01 11:29:31.290785",
-                "output": "output.pdf",
-                "pwd": "/data/archive/1591010969",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
-                ],
-                "end_ts": "2020-06-01 11:29:34.815058",
-                "duration": 3,
-                "status": "succeeded"
+                "output": "media"
             }
         ],
         "archive_org": [
             {
-                "start_ts": "2020-06-01 11:29:51.399261",
-                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out",
                 "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-01 11:29:51.399261",
+                "end_ts": "2020-06-01 11:29:57.171363",
+                "status": "failed",
                 "cmd": [
                     "curl",
                     "--location",
@@ -182,14 +184,14 @@
                     "60",
                     "https://web.archive.org/save/https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
                 ],
-                "end_ts": "2020-06-01 11:29:57.171363",
                 "duration": 5,
-                "status": "failed"
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
             },
             {
-                "start_ts": "2020-06-02 11:53:43.497468",
-                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out",
                 "pwd": "/data/archive/1591010969",
+                "start_ts": "2020-06-02 11:53:43.497468",
+                "end_ts": "2020-06-02 11:53:49.052712",
+                "status": "failed",
                 "cmd": [
                     "curl",
                     "--location",
@@ -200,12 +202,29 @@
                     "60",
                     "https://web.archive.org/save/https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
                 ],
-                "end_ts": "2020-06-02 11:53:49.052712",
                 "duration": 5,
-                "status": "failed"
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
+            },
+            {
+                "pwd": "/data/archive/1591010969",
+                "end_ts": "2020-06-03 11:42:16.874652",
+                "duration": 5,
+                "status": "failed",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.washingtonpost.com/nation/2020/06/01/george-floyd-protests-live-updates/"
+                ],
+                "start_ts": "2020-06-03 11:42:11.241156",
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
             }
         ]
     },
-    "timestamp": "1591010969",
-    "tags": ""
+    "tags": "",
+    "updated": "1591184536.874943"
 }

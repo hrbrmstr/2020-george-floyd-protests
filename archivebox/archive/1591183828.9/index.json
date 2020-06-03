@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:39:44.927313",
+                "duration": 11,
+                "status": "succeeded",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591184372",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+                ],
+                "start_ts": "2020-06-03 11:39:32.951482",
+                "output": "en.wikipedia.org/wiki/List_of_George_Floyd_protests.html"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:39:32.723091",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:39:32.297448",
+                "output": "List of George Floyd protests - Wikipedia"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:40:06.331717",
+                "duration": 21,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+                ],
+                "start_ts": "2020-06-03 11:39:44.927875",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:39:32.946566",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=en.wikipedia.org"
+                ],
+                "start_ts": "2020-06-03 11:39:32.724840",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:40:13.858315",
+                "duration": 7,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+                ],
+                "start_ts": "2020-06-03 11:40:06.332803",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:40:15.416295",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+                ],
+                "start_ts": "2020-06-03 11:40:13.859187",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:40:16.917482",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+                ],
+                "start_ts": "2020-06-03 11:40:15.417969",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.9",
+                "end_ts": "2020-06-03 11:40:18.626854",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+                ],
+                "start_ts": "2020-06-03 11:40:16.918036",
+                "output": "https://web.archive.org/web/20200603114017/https://en.wikipedia.org/wiki/List_of_George_Floyd_protests"
+            }
+        ]
+    },
+    "timestamp": "1591183828.9",
+    "updated": "1591184418.6429"
+}

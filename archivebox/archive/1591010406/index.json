@@ -1,19 +1,119 @@
 {
-    "updated": "1591098835.170535",
-    "url": "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
     "title": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times",
+    "timestamp": "1591010406",
     "sources": [
+        "/data/sources/stdin-1591098398.txt",
+        "/data/sources/stdin-1591010419.txt",
         "/data/sources/stdin-1591010406.txt",
         "/data/sources/stdin-1591010969.txt",
-        "/data/sources/stdin-1591010419.txt",
-        "/data/sources/stdin-1591098398.txt"
+        "/data/sources/stdin-1591183828.txt"
     ],
+    "url": "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
     "history": {
+        "wget": [],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:20:19.778178",
+                "end_ts": "2020-06-01 11:20:25.112033",
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
+                ],
+                "duration": 5,
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:34:47.587740",
+                "end_ts": "2020-06-01 11:34:53.237333",
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
+                ],
+                "duration": 5,
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-02 11:53:49.431390",
+                "end_ts": "2020-06-02 11:53:55.163680",
+                "status": "failed",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
+                ],
+                "duration": 5,
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "pwd": "/data/archive/1591010406",
+                "end_ts": "2020-06-03 11:42:23.277302",
+                "duration": 5,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
+                ],
+                "start_ts": "2020-06-03 11:42:17.307422",
+                "output": "output.pdf"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:20:19.346488",
+                "end_ts": "2020-06-01 11:20:19.764078",
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "output": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times"
+            }
+        ],
+        "git": [],
+        "favicon": [],
         "screenshot": [
             {
-                "start_ts": "2020-06-01 11:20:25.112858",
-                "output": "screenshot.png",
                 "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:20:25.112858",
+                "end_ts": "2020-06-01 11:20:30.973408",
+                "status": "succeeded",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -25,36 +125,16 @@
                     "--screenshot",
                     "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:20:30.973408",
                 "duration": 5,
-                "status": "succeeded"
+                "output": "screenshot.png"
             }
         ],
-        "git": [],
-        "title": [
-            {
-                "start_ts": "2020-06-01 11:20:19.346488",
-                "output": "Fiery Clashes Erupt Between Police and Protesters Over George Floyd Death - The New York Times",
-                "pwd": "/data/archive/1591010406",
-                "cmd": [
-                    "curl",
-                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
-                    "|",
-                    "grep",
-                    "<title>"
-                ],
-                "end_ts": "2020-06-01 11:20:19.764078",
-                "duration": 0,
-                "status": "succeeded"
-            }
-        ],
-        "favicon": [],
-        "wget": [],
         "dom": [
             {
-                "start_ts": "2020-06-01 11:20:30.974049",
-                "output": "output.html",
                 "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:20:30.974049",
+                "end_ts": "2020-06-01 11:20:37.350514",
+                "status": "succeeded",
                 "cmd": [
                     "google-chrome-unstable",
                     "--headless",
@@ -66,16 +146,16 @@
                     "--dump-dom",
                     "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:20:37.350514",
                 "duration": 6,
-                "status": "succeeded"
+                "output": "output.html"
             }
         ],
         "media": [
             {
-                "start_ts": "2020-06-01 11:20:37.352984",
-                "output": "Failed to download media",
                 "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:20:37.352984",
+                "end_ts": "2020-06-01 11:20:38.054023",
+                "status": "failed",
                 "cmd": [
                     "youtube-dl",
                     "--write-description",
@@ -98,75 +178,16 @@
                     "--add-metadata",
                     "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:20:38.054023",
                 "duration": 0,
-                "status": "failed"
-            }
-        ],
-        "pdf": [
-            {
-                "start_ts": "2020-06-01 11:20:19.778178",
-                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
-                "pwd": "/data/archive/1591010406",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-01 11:20:25.112033",
-                "duration": 5,
-                "status": "failed"
-            },
-            {
-                "start_ts": "2020-06-01 11:34:47.587740",
-                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
-                "pwd": "/data/archive/1591010406",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-01 11:34:53.237333",
-                "duration": 5,
-                "status": "failed"
-            },
-            {
-                "start_ts": "2020-06-02 11:53:49.431390",
-                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)",
-                "pwd": "/data/archive/1591010406",
-                "cmd": [
-                    "google-chrome-unstable",
-                    "--headless",
-                    "--no-sandbox",
-                    "--disable-gpu",
-                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
-                    "--window-size=1440,2000",
-                    "--timeout=60000",
-                    "--print-to-pdf",
-                    "https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
-                ],
-                "end_ts": "2020-06-02 11:53:55.163680",
-                "duration": 5,
-                "status": "failed"
+                "output": "Failed to download media"
             }
         ],
         "archive_org": [
             {
-                "start_ts": "2020-06-01 11:20:38.054655",
-                "output": "https://web.archive.org/web/20200601112038/https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html",
                 "pwd": "/data/archive/1591010406",
+                "start_ts": "2020-06-01 11:20:38.054655",
+                "end_ts": "2020-06-01 11:20:38.941352",
+                "status": "succeeded",
                 "cmd": [
                     "curl",
                     "--location",
@@ -177,12 +198,11 @@
                     "60",
                     "https://web.archive.org/save/https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
                 ],
-                "end_ts": "2020-06-01 11:20:38.941352",
                 "duration": 0,
-                "status": "succeeded"
+                "output": "https://web.archive.org/web/20200601112038/https://www.nytimes.com/2020/05/30/us/minneapolis-floyd-protests.html"
             }
         ]
     },
-    "timestamp": "1591010406",
-    "tags": ""
+    "tags": "",
+    "updated": "1591184543.285599"
 }

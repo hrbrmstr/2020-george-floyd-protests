@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:35:19.284824",
+                "duration": 59,
+                "status": "failed",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591184059",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+                ],
+                "start_ts": "2020-06-03 11:34:19.336245",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:34:19.127221",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:34:18.751153",
+                "output": "Opinion | At George Floyd Protests, Police Attacks on the First Amendment - The New York Times"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:35:24.706677",
+                "duration": 5,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+                ],
+                "start_ts": "2020-06-03 11:35:19.290227",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:34:19.332549",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.nytimes.com"
+                ],
+                "start_ts": "2020-06-03 11:34:19.129735",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:35:30.235995",
+                "duration": 5,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+                ],
+                "start_ts": "2020-06-03 11:35:24.707346",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:35:35.350209",
+                "duration": 5,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+                ],
+                "start_ts": "2020-06-03 11:35:30.236728",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:35:36.317985",
+                "duration": 0,
+                "status": "failed",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+                ],
+                "start_ts": "2020-06-03 11:35:35.352992",
+                "output": "Failed to download media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.3",
+                "end_ts": "2020-06-03 11:35:37.032205",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+                ],
+                "start_ts": "2020-06-03 11:35:36.318626",
+                "output": "https://web.archive.org/web/20200603113536/https://www.nytimes.com/2020/06/02/opinion/george-floyd-protests-first-amendment.html"
+            }
+        ]
+    },
+    "timestamp": "1591183828.3",
+    "updated": "1591184137.045219"
+}

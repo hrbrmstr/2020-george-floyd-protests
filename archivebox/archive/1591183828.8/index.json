@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:39:25.440996",
+                "duration": 59,
+                "status": "failed",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591184305",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+                ],
+                "start_ts": "2020-06-03 11:38:25.489692",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:38:25.289691",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:38:24.361347",
+                "output": "U.S. Standing in World Undercut by Police Violence at Home"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:39:27.280866",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+                ],
+                "start_ts": "2020-06-03 11:39:25.446127",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:38:25.485376",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=foreignpolicy.com"
+                ],
+                "start_ts": "2020-06-03 11:38:25.293060",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:39:28.718643",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+                ],
+                "start_ts": "2020-06-03 11:39:27.281565",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:39:29.711354",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+                ],
+                "start_ts": "2020-06-03 11:39:28.719367",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:39:30.881648",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+                ],
+                "start_ts": "2020-06-03 11:39:29.717498",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.8",
+                "end_ts": "2020-06-03 11:39:32.199483",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+                ],
+                "start_ts": "2020-06-03 11:39:30.882344",
+                "output": "https://web.archive.org/web/20200603113931/https://foreignpolicy.com/2020/06/01/protests-trump-soft-power-wanes-racial-injustice-police-violence-george-floyd-world-reaction-police-brutality/"
+            }
+        ]
+    },
+    "timestamp": "1591183828.8",
+    "updated": "1591184372.226901"
+}

@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:18.383177",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591183937",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/"
+                ],
+                "start_ts": "2020-06-03 11:32:17.958725",
+                "output": "www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/index.html"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:17.708015",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:32:17.270356",
+                "output": "Washington Post: Breaking News, World, US, DC News &amp; Analysis - The Washington Post"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:21.888803",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/"
+                ],
+                "start_ts": "2020-06-03 11:32:18.383791",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:17.955358",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.washingtonpost.com"
+                ],
+                "start_ts": "2020-06-03 11:32:17.711668",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:25.103639",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/"
+                ],
+                "start_ts": "2020-06-03 11:32:21.890804",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:27.213731",
+                "duration": 2,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/"
+                ],
+                "start_ts": "2020-06-03 11:32:25.104458",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:35.855389",
+                "duration": 8,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/"
+                ],
+                "start_ts": "2020-06-03 11:32:27.215675",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.0",
+                "end_ts": "2020-06-03 11:32:41.473180",
+                "duration": 5,
+                "status": "failed",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.washingtonpost.com/religion/2020/06/02/trump-catholic-shrine-church-bible-protesters/"
+                ],
+                "start_ts": "2020-06-03 11:32:35.855928",
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
+            }
+        ]
+    },
+    "timestamp": "1591183828.0",
+    "updated": "1591183961.473461"
+}

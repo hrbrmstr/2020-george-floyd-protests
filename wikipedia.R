@@ -43,7 +43,7 @@ map(xdf$geometry$coordinates, set_names, c("lng", "lat")) %>%
     crs = 4326
   ) -> protests_100
 
-st_write(protests_100, here::here("data/2020-06-02-wikipedia-protests-100.geojson"))
+st_write(protests_100, here::here("data/2020-06-03-wikipedia-protests-100.geojson"))
 
 # map them to check
 library(rnaturalearth)
@@ -55,8 +55,8 @@ ggplot() +
   geom_sf(data = protests_100, shape = 15, size = 0.5, color = "#7f0000") +
   coord_sf(crs = 54019, datum = NA) +
   labs(
-    title = sprintf("%s Protests", Sys.Date()-1),
-    subtitle = "Locations where 100+ came together",
+    title = "George Floyd Protests",
+    subtitle = sprintf("Locations where 100+ came together (Cumulative to %s)", Sys.Date()-1),
     caption = "Source: <https://en.wikipedia.org/wiki/List_of_George_Floyd_protests>\nCode: <https://github.com/hrbrmstr/2020-george-floyd-protests>"
   ) +
   theme_ipsum_es(grid="") -> gg
@@ -68,6 +68,8 @@ ggsave(
   height = 600/96,
   dpi = "retina"
 )
+
+gg
 
 # day/locale/counts (>=100) table -----------------------------------------
 
@@ -116,7 +118,7 @@ html_nodes(pg, xpath=".//h2[contains(., 'International')]/preceding-sibling::h3"
     entry = paste0(entry, collapse = " ")
   ) -> protest_entries
 
-write_csv(protest_entries, here::here("data/2020-06-02-wikipedia-locale-entries.csv"))
+write_csv(protest_entries, here::here("data/2020-06-03-wikipedia-locale-entries.csv"))
 
 # NOTE: as of 2020-06-01 0635 ET many entries noting either the presence of
 #       the national guard or the calling for the presence of the national

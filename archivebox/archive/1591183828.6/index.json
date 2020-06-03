@@ -1,0 +1,192 @@
+{
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1591183828.txt"
+    ],
+    "url": "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html",
+    "history": {
+        "wget": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:07.717082",
+                "duration": 3,
+                "status": "succeeded",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1591184223",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+                ],
+                "start_ts": "2020-06-03 11:37:03.797537",
+                "output": "www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+            }
+        ],
+        "title": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:03.597453",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "start_ts": "2020-06-03 11:37:02.803753",
+                "output": "Interest in the George Floyd protests has soared past the coronavirus - Axios"
+            }
+        ],
+        "pdf": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:09.086375",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+                ],
+                "start_ts": "2020-06-03 11:37:07.717773",
+                "output": "output.pdf"
+            }
+        ],
+        "favicon": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:03.793009",
+                "duration": 0,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.axios.com"
+                ],
+                "start_ts": "2020-06-03 11:37:03.599033",
+                "output": "favicon.ico"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:10.943590",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+                ],
+                "start_ts": "2020-06-03 11:37:09.087284",
+                "output": "screenshot.png"
+            }
+        ],
+        "dom": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:12.763870",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+                ],
+                "start_ts": "2020-06-03 11:37:10.944379",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:14.010804",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+                ],
+                "start_ts": "2020-06-03 11:37:12.768836",
+                "output": "media"
+            }
+        ],
+        "archive_org": [
+            {
+                "pwd": "/data/archive/1591183828.6",
+                "end_ts": "2020-06-03 11:37:15.391087",
+                "duration": 1,
+                "status": "succeeded",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+                ],
+                "start_ts": "2020-06-03 11:37:14.013077",
+                "output": "https://web.archive.org/web/20200603113714/https://www.axios.com/george-floyd-protests-coronavirus-media-coverage-08e7aa7c-1a31-4f1a-98b1-adf3229797ca.html"
+            }
+        ]
+    },
+    "timestamp": "1591183828.6",
+    "updated": "1591184235.413384"
+}
